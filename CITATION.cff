@@ -55,3 +55,4 @@ version: "1.0.0"
 # Full scheme + CrossRef rules: methodology/publication_workflow.md
 # § Step 5 — DOI mint.
 # doi: "10.61700/<10-char-opaque-suffix>"   # auto-populated on first publish-release
+doi: "10.61700/t31oy23grr"

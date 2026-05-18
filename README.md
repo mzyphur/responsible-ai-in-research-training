@@ -75,7 +75,8 @@ Questions about public evidence can be sent to [support@instats.org](mailto:supp
   title = {<PROJECT_TITLE>: <SUBTITLE>},
   year = {<CITATION_YEAR>},
   howpublished = {Instats Policy Series, v<VERSION>},
-  url = {<REPO_URL>}
+  url = {<REPO_URL>},
+  doi         = {10.61700/t31oy23grr}
 }
 ```
 
