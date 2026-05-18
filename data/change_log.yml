@@ -1,0 +1,24 @@
+# Public value/caveat change log for <PROJECT>.
+#
+# Required for every post-release change to a headline value, chart-driving
+# value, public caveat, or recommendation. The consistency gate validates
+# shape when this file is present; human release review decides whether a
+# changed value needs an entry.
+
+changes:
+  - change_id: CHG-001
+    date: "YYYY-MM-DD"
+    version: "0.1.1"
+    claim_id: CLM-001
+    value_key: "headline_revenues_aud_bn.instrument_a"
+    changed_fields: ["value"]
+    old_value: "<old value or null>"
+    new_value: "<new value or null>"
+    reason: "<why the value/caveat changed>"
+    source_ids: ["SRC-001"]
+    uncertainty_status: direct_source
+    release_approval:
+      accountable_editor: "<accountable author/editor>"
+      date: "YYYY-MM-DD"
+      status: approved
+    notes: "Public provenance only; no private operational details."

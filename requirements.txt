@@ -1,0 +1,23 @@
+# Bounded development requirements for template and seeded-project builds.
+# Patch + minor updates are allowed within a major (the `<X.0` upper bound
+# stops a breaking 4.0/5.0 from auto-installing). Release managers who need
+# byte-stable rebuilds should capture a per-release `pip freeze` / lockfile
+# alongside the public release notes and re-run `make verify`.
+#
+# To regenerate this file from the current environment:
+#   pip freeze | grep -iE '^(matplotlib|numpy|pandas|markdown|python-docx|weasyprint|PyYAML|pypdf|Pillow)=='
+#
+# Non-Python system dependencies:
+# - pandoc
+# - LibreOffice `soffice` on PATH. The DOCX builder fails without the
+#   LibreOffice headless round-trip because Word-for-Mac compatibility depends
+#   on the normalised OOXML it emits. On macOS: brew install --cask libreoffice
+matplotlib>=3.10,<4.0
+numpy>=2.3,<3.0
+pandas>=2.3,<3.0
+Markdown>=3.10,<4.0
+python-docx>=1.2,<2.0
+weasyprint>=68.0,<69.0
+PyYAML>=6.0,<7.0
+pypdf>=6.0,<7.0
+Pillow>=12.0,<13.0

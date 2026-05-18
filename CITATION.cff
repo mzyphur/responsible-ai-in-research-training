@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+title: "Responsible AI in Research and Research Training: A Global Capability Framework for University Research Leadership"
+message: "If you use this work, please cite it using the metadata below."
+type: report
+authors:
+  - family-names: "Zyphur"
+    given-names: "Michael J."
+    affiliation: "Instats"
+    email: "support@instats.org"
+    orcid: "https://orcid.org/0000-0003-3237-7892"
+repository-code: "https://github.com/mzyphur/responsible-ai-in-research-training"
+url: "https://instats.org/publications/responsible-ai-in-research-training/"
+abstract: >-
+  A global capability framework for senior university research
+  leadership on responsible AI use in research and research training.
+  Synthesises national research-funder policies (UKRI, NSF, ARC, DFG,
+  ERC, NORDIS, A*STAR), institutional AI policies at top doctoral
+  universities, and existing AI-literacy and researcher-development
+  frameworks (UNESCO, OECD, JISC, EDUCAUSE, Vitae UK Researcher
+  Development Framework, Council of Graduate Schools). Specifies what
+  responsible AI use looks like in practice at PhD level: AI tools as
+  search, co-author, validator, and tutor; privacy, plagiarism, and
+  intellectual-property governance; reproducibility, hallucination,
+  and adversarial-validation discipline; and the AI-literacy
+  competencies humans need to keep research valid, replicable, and
+  ethical when AI is in the loop. Benchmarks readiness at the system
+  level and the organisation level, including whether universities
+  have AI policies that go beyond plagiarism. Written as a global
+  view that supports later regional adaptations.
+keywords:
+  - public policy
+  - higher education
+  - artificial intelligence
+  - research training
+  - PhD research
+  - AI ethics
+  - AI literacy
+  - capability framework
+  - responsible AI
+  - research integrity
+  - international comparison
+  - open data
+  - reproducible research
+  - INSTATS-PS-2026-04
+license: CC-BY-NC-4.0
+date-released: "2026-05-18"
+version: "0.1.0"
+# DOI: leave commented out at seed time. The first run of
+# `python3 scripts/mint_doi.py --publication-root .` — which
+# `make publish-release` calls by default (v0.22.14+; pass MINT_DOI=0
+# to skip) — generates an opaque 10-char random suffix per CrossRef's
+# opacity rule, writes `doi: "10.61700/<suffix>"` here, and
+# propagates the same string to drafts/report.md colophon + README.md
+# citation paragraph + README.md BibTeX entry. Idempotent on re-run.
+# Full scheme + CrossRef rules: methodology/publication_workflow.md
+# § Step 5 — DOI mint.
+# doi: "10.61700/<10-char-opaque-suffix>"   # auto-populated on first publish-release

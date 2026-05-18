@@ -1,0 +1,1127 @@
+/* Instats Policy Series — print-quality policy document styling.
+ *
+ * Brand palette per Instats house style:
+ *   Primary    #00547B   (deep teal-navy — used for H1/H2 + key emphasis)
+ *   Secondary  #3092B1   (mid teal — links, H3, accents, quote rule)
+ *   Background #F5F5F7   (paper / page background)
+ *   Tags       #F1F0F1   (callout panels, table-row alt, code blocks)
+ *
+ * Typography (per POLICY_DOCS.md §10.1 and canonical
+ * policy_docs/examples/report.css):
+ *   Body:     Source Serif 4 — high-density serif designed for reading
+ *             at body sizes; real italics; optical-size axis tunes letter-
+ *             shapes for caption/footnote sizes vs. body sizes.
+ *   Display:  Montserrat semibold (600) — Grattan / Brookings convention;
+ *             Inter is the immediate fallback if Montserrat is not
+ *             available in the rendering environment.
+ *
+ * Typographic hierarchy follows the Grattan / Brookings / Cato
+ * convention: serif body for long-form reading, sans-serif headings
+ * for hierarchy.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&display=swap");
+
+:root {
+  /* Instats brand — primary palette */
+  --instats-primary:   #00547B;   /* deep teal-navy */
+  --instats-secondary: #3092B1;   /* mid teal */
+  --instats-bg:        #F5F5F7;   /* paper */
+  --instats-tag:       #F1F0F1;   /* tags / chips / alt panel */
+  --instats-primary-dk: #003F5C;
+  --instats-secondary-lt: #BFE0EC;
+
+  /* Document */
+  --ink:        #212529;
+  --ink-soft:   #495057;
+  --paper:      var(--instats-bg);
+  --cover-bg:   #FFFFFF;
+  --accent:     #C5283D;  /* Chart 'gas' red — used sparingly, for emphasis */
+  --rule:       #DEE2E6;
+  --rule-soft:  var(--instats-tag);
+  --highlight:  #FFF7E6;
+  --quote-bar:  var(--instats-secondary);
+  --code-bg:    var(--instats-tag);
+
+  /* Three-family type system per DESIGN_FEEDBACK §3.1.
+     --serif    body, lede, captions over 11pt, blockquotes
+     --sans     cover title, headings, kickers, table headers, chart titles
+     --meta     footnotes, references, source lines, page numbers, fine print
+     --display  alias for --sans (legacy uses) */
+  --serif:      "Source Serif 4", "Charter", "Iowan Old Style", "Georgia", "Times New Roman", serif;
+  --sans:       "Montserrat", "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --meta:       "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --display:    var(--sans);
+  --mono:       "JetBrains Mono", "SF Mono", "Menlo", monospace;
+  --measure:    68ch;
+
+  /* Named type-scale tokens per DESIGN_FEEDBACK §3.2.
+     Single source of truth for size + line-height + weight + family
+     at every typographic role. Use these via var() in CSS rules; never
+     hard-code px values for type. */
+  --type-display-xl-size:    54px;
+  --type-display-xl-lh:      1.05;
+  --type-display-xl-weight:  700;
+
+  --type-display-l-size:     44px;
+  --type-display-l-lh:       1.08;
+  --type-display-l-weight:   700;
+
+  --type-h1-size:            32px;
+  --type-h1-lh:              1.15;
+  --type-h1-weight:          600;
+
+  --type-h2-size:            24px;
+  --type-h2-lh:              1.2;
+  --type-h2-weight:          600;
+
+  --type-h3-size:            18px;
+  --type-h3-lh:              1.25;
+  --type-h3-weight:          600;
+  --type-h3-tracking:        0.08em;
+
+  --type-lede-size:          20px;
+  --type-lede-lh:            1.5;
+
+  --type-body-size:          18px;
+  --type-body-lh:            1.65;
+
+  --type-body-small-size:    15px;
+  --type-body-small-lh:      1.55;
+
+  --type-kicker-size:        9px;
+  --type-kicker-lh:          1;
+  --type-kicker-weight:      700;
+  --type-kicker-tracking:    0.16em;
+
+  --type-footnote-size:      13px;
+  --type-footnote-lh:        1.45;
+
+  --type-meta-size:          12px;
+  --type-meta-lh:            1.4;
+  --type-meta-weight:        500;
+  --type-meta-tracking:      0.14em;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 16.5px; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: var(--serif);
+  color: var(--ink);
+  background: var(--paper);
+  margin: 0;
+  line-height: 1.65;
+  /* Source Serif 4 uses an optical-size axis — feed it the actual font size so
+     letterforms tune themselves for the body size (vs. the captions and footnotes). */
+  font-optical-sizing: auto;
+  /* DESIGN_FEEDBACK §3.3:
+     - oldstyle numerals in running prose (overridden to tabular in tables/.stat)
+     - hung punctuation hangs quotes/parens into the margin, the cheapest
+       single detail that makes a page look set rather than typed */
+  font-variant-numeric: oldstyle-nums;
+  hanging-punctuation: first last;
+}
+
+/* Tabular numerals where columns of figures need to align. */
+td, th, .stat, .keyfacts .num, .figure-num,
+.tablewrap td, .tablewrap th {
+  font-variant-numeric: tabular-nums;
+}
+
+/* DESIGN_FEEDBACK §3.3: eliminate orphans + bad rags in body, balance
+   headings so they don't wrap on one weird word. Hyphenation on for
+   body (justified-feel without justification), off for headings. */
+p, li, blockquote, dd {
+  text-wrap: pretty;
+  hyphens: auto;
+}
+h1, h2, h3, h4 {
+  text-wrap: balance;
+  hyphens: none;
+  -webkit-font-feature-settings: "kern", "liga";
+}
+
+.wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 56px 36px 96px 36px;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+ * COVER PAGE — Instats policy series, single-page composition.
+ *
+ * Layout (from top to bottom):
+ *   1. Thin 6px primary-color rule (page-wide).
+ *   2. Logo block: small (180px), left-aligned, generous space below.
+ *   3. Kicker: 11px Montserrat 700 caps + tracking, in secondary blue.
+ *   4. Title: 44px display, primary blue, very tight leading.
+ *   5. Subtitle (italic .cover h2): 22px italic, secondary blue.
+ *   6. Abstract: 16px italic, ink-soft, max 60ch.
+ *   7. Author block: 13px Montserrat, ink.
+ *   8. Bottom: solid primary-color band, 48px tall, with report id.
+ * ─────────────────────────────────────────────────────────────────────*/
+.cover {
+  background: var(--cover-bg);
+  /* Generous internal padding so the logo, kicker, title and abstract
+     don't hug the left edge of the white card. The bottom anchor band
+     (.cover-band) still spans full-width via negative-margin tricks below. */
+  padding: 0 56px;
+  margin-bottom: 0;
+  border-top: 6px solid var(--instats-primary);
+  border-bottom: none;
+  position: relative;
+  min-height: 86vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cover > * { padding-left: 0; padding-right: 0; }
+
+@media (max-width: 760px) {
+  .cover { padding: 0 28px; }
+  .cover .cover-band { margin-left: -28px; margin-right: -28px; padding-left: 28px; }
+}
+
+.cover .cover-logo img,
+.cover p img {
+  display: block;
+  max-width: 180px;
+  height: auto;
+  margin: 56px 0 28px 0;
+}
+
+/* Kicker — small caps series identifier (the bit Grattan / Cato put above the title) */
+.cover .kicker {
+  font-family: var(--display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--instats-secondary);
+  margin: 0 0 12px 0;
+  display: block;
+}
+.cover .kicker p { margin: 0; max-width: none; font-family: inherit; font-size: inherit; }
+
+.cover h1 {
+  font-family: var(--display);
+  font-size: 2.75rem;
+  line-height: 1.06;
+  letter-spacing: -0.015em;
+  color: var(--instats-primary);
+  margin: 0 0 6px 0;
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+  max-width: 18ch;
+}
+
+/* DESIGN_FEEDBACK §5.1 #5: subtitle in italic Source Serif at 26pt,
+   muted grey or secondary blue. Source Serif italic — not display
+   sans — is the deck-style pairing under a sans display title. */
+.cover h2 {
+  font-family: var(--serif);
+  font-size: 1.55rem;            /* ~26pt at 18px body */
+  font-style: italic;
+  line-height: 1.3;
+  color: var(--instats-secondary);
+  margin: 0 0 36px 0;
+  border-bottom: none;
+  padding-bottom: 0;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+}
+
+/* Abstract — DESIGN_FEEDBACK §5.1 #7:
+   19pt italic serif in a 60ch measure, anchored to the left margin
+   with a 2px primary-blue rule running down its left edge. */
+.cover .abstract {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.12rem;            /* ~19pt at 18px body */
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 60ch;
+  margin: 0 0 auto 0;
+  padding-left: 24px;
+  border-left: 2px solid var(--instats-primary);
+}
+.cover .abstract p { max-width: none; margin: 0; font-family: inherit; font-style: inherit; font-size: inherit; color: inherit; }
+
+/* Author block — flush to bottom, sans-serif, ink */
+.cover .author {
+  font-family: var(--display);
+  font-size: 0.95rem;
+  color: var(--ink);
+  line-height: 1.55;
+  margin: 48px 0 0 0;
+  padding: 18px 0 0 0;
+  border-top: 1px solid var(--rule);
+  max-width: none;
+}
+.cover .author p { margin: 0; max-width: none; font-family: inherit; font-size: inherit; color: inherit; }
+.cover .author strong { color: var(--instats-primary); font-weight: 700; }
+
+/* Visual anchor at the very bottom of the cover. DESIGN_FEEDBACK §5.1 #8:
+   48px solid-primary band carrying the report identifier. */
+.cover .cover-band {
+  margin: 56px -56px 0 -56px;
+  min-height: 48px;
+  padding: 17px 24px 15px 24px;
+  background: var(--instats-primary);
+  color: white;
+  max-width: none;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.cover .cover-band p {
+  margin: 0;
+  max-width: none;
+}
+
+.cover .cover-band-id {
+  color: white;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+ * COLOPHON (back of cover)
+ * ─────────────────────────────────────────────────────────────────────*/
+.colophon {
+  background: var(--rule-soft);
+  padding: 32px 36px;
+  margin: 48px -36px 48px -36px;
+  border-left: 3px solid var(--instats-secondary);
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+.colophon p {
+  max-width: none;
+  margin: 0 0 14px 0;
+}
+
+.colophon strong {
+  color: var(--instats-primary);
+  font-weight: 600;
+}
+
+.colophon a {
+  color: var(--instats-secondary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+ * EXECUTIVE SUMMARY — DESIGN_FEEDBACK §6
+ *
+ * Wrap the entire executive summary in a tinted band that bleeds 16px
+ * beyond the body column on each side. The tint is the single visual
+ * treatment — no icons, no emoji, no traffic-light colour chips, no
+ * sans-serif body.
+ *
+ * The H2 inside the band uses kicker styling per §6.
+ * ─────────────────────────────────────────────────────────────────────*/
+.exec {
+  background: var(--paper-tint, var(--instats-bg));
+  margin: 56px -52px;            /* 36px wrap padding + 16px bleed each side */
+  padding: 56px 52px 48px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.exec > h2:first-of-type {
+  /* H2 inside the band reads as a kicker — the band itself is the
+     section signal, so the heading shrinks back to a label. */
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--instats-primary);
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin: 0 0 28px 0;
+}
+
+/* Lede: first paragraph of the exec summary, set in 20pt italic serif
+   per DESIGN_FEEDBACK §3.2 and §6. The tinted band is the signal;
+   the inner left rule (deleted in v2.1.1) double-marked the section
+   redundantly. The .cover .abstract keeps its left rule because the
+   abstract sits on white, not on the band. */
+.exec > p:first-of-type,
+.exec .lede {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--ink);
+  margin-bottom: 28px;
+  max-width: 60ch;
+}
+
+/* Body paragraphs inside the exec band keep the body serif at body
+   size — DESIGN_FEEDBACK §6 explicitly forbids sans-serif body inside
+   the exec summary. The band's tint is the only signal. */
+.exec p { max-width: 60ch; }
+
+/* The numbered verdicts list — DESIGN_FEEDBACK §8 + §10. */
+.exec ol {
+  counter-reset: verdict;
+  list-style: none;
+  padding-left: 0;
+  margin: 28px 0;
+}
+.exec ol > li {
+  counter-increment: verdict;
+  position: relative;
+  padding: 20px 0 20px 56px;
+  border-top: 1px solid var(--rule);
+}
+.exec ol > li:last-child { border-bottom: 1px solid var(--rule); }
+.exec ol > li::before {
+  content: counter(verdict, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 22px;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 760px) {
+  .exec { margin: 40px -16px; padding: 40px 24px; }
+  .exec ol > li { padding-left: 44px; }
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+ * BOX — methodology / data callout per DESIGN_FEEDBACK §7.3
+ *
+ * 1px hairline frame OR tinted background, never both. Body text at
+ * the same body size as the rest of the document — do not shrink.
+ * Use ::: callout fenced div in markdown.
+ * ─────────────────────────────────────────────────────────────────────*/
+.callout {
+  border: 1px solid var(--rule);
+  padding: 24px 28px;
+  margin: 32px 0;
+  background: transparent;
+}
+.callout > h3:first-of-type,
+.callout > h2:first-of-type {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--instats-primary);
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+ * VERDICT chips — DESIGN_FEEDBACK §10
+ *
+ * Pill-shaped inline label for fact-checking claims. Use ::: verdict
+ * with .true / .mixed / .false / .decomposed modifier classes.
+ * ─────────────────────────────────────────────────────────────────────*/
+.verdict, .verdict-pill {
+  display: inline-block;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 3px;
+  background: var(--instats-tag);
+  color: var(--ink);
+  margin: 0 4px;
+  vertical-align: 1px;
+}
+/* TRUE stays at 18%; MIXED/FALSE/DECOMPOSED use 22% to match the DOCX
+   reference styles and preserve print legibility. */
+.verdict.true,      .verdict-pill.true      { background: color-mix(in srgb, #1F6E47 18%, white); color: #1F6E47; }
+.verdict.mixed,     .verdict-pill.mixed     { background: color-mix(in srgb, #8C5A12 22%, white); color: #8C5A12; }
+.verdict.false,     .verdict-pill.false     { background: color-mix(in srgb, #963A2C 22%, white); color: #963A2C; }
+.verdict.decomposed,.verdict-pill.decomposed{ background: color-mix(in srgb, var(--instats-secondary) 22%, white); color: var(--instats-primary); }
+
+/* ─────────────────────────────────────────────────────────────────────
+ * PULL QUOTE — DESIGN_FEEDBACK §10
+ *
+ * 28pt serif italic, 80%-of-body-column width, primary-blue rule
+ * flush-left of the first line. Use markdown blockquote (>) for it;
+ * this rule restyles the default blockquote to spec.
+ * ─────────────────────────────────────────────────────────────────────*/
+blockquote.pullquote, .pullquote {
+  position: relative;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.55rem;          /* ~28pt at 18px body */
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 40px 10% 40px 0;
+  padding: 4px 0 4px 24px;
+  border-left: 0;               /* full-height slab removed in v2.1.1 */
+  background: transparent;
+  max-width: none;
+}
+
+/* DESIGN_FEEDBACK §10 — the rule is "a 12pt primary-blue rule, 1.5em
+   tall, sitting flush-left of the first line — not a full quote-mark
+   glyph." Implemented as a short ::before bar at the cap-height of
+   the opening line so the mark anchors to the prose rather than
+   running the full height of the quote. */
+blockquote.pullquote::before, .pullquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;                   /* aligns to cap height of first line */
+  width: 4px;                   /* 12pt rule weight at 1rem ≈ 4px wide */
+  height: 1.5em;
+  background: var(--instats-primary);
+}
+blockquote.pullquote cite, .pullquote cite {
+  display: block;
+  margin-top: 14px;
+  font-family: var(--sans);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+ * TABLE OF CONTENTS — hand-rendered, static, present in DOCX + HTML alike
+ * ─────────────────────────────────────────────────────────────────────*/
+.toc {
+  font-family: var(--display);
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin: 32px 0 48px 0;
+  background: #FFFFFF;
+  border: 1px solid var(--rule);
+  padding: 32px 36px;
+  line-height: 1.5;
+}
+
+/* DESIGN_FEEDBACK §3.2: the TOC heading is a section label, not a peer
+   of body H1s. Treat as a kicker (caps, tracked, primary blue). The
+   2px primary-blue bottom rule is the visual anchor instead of size. */
+.toc h1 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 0.85rem;            /* ~14px at body 16.5px */
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--instats-primary);
+  margin: 0 0 24px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 2px solid var(--instats-primary);
+}
+
+/* H4 inside TOC = Part / Section header in TOC */
+.toc h4 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.0rem;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--instats-primary);
+  margin: 18px 0 4px 0;
+}
+
+/* Sub-entries within a part — proper bulleted list, one per line. */
+.toc ul {
+  list-style: none;
+  padding-left: 18px;
+  margin: 6px 0 18px 0;
+}
+
+.toc ul li {
+  position: relative;
+  padding-left: 14px;
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.45;
+  max-width: none;
+}
+
+.toc ul li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  color: var(--instats-secondary);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+/* Any stray paragraphs inside .toc (shouldn't happen but defend) */
+.toc p {
+  margin: 4px 0 4px 18px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  max-width: none;
+  line-height: 1.45;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+ * HEADINGS — body
+ * ─────────────────────────────────────────────────────────────────────*/
+/* DESIGN_FEEDBACK §4.3: white space is structural, not residual.
+   - 96px above every H1 (was 56px)
+   - 72px before every H2 (was 40px)
+   - 48px before every H3 (was 28px) */
+h1 {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 1.85rem;
+  color: var(--instats-primary);
+  margin: 96px 0 18px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--instats-primary);
+  line-height: 1.2;
+}
+
+.cover h1 { border-bottom: none; padding-bottom: 0; }
+
+h2 {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--instats-primary);
+  margin: 72px 0 14px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+  line-height: 1.25;
+}
+
+.cover h2 { border-bottom: none; padding-bottom: 0; }
+
+h3 {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 1.10rem;
+  color: var(--instats-secondary);
+  margin: 48px 0 10px 0;
+  line-height: 1.3;
+}
+
+h4 {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.93rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin: 22px 0 8px 0;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+ * BODY TEXT
+ * ─────────────────────────────────────────────────────────────────────*/
+p {
+  max-width: var(--measure);
+  margin: 0 0 14px 0;
+}
+
+ul, ol {
+  max-width: var(--measure);
+  margin: 0 0 18px 0;
+  padding-left: 1.4em;
+}
+
+li { margin-bottom: 5px; }
+
+/* Block quotations — Source Serif 4 italic with a quiet secondary-blue
+   left rule. The cyan gradient that used to live here was deleted in
+   v2.1.1 per DESIGN_FEEDBACK §16 ("Gradients of any kind … on
+   backgrounds") and POLICY_DOCS §6 ("Coloured backgrounds on body
+   paragraphs"). The 4px solid rule does the signalling. */
+blockquote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.10rem;
+  line-height: 1.55;
+  color: var(--ink);
+  border-left: 4px solid var(--quote-bar);
+  background: transparent;
+  margin: 22px 0;
+  padding: 14px 22px;
+  max-width: var(--measure);
+}
+
+blockquote cite {
+  display: block;
+  font-style: normal;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  margin-top: 8px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  margin: 18px 0 24px 0;
+  background: #FFFFFF;
+}
+
+th, td {
+  text-align: left;
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+th {
+  background: #FFFFFF;
+  font-weight: 700;
+  color: var(--instats-primary);
+  border-bottom: 2px solid var(--instats-primary);
+}
+
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Subtle row-hover on screen only, gated to fine-pointer devices so the
+   table still prints (and reads on touch) as a quiet data block. The
+   alpha is below threshold-of-perception until the user actually
+   hovers a row — DESIGN_FEEDBACK §16 wants nothing showy here. */
+@media (hover: hover) and (pointer: fine) {
+  tr:hover td { background: rgba(75, 145, 179, 0.02); }
+}
+
+/* Figures */
+/* DESIGN_FEEDBACK §4.3 + §8.2: 32px of internal whitespace below
+   charts/tables before body resumes; chart+caption read as a single
+   composed unit. */
+figure { margin: 40px 0 44px 0; padding: 0; }
+
+/* ─────────────────────────────────────────────────────────────────────
+ * Chart caption frame — DESIGN_FEEDBACK §8.2
+ *
+ *   FIGURE 1                       ← kicker, Montserrat caps tracked
+ *   Bold one-line title            ← Montserrat 600, body size
+ *   [chart PNG]                    ← 32px above + below
+ *   Italic interpretation line     ← body-small serif italic
+ *   SOURCE · PRIMARY-SOURCE LINE   ← Inter caps tracked
+ * ─────────────────────────────────────────────────────────────────────*/
+figure.chart {
+  margin: 56px 0 64px 0;
+  padding: 0;
+}
+figure.chart .figkicker {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--instats-primary);
+  margin-bottom: 6px;
+}
+figure.chart .figtitle {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 1.3;
+  color: var(--ink);
+  margin-bottom: 18px;
+  max-width: var(--measure);
+}
+figure.chart > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+figure.chart .figinterp {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.94rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin: 18px 0 6px 0;
+  max-width: var(--measure);
+}
+figure.chart .figsrc {
+  font-family: var(--meta);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--ink-faint, var(--ink-soft));
+  margin: 8px 0 0 0;
+  max-width: var(--measure);
+}
+
+figure img, p > img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p > img {
+  border: 1px solid var(--rule);
+  margin: 12px auto;
+}
+
+figcaption,
+p > img + em {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+  margin-top: 10px;
+  max-width: var(--measure);
+  display: block;
+}
+
+/* Footnote refs — DESIGN_FEEDBACK §3.1 + §11: Inter (metadata family),
+   primary-blue per §11 ("Superscript markers in body … primary-blue").
+   Was secondary in v2.1.0; corrected in v2.1.1 after the design review.
+   Separator commas between adjacent refs use `.footnote-sep` and share
+   the same marker treatment, avoiding baseline body punctuation between
+   superscripts. */
+sup a,
+.footnote-sep {
+  font-family: var(--meta);
+  color: var(--instats-primary);
+  text-decoration: none;
+  font-size: 0.85em;
+  vertical-align: super;
+  padding: 0 2px;
+  font-weight: 600;
+  display: inline;
+}
+
+sup a:hover { text-decoration: underline; }
+
+/* Inline links */
+a {
+  color: var(--instats-secondary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2.5px;
+}
+
+a:hover { color: var(--instats-primary); }
+
+/* Inline repo paths / manifest keys. Browser defaults make <code> look
+   oversized in caption and source lines; keep these as compact metadata
+   chips so paths like `sources/fx_rates.md` do not dominate the prose. */
+code, kbd, samp {
+  font-family: var(--mono);
+  font-size: 0.84em;
+  line-height: 1;
+  background: var(--code-bg);
+  color: var(--ink);
+  padding: 0.06em 0.22em;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+pre code {
+  font-size: 0.86rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+/* Sources / footnotes — DESIGN_FEEDBACK §11: Inter (metadata family), 9pt
+   with 13pt leading, top 32px-tall margin and a 1px hairline rule across
+   the body measure.
+   Selector note: python-markdown's footnotes extension emits the
+   bottom-of-document block as <div class="footnote"> (singular). Pandoc
+   emits <div class="footnotes"> (plural). We target both so the rule
+   applies regardless of which markdown processor produced the HTML. */
+.sources, .footnotes, .footnote {
+  font-family: var(--meta);
+  font-size: 0.83rem;
+  color: var(--ink-soft);
+  line-height: 1.44;        /* 13pt / 9pt ≈ 1.44 */
+  margin-top: 80px;
+  padding-top: 32px;
+  border-top: 1px solid var(--rule);
+}
+
+/* Number set in Inter 600 with hanging indent — DESIGN_FEEDBACK §11. */
+.sources ol, .footnotes ol, .footnote ol {
+  padding-left: 2.2em;
+}
+.sources li, .footnotes li, .footnote li {
+  margin-bottom: 10px;
+  text-indent: 0;
+}
+.sources li::marker, .footnotes li::marker, .footnote li::marker {
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.sources a, .footnotes a { color: var(--instats-secondary); }
+
+.footnotes hr { display: none; }
+
+/* .caveat was deleted in v2.1.1 — the rule combined rounded corners,
+   a warm-yellow fill, an off-palette orange accent stripe, and a
+   coloured background on body content. Every one of those is a
+   DESIGN_FEEDBACK §16 / POLICY_DOCS §6 anti-pattern. Any content
+   previously inside a .caveat block should be either:
+     - a methodology Box (::: callout / .callout)
+     - an italic-serif paragraph, or
+     - a footnote.
+   No replacement rule is provided on purpose. */
+
+/* Page-break helpers */
+.pagebreak { page-break-after: always; break-after: page; }
+
+/* ─────────────────────────────────────────────────────────────────────
+ * Print stylesheet — DESIGN_FEEDBACK §15.3
+ *
+ * Goal: when the reader hits Cmd-P → Save as PDF, the result is a
+ * publication-quality document, not a webpage forced onto A4.
+ * ─────────────────────────────────────────────────────────────────────*/
+@page {
+  size: A4;
+  margin: 22mm 22mm 25mm 22mm;
+}
+
+@media print {
+  /* Body type: 11pt serif at 1.5 leading, oldstyle nums retained. */
+  html, body {
+    font-size: 11pt;
+    line-height: 1.5;
+    background: white;
+  }
+  body {
+    color: #000;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Strip web-only chrome: anything tagged as nav, sticky, or progress. */
+  .sticky-toc, .progress-bar, .site-nav, nav.navbar, .web-only {
+    display: none !important;
+  }
+
+  /* Layout: remove web column width — pandoc/pages will use @page margins. */
+  .wrap { padding: 0; max-width: none; }
+
+  /* Section breaks. Every H1 starts on a new page; H2 stays with following
+     content; footnotes block break to its own page. */
+  h1 { break-before: page; }
+  h1, h2, h3 { break-after: avoid; }
+  figure, .tablewrap, table, blockquote, .colophon, .toc, .callout {
+    break-inside: avoid;
+  }
+  .footnotes, .footnote, .sources { break-before: page; }
+
+  /* Links: tone down (no coloured links in print, but keep underline). */
+  a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+  }
+  /* External links: show the URL inline so the PDF is still useful printed. */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-family: var(--meta);
+    font-size: 0.78em;
+    color: var(--ink-soft);
+    word-break: break-all;
+  }
+  /* …but suppress URL-printing in blocks where it would be cosmetic
+     clutter rather than useful information:
+       - The footnotes block already prints the full URL as citation.
+       - The cover, author block, and colophon all use short
+         human-readable link text like "instats.org" — printing the
+         full URL after it just doubles the same string. */
+  .footnotes a[href^="http"]::after,
+  .footnote a[href^="http"]::after,
+  .sources a[href^="http"]::after,
+  .cover a[href^="http"]::after,
+  .colophon a[href^="http"]::after,
+  .author a[href^="http"]::after,
+  /* Also suppress on links that wrap an image (e.g. the logo). */
+  a:has(img)[href^="http"]::after { content: ""; }
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+ * Web-only chrome — DESIGN_FEEDBACK §7.4 + §15.4
+ *
+ *   Four interactive elements, no more:
+ *     1. Sticky header bar (not implemented here — kept simple)
+ *     2. Reading progress bar (3px, primary blue, top edge)
+ *     3. Sticky left-rail TOC (desktop only; >1100px viewport)
+ *     4. Footnote backlinks (handled by markdown processor)
+ *
+ *   All hidden in @media print via the .web-only class.
+ * ─────────────────────────────────────────────────────────────────────*/
+/* Sticky header — appears after the reader scrolls past the cover.
+   JS toggles .visible based on scroll position. */
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  /* v2.1.1: solid white instead of the previous translucent-with-blur
+     treatment. DESIGN_FEEDBACK §16 explicitly forbids glass-morphism /
+     frosted backdrops. The header is 56px tall — solid is fine. */
+  background: #FFFFFF;
+  border-bottom: 1px solid var(--rule-soft);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0 28px;
+  z-index: 90;
+  transform: translateY(-100%);
+  transition: transform 0.18s ease;
+}
+.sticky-header.visible { transform: translateY(0); }
+
+.sticky-header .sh-title {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--instats-primary);
+  letter-spacing: -0.005em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50%;
+}
+.sticky-header .sh-meta {
+  font-family: var(--meta);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sticky-header .sh-download {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+  background: var(--instats-primary);
+  border: 0;
+  padding: 8px 14px;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.sticky-header .sh-download:hover {
+  background: var(--instats-secondary);
+  color: white;
+}
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;                          /* JS sets this to scroll percentage */
+  background: var(--instats-primary);
+  z-index: 100;                      /* above the sticky header */
+  transition: width 0.06s linear;
+  pointer-events: none;
+}
+
+.sticky-toc {
+  display: none;                     /* hidden by default; CSS @media shows it */
+  position: fixed;
+  top: 80px;
+  /* Position to the LEFT of the centred body column with a 24px gutter.
+     The body column is 880px wide and centred, so its left edge sits at
+     calc((100% - 880px) / 2). Place the TOC 280px to the left of that,
+     but never below a 16px viewport-edge gutter — at narrow viewports
+     the calc can otherwise resolve negative and clip the TOC off the
+     left edge. */
+  left: max(16px, calc((100% - 880px) / 2 - 280px));
+  width: 240px;
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+  padding: 16px 18px 16px 0;
+  border-right: 1px solid var(--rule-soft);
+  font-family: var(--meta);
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+.sticky-toc-title {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--instats-primary);
+  margin-bottom: 12px;
+}
+.sticky-toc ol {
+  list-style: none;
+  counter-reset: stoc;
+  padding: 0;
+  margin: 0;
+}
+.sticky-toc li {
+  counter-increment: stoc;
+  padding: 4px 0;
+  margin: 0;
+}
+.sticky-toc a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  display: block;
+  padding: 4px 0 4px 12px;
+  border-left: 2px solid transparent;
+  transition: color 0.15s, border-left-color 0.15s;
+}
+.sticky-toc a:hover { color: var(--instats-primary); }
+.sticky-toc a.active {
+  color: var(--instats-primary);
+  border-left-color: var(--instats-primary);
+  font-weight: 600;
+}
+
+/* Show the sticky TOC only when the viewport is wide enough that a
+   240px TOC + 24px gutter fits to the LEFT of the centred 880px body
+   column without overlapping it. Math:
+       (viewport - 880) / 2  >=  240 + 24
+       viewport             >=  1408px
+   Below that threshold the inline TOC (.toc block in the body) is
+   sufficient — the sticky rail just clips into the prose otherwise. */
+@media (min-width: 1408px) {
+  .sticky-toc { display: block; }
+}
+
+/* Legacy minimal-print fallback — older browsers without @page support. */
+@media print {
+  /* belt-and-braces page-break aliases for older render engines */
+  figure, table, blockquote, .colophon, .toc { page-break-inside: avoid; }
+  h1 { page-break-before: always; }
+  h2, h3 { page-break-after: avoid; }
+}

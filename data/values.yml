@@ -1,0 +1,99 @@
+# <PROJECT> — canonical headline numbers.
+#
+# This file is the single source of truth for every value that appears
+# in MORE than one place across the report (chart scripts, prose
+# tables, Appendix A reconciliation, README citation badge, …).
+#
+# Build pipeline contract:
+#   - Chart scripts in charts/*.py read from this file via
+#     `from values import load_values` (see charts/values.py).
+#   - scripts/check_consistency.py asserts that:
+#       (a) every FX rate in chart docstrings matches fx_rates below;
+#       (b) the colophon currency line in drafts/report.md matches
+#           fx_rates below;
+#       (c) every Figure N in body has a matching PNG;
+#       (d) every chart PNG has a matching SVG;
+#       (e) every headline_check entry resolves to a public claim/source
+#           record in sources/claim_register.yml;
+#       (f) VERSION matches the citation block in README.md;
+#       (g) Appendix B title matches VERSION.
+#
+# When this file is touched, run `make verify` before committing.
+#
+# Rename to `values.yml` (drop the `_TEMPLATE` suffix) and fill in the
+# project-specific values.
+
+source_version: "0.1.0"
+
+# ---------------------------------------------------------------------
+# Currency convention — drafts/report.md colophon
+# ---------------------------------------------------------------------
+fx_rates:
+  as_of: "YYYY-MM-DD"  # RBA F11.1 (or equivalent national fix) date
+  USD: 0.000
+  # NOK: 0.000
+  # GBP: 0.000
+  # JPY: 0.00000
+  # RM:  0.000
+
+# ---------------------------------------------------------------------
+# Project headline numbers go here, grouped semantically.
+# Examples (delete and replace with your project's actual structure):
+# ---------------------------------------------------------------------
+# headline_revenues_aud_bn:
+#   instrument_a: 0.0
+#   instrument_b: 0.0
+#
+# country_per_capita_aud:
+#   country_a: 0
+#   country_b: 0
+#
+# budget_2025_26:
+#   total_receipts_aud_bn: 0
+#   total_expenses_aud_bn: 0
+
+# ---------------------------------------------------------------------
+# Manifest-vs-prose check seeds (check_consistency.py step 8, v0.17+).
+#
+# For each entry, the formatted manifest value MUST appear at
+# `body_regex`'s capture group 1 in drafts/report.md. This closes the
+# loophole class where mutating a manifest value passes the FX/PNG
+# checks because none of them look at body prose.
+#
+# Schema:
+#   manifest_path: dotted path into THIS yaml file
+#   body_regex:    Python regex; capture group 1 is the candidate match
+#   format:        integer | float1 | float2 | thousands
+#   description:   human-readable; printed in PASS/FAIL log
+#   claim_id:      public claim identifier in sources/claim_register.yml
+#   source_id:     public source identifier in sources/claim_register.yml
+#   uncertainty_status:
+#                  direct_source | derived_calculation | indicative |
+#                  scenario | disputed | synthetic_fixture
+#   change_log_required:
+#                  optional list containing value and/or caveat when a
+#                  post-release headline change must appear in
+#                  data/change_log.yml with approved signoff
+#
+# Only the MOST-CITED headline numbers belong here — anything that
+# would jump off a chart caption / appendix table if it drifted.
+# Curate small; the value of this gate falls if it grows unmaintained.
+#
+# Example entries (delete and replace):
+# ---------------------------------------------------------------------
+# headline_check:
+#   - manifest_path: headline_revenues_aud_bn.instrument_a
+#     body_regex: 'Instrument A raised \*\*A\$(\d+\.\d+) bn\*\*'
+#     format: float1
+#     description: Exec summary — Instrument A annual revenue
+#     claim_id: CLM-001
+#     source_id: SRC-001
+#     uncertainty_status: direct_source
+#     # change_log_required: [value]
+#   - manifest_path: country_per_capita_aud.country_a
+#     body_regex: 'Country A.{0,40}A\$(\d{1,3},\d{3}) per resident'
+#     format: thousands
+#     description: § 3 — Country A per-resident take
+#     claim_id: CLM-002
+#     source_id: SRC-002
+#     uncertainty_status: derived_calculation
