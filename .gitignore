@@ -95,3 +95,12 @@ charts/values.py
 # git history.
 final/human_signoff.md
 final/public_boundary_review.md
+
+# Stage A/B/C/D/E review outputs — private working artefacts per
+# methodology/public_private_boundary_protocol.md. The disallowed-
+# public list includes final/review_*.md, final/reviews/,
+# final/synthesis.md, final/p0_p1_carryover.md.
+final/review_*.md
+final/reviews/
+final/synthesis.md
+final/p0_p1_carryover.md

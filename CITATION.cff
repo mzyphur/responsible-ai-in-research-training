@@ -44,7 +44,7 @@ keywords:
   - INSTATS-PS-2026-04
 license: CC-BY-NC-4.0
 date-released: "2026-05-18"
-version: "0.5.0"
+version: "0.5.1"
 # DOI: leave commented out at seed time. The first run of
 # `python3 scripts/mint_doi.py --publication-root .` — which
 # `make publish-release` calls by default (v0.22.14+; pass MINT_DOI=0
