@@ -26,7 +26,7 @@ Instats &nbsp;·&nbsp; [instats.org](https://instats.org) &nbsp;·&nbsp; [suppor
 
 ::: colophon
 
-**Citation.** Zyphur, M. J. (2026). *Responsible AI in Research and Research Training: A Global Capability Framework for University Research Leadership.* Instats Policy Series, v0.1.0. [github.com/mzyphur/responsible-ai-in-research-training](https://github.com/mzyphur/responsible-ai-in-research-training). ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: forthcoming via CrossRef (see CITATION.cff).
+**Citation.** Zyphur, M. J. (2026). *Responsible AI in Research and Research Training: A Global Capability Framework for University Research Leadership.* Instats Policy Series, v0.5.0. [github.com/mzyphur/responsible-ai-in-research-training](https://github.com/mzyphur/responsible-ai-in-research-training). ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: forthcoming via CrossRef (see CITATION.cff).
 
 **License.** Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0). Share and adapt with attribution; commercial reuse requires written permission from the author.
 
@@ -166,12 +166,6 @@ The cross-country picture is sharper than the within-country picture. The German
 Twenty per cent of the world's top-tier doctoral universities have AI policies that go past plagiarism. That figure is the cover-table comparator of this report. It is also the policy ceiling that the maturity grid in Part 4 is designed to break.
 
 ---
-
-::: stub-marker
-
-**Drafting note — v0.1.0.** Parts 2, 4, and 5 and Appendices A–F are under draft. The five-dimension framework in Part 2 is shipped to v0.2.0 once the Tier 2 dossiers in flight (AI tool taxonomy; privacy / IP / governance; reproducibility-crisis intersection; adversarial-review patterns) land. Part 3 (international comparison) and Part 4 (maturity grid) follow at v0.3.0 and v0.4.0. Part 5 (recommendations by audience tier) and the appendices follow at v0.5.0. Stage A review opens at v0.5.0. The exec summary and Part 1 above are the v0.1.0 spine.
-
-:::
 
 \newpage
 
@@ -373,13 +367,77 @@ The worked examples illustrate two structural findings. First, an institution's 
 
 ## Part 5 — Recommendations for university research leadership
 
-*v0.1.0 stub. Five short chapters, one per audience tier from the executive summary. Lands at v0.5.0.*
+Part 5 specifies, for each of the five audience tiers from the executive summary, a small number of concrete actions that move an institution along the maturity grid. Each recommendation names the framework dimension it targets and the maturity-level move it represents. The actions are non-prescriptive on which level the institution should ultimately occupy: that is an institutional choice. The actions are prescriptive on what counts as movement.
+
+### 5.1 For executive research leadership
+
+The Tier 1 audience is the Deputy Vice-Chancellors and equivalents, the Pro-Vice-Chancellors and Deputy Vice Presidents of Research, the Deputy Provosts. Five concrete actions.
+
+First, *name an owner for the framework's Dimension 5*: the institutional benchmarking-and-improvement cycle on AI in research and research training. Give the owner a published mandate to score the institution against Dimensions 1 through 4 at a stated cadence. The owner can be a deputy vice-chancellor, a director of research integrity, or a chair of a standing committee; what matters is that the owner is named and the cadence is published. This is the move from *absent* to *nascent* on Dimension 5.
+
+Second, *publish the institution's preparation status for the regulatory pressure points* applicable to its jurisdictions: the EU AI Act Article 27 Fundamental Rights Impact Assessment obligation effective 2 August 2026 for institutions operating in or for the EU market; the Australian Privacy Act 1988 automated-decision-making transparency obligation effective 10 December 2026 for institutions under that regime. The publication is the operational test for Dimension 5 *established*.
+
+Third, *commission an institutional review against the maturity grid* in Part 4 and Appendix A and publish the dimensional profile. The review can be internal in year one; external benchmarking against peers is what moves the institution from *established* to *leading* on Dimension 5.
+
+Fourth, *fund the people, systems, and processes the dimensional profile reveals are constrained*. Dimension 3 (tooling that promotes responsible use) typically requires the largest upfront investment because the institutional procurement gate, the sampled resolvability test, and the EU AI Act Article 27 Fundamental Rights Impact Assessment infrastructure are organisationally consequential. Dimension 4 (AI-literate humans) typically requires the largest sustained investment because curriculum integration, supervisor training, and examiner training are recurring annual costs. The fund-the-gap action distinguishes a published policy from an enacted one.
+
+Fifth, *speak the institution's framework position publicly* to council, board, and sector peers. Convergence at sector scale is achievable, as the publisher ten-week wave demonstrated. The institutional layer has not yet achieved convergence at sector scale. Public articulation of the institutional framework position contributes to the convergence the report's evidence shows the sector currently lacks.
+
+### 5.2 For faculty deans and associate deans of research
+
+The Tier 2 audience translates the executive position into faculty practice. Four concrete actions.
+
+First, *publish the faculty's task-level rules for AI use in PhD research*, anchored to the institutional framework and applicable to the disciplines the faculty covers. The faculty rules can be more specific than the institutional rules; they must not be inconsistent. Disciplines vary materially on what AI use looks like in practice: a humanities PhD candidate's AI-use profile is structurally different from a computational-biology candidate's. The faculty layer is where the discipline-specific operational rules are owned.
+
+Second, *integrate AI competency into the faculty's PhD methods curriculum*. The six load-bearing AI-era competencies from §2.4 are named outcomes; the curriculum-content owner is the faculty methods coordinator or equivalent; the cadence of curriculum review is published. This is the move from *nascent* to *established* on Dimension 4 at faculty scale.
+
+Third, *commission a faculty-level mapping of the AI tools faculty researchers actually use* against the §2.3 observable-property test. The mapping is a one-off at the faculty level and feeds the institutional tooling-procurement gate. Faculty researchers will surface tools the institutional procurement gate has not yet considered.
+
+Fourth, *report the faculty's dimensional profile against the institutional benchmark*. The faculty's profile may differ from the institutional one, and the difference is the most informative diagnostic. A faculty at *established* on Dimension 1 while the institution is at *nascent* is doing important work the institutional layer should learn from. A faculty at *absent* on Dimension 4 while the institution is at *established* needs faculty-level intervention.
+
+### 5.3 For deans of graduate schools and A/Deans of research training
+
+The Tier 3 audience owns the operational layer where the framework is enacted: the supervision, the curriculum, the examination. Four concrete actions.
+
+First, *publish a graduate-school-level AI policy with examiner-side rules*. The Class D institutions in the global sample (UCL Doctoral School; KCL Centre for Education Studies; Heidelberg Graduate Academy; KU Leuven; Helsinki; Tsinghua) are the worked exemplars. The graduate-school policy can name the candidate-supervisor conversation, the thesis-declaration instrument, and the examiner-side verification expectation. This is the move from *nascent* to *established* on Dimension 1 at graduate-school scale.
+
+Second, *codify the six AI-era competencies as PhD methods curriculum outcomes*. The competencies are additive to the pre-AI reproducibility-and-validity canon; the curriculum carries both. KU Leuven's "Responsible and Open research learning path for PhD researchers" and Helsinki's MOOC sequence are the curriculum-integration exemplars. The curriculum review cycle is published and the curriculum content tracks the AI tool landscape.
+
+Third, *train supervisors on the framework*. Supervisor training is the binding constraint on Dimension 4 maturity at scale: a candidate cannot acquire competencies that the supervisor does not model. The training is a recurring annual cost. Model-version drift, tool-class drift, and regulatory-environment drift all require updating. The training cost lives in the graduate-school budget.
+
+Fourth, *train examiners on the corresponding verification skills*. The examiner-side rule that a candidate "must be able to describe and defend any use of generative AI, as well as the contents of the thesis during their final oral examination" — the University of Toronto School of Graduate Studies formulation — operationalises Dimension 1 at the point of examination. The examiner training carries the verification competencies the examination is expected to apply.
+
+### 5.4 For higher-degrees committees and research-integrity committees
+
+The Tier 4 audience writes the policy text and adjudicates the cases the policy text covers. Three concrete actions.
+
+First, *publish a committee-level AI policy that extends past plagiarism*. The Class A and Class B institutional postures in the global sample treat AI as a plagiarism-policy extension; the Class C and Class D postures extend into research integrity, reproducibility, and AI literacy. The committee-level policy that the report's framework points to is at Class C minimum, with explicit reference to validity, reproducibility, and the verification expectations the framework names. The Australian Code for the Responsible Conduct of Research 2018, the German *eidesstattliche Versicherung* tradition, and the publisher-side disclosure conventions supply the policy-language anchors the committee can build on.
+
+Second, *develop an adjudication framework for AI-related cases* that distinguishes the four most common case types: undisclosed AI use; disclosed-but-unverified AI use; AI-fabricated content (citations, data, images); and AI-assisted misconduct. Each case type requires a different evidentiary standard and a different remedial action. The committee that has not done this differentiation finds itself either over-applying plagiarism rules (the case is academic misconduct when it is a research-integrity case) or under-applying them (the case is treated as routine when it is a fabrication case).
+
+Third, *engage with the regulatory environment* applicable to the institution. For institutions in or for the EU market, the EU AI Act Article 27 Fundamental Rights Impact Assessment for admissions, learning-outcome evaluation, and proctoring is the binding operational test from 2 August 2026. The committee may not own the assessment itself, but the committee owns the policy language that surrounds it. The committee that has read the framework before the deadline is the committee that can write the policy language the institution needs.
+
+### 5.5 For peak bodies for graduate students
+
+The Tier 5 audience is the advocacy frame: the national graduate-student associations, councils of graduate schools, postdoc associations. Three concrete actions.
+
+First, *publish position statements specifying what graduate students should be entitled to expect* from their training environment on each of the framework's five dimensions. The position can be expressed as a published charter, a sector-level petition, or an annual benchmarking report. The Council of Graduate Schools and Institut national de la recherche scientifique 2025 Global Action Agenda is the closest current sector-level position; peak bodies for graduate students can name where its principles need operational extension.
+
+Second, *advocate for the funder and institutional investment* that Dimension 4 requires. AI-literacy training is a recurring cost; it does not pay for itself out of existing research-training budgets. The peak-body advocacy frame is the place where the recurring-cost case is made publicly. UK Research and Innovation's twelve AI Centres for Doctoral Training and £117 million commitment is the largest current investment of this kind; peak bodies for graduate students can name what comparable national investments would look like in their jurisdictions.
+
+Third, *commission and publish independent benchmarking* of the institutional layer in each peak body's jurisdiction. The institutional layer is the layer the framework's evidence shows is least developed; the peak body is the independent voice with the standing to make the institutional layer's gaps visible. The benchmarking can use the Part 4 maturity grid directly.
 
 \newpage
 
 ## Conclusion
 
-*v0.1.0 stub. Lands at v0.5.0 with the Part 5 recommendations.*
+The regulatory cascade above the university has been working at speed and at scale. The world's major academic publishers acted in ten weeks. The world's major national research funders have acted, unevenly, over three years. The world's major capability-framework bodies have published the literature universities now cite as their reference. The fourth layer, the universities themselves and the institutional infrastructure that trains PhD researchers, has not caught up. Twenty per cent of the world's top-tier doctoral universities have AI policies that extend past plagiarism; eighty per cent have not. The single most authoritative researcher-development framework in the Anglophone university world did not, in its 2025 refresh, surface AI as a competency at all.
+
+The asymmetry is institutional choice, not technology. The framework in Part 2 specifies five dimensions on which institutional choice can be expressed: human-in-the-loop discipline, responsible use in practice, tooling that promotes responsible use, AI-literate humans, and an institutional benchmarking cycle that knows where the institution sits and acts on the answer. The maturity grid in Part 4 is the self-diagnostic instrument that operationalises the choice. The international evidence in Part 3 demonstrates that the choice has already been made by a small number of institutions in a small number of countries, and that the choice is achievable. The recommendations in Part 5 are the concrete actions that move an institution along the grid.
+
+Universities are not passive consumers of AI. They are the institutions that define what responsible research practice looks like for the next generation of researchers, examiners, supervisors, and colleagues. The framework is the operational tool that lets the institutional layer of the regulatory cascade act with the speed and the scale the publisher layer has demonstrated is achievable.
+
+There are no AI-induced obstacles to acting. The obstacles are institutional choice.
 
 \newpage
 
@@ -455,8 +513,6 @@ The framework's Dimension 3 (tooling that promotes responsible use) is built aro
 
 ## Appendix D — About this report
 
-*v0.1.0 stub.*
-
 **Author and contact.** Michael J. Zyphur, PhD (Instats; ORCID 0000-0003-3237-7892; support@instats.org).
 
 **Methodology summary.** Forensic, source-anchored analysis. Every numerical claim and every direct quotation in this report is traced to a primary URL with a snapshot date of 2026-05-18 (the date of the Tier 1 dossier round) or later. Source dossiers live in `research/dossier_0{1..8}_*.md` and are organised by evidence axis (funders; institutional policies; capability frameworks; publishers; AI tool taxonomy; privacy / IP / governance; reproducibility-crisis intersection; adversarial-review patterns). The dossiers are working notes; the canonical claim register lives in `sources/claim_register.yml`.
@@ -471,13 +527,34 @@ The framework's Dimension 3 (tooling that promotes responsible use) is built aro
 
 ## Appendix E — Sources
 
-*v0.1.0 stub. The full alphabetised primary-source list is produced from the eight evidence dossiers and lands at v0.5.0. Working-state source URLs are in the Tier 1 dossiers' Sources sections.*
+The report's full evidence base is documented across eight primary-source dossiers in the project's `research/` directory. Each dossier carries an alphabetised list of primary-source URLs, all snapshotted on 2026-05-18 unless otherwise noted, together with a structured per-source typology indicating whether each citation is a primary regulatory instrument, a peer-reviewed study, a documented case, expert commentary, or a researcher self-report. The dossiers are working notes; this report's footnotes carry the load-bearing citations to primary sources.
+
+The eight dossiers are:
+
+- `research/dossier_01_national_funders.md` — fourteen national research funders across thirteen countries (UKRI; NSF; NIH; ARC; NHMRC; DFG; ERC; A*STAR; JSPS; Canadian tri-agency; NWO; SNSF; Swedish Research Council; Research Council of Norway).
+- `research/dossier_02_university_policies.md` — thirty top-tier doctoral universities across twelve countries (UK Russell Group; US Ivy-Plus and AAU; Australian Group of Eight; German U15; continental European research-intensives; Asian RU11 and adjacent; Canadian U15).
+- `research/dossier_03_capability_frameworks.md` — thirteen capability frameworks (UNESCO AI CF for Students and Teachers; OECD-EC AILit; DigComp 2.2; Jisc; EDUCAUSE; Vitae RDF; CGS-INRS Global Action Agenda; EUA; US National Academies / PNAS; TEQSA; Russell Group; Digital Education Council).
+- `research/dossier_04_publisher_policies.md` — eighteen publisher and journal entries plus three preprint servers (Nature family; Springer Nature publisher-wide; Springer non-Nature; Science; Elsevier; Cell Press; Lancet family; BMJ family; JAMA Network; NEJM; Wiley; Taylor & Francis; SAGE; OUP; Cambridge UP; PLOS; ACM; IEEE; arXiv; bioRxiv; medRxiv).
+- `research/dossier_05_ai_tool_taxonomy.md` — eleven AI tool classes (LLM-as-search; LLM-as-co-author; LLM-as-validator; LLM-as-tutor; LLM-as-coder; RAG-anchored research assistants; automated literature-synthesis tools; AlphaFold-class specialised assistants; image-and-figure generation; voice-and-transcription; AI-detection).
+- `research/dossier_06_privacy_ip_governance.md` — fourteen privacy, IP, and governance frameworks (GDPR; EU AI Act; UK GDPR + DPA 2018; UK pro-innovation white paper + AISI; Singapore Model AI Governance Framework for GenAI; NIST AI RMF + GenAI Profile; Colorado AI Act; NYC Local Law 144; Australian Privacy Act 1988 + 2024 amendments; Canada PIPEDA; OECD AI Principles; Council of Europe Framework Convention on AI; ISO/IEC 42001; China Interim Measures for GenAI).
+- `research/dossier_07_reproducibility_intersection.md` — pre-AI reproducibility-crisis literature anchor (Ioannidis 2005; OSC 2015; Begley-Ellis 2012; Errington 2021; Camerer 2018; Many Labs 1-3; Voelkl 2018; Bouter / Gopalakrishna 2022) and the AI-augmentation intersection (multiplier-side §7a-§7i; solver-side §7j-§7n).
+- `research/dossier_08_adversarial_review_patterns.md` — nine adversarial-review patterns (red-team / blue-team; devil's-advocate; pre-mortem; structured analytic techniques; adversarial collaboration; multi-agent LLM debate; constitutional AI / self-critique chains; AI red-teaming as research method; pre-registration).
+
+The dossiers are intended as working evidence notes for the report's drafting and review process. The footnotes in this report's main text are the canonical citations for downstream use; readers seeking the underlying evidence base will find the dossiers in the same git repository as the report itself, with each entry naming the primary-source URL and its access status as of the snapshot date.
 
 \newpage
 
 ## Appendix F — Regional-adaptation note
 
-*v0.1.0 stub. This report is the global anchor of a planned regional series. The companion reports re-populate the five-dimension framework and the maturity grid with regional evidence — US / Americas next, then UK / Europe, then APAC ex Japan — without altering the framework or the grid. Appendix F documents the adaptation procedure and the design choices that make the framework reusable. Lands at v0.5.0.*
+This report is the global anchor of a planned regional series. The framework in Part 2 and the maturity grid in Part 4 are deliberately built to be reusable: the framework's five dimensions and the grid's four maturity levels do not change between the global view and a regional adaptation. What changes is the evidence that populates each cell.
+
+Three regional adaptations are planned to follow this global view: a US and Americas regional view (lifting the framework and repopulating it with NSF, NIH, and tri-agency funder evidence; with the AAU, Ivy-Plus, and Canadian U15 institutional sample; with the US-specific publisher and journal evidence); a UK and Europe regional view (with UKRI, ERC, DFG, NWO, SNSF, Swedish, Norwegian funder evidence; with the Russell Group, German U15, and continental research-intensive institutional sample; with the European Research Area Living Guidelines and EU AI Act regulatory environment foregrounded); and an APAC ex Japan regional view (with Singapore A*STAR, Australian ARC and NHMRC, New Zealand TEC, Hong Kong RGC, and Korean NRF funder evidence; with the Group of Eight, RU11-adjacent, and regional institutional sample). Where in-region differentiation justifies it, sub-regional deep-dives may follow the regional adaptations: within-US (state and system differentiation); UK versus wider Europe; East versus West Europe; North versus South Europe.
+
+Three design choices make the framework reusable. First, the five dimensions are defined in terms of observable institutional behaviour, not in terms of named documents or instruments specific to a single jurisdiction. The German *eidesstattliche Versicherung* and the Australian Code for the Responsible Conduct of Research 2018 are cited as anchor instruments in the global view, but neither is built into the framework definitions. A regional adaptation will name the equivalent anchor instruments in its jurisdictions without altering the dimensions. Second, the maturity-level descriptions in Appendix A are non-prescriptive on which level an institution should occupy. The framework specifies the criteria for distinguishing levels; the choice of level is institutional. A regional adaptation operates on the same level definitions. Third, the four institutional axes (policy / people / systems / process) are jurisdiction-agnostic. Specific regulatory pressure points vary (the EU AI Act Article 27 Fundamental Rights Impact Assessment deadline applies in or for the EU market; the Australian Privacy Act automated-decision-making obligation applies under Australian regulation; equivalent pressure points exist in other jurisdictions). The four axes themselves do not change.
+
+Three operational notes for a regional-adaptation author. The first is fidelity: do not modify the framework dimensions or the maturity-grid level definitions. The regional adaptation's contribution is the regional evidence that populates the cells, not a redefinition of the cells. The second is currency: the snapshot date applicable to the regional adaptation should be its own publication date, and the regional adaptation should re-snapshot the underlying primary sources at that date. Regulatory environments, publisher policies, and institutional postures shift on a six-to-twelve-month cycle in 2026; a 2027 regional adaptation will find a materially different evidence environment than the global view. The third is acknowledgement: each regional adaptation acknowledges the global view as its template and identifies where regional evidence agrees with the global pattern and where it diverges. The cross-references the regional adaptations build allow sub-regional and longitudinal comparisons that the global view alone cannot support.
+
+Together the global view and the regional adaptations form a connected sequence: the global view sets the framework and the maturity grid; the regional adaptations populate the cells with regional evidence; the connected reports allow institutions in any jurisdiction to score themselves and to benchmark against jurisdictionally appropriate peers.
 
 \newpage
 
