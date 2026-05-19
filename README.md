@@ -13,10 +13,10 @@
   <a href="https://mzyphur.github.io/responsible-ai-in-research-training/">
     <img alt="Read online" src="https://img.shields.io/badge/Read%20the%20report%20online-00547B?style=for-the-badge&logo=readthedocs&logoColor=white">
   </a>
-  <a href="https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest/download/report.docx">
+  <a href="https://mzyphur.github.io/responsible-ai-in-research-training/Instats%20-%20Responsible%20AI%20in%20Academic%20Research.docx">
     <img alt="Download Microsoft Word" src="https://img.shields.io/badge/Download%20.docx-3092B1?style=for-the-badge&logo=microsoftword&logoColor=white">
   </a>
-  <a href="https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest/download/report.pdf">
+  <a href="https://mzyphur.github.io/responsible-ai-in-research-training/Instats%20-%20Responsible%20AI%20in%20Academic%20Research.pdf">
     <img alt="Download PDF" src="https://img.shields.io/badge/Download%20.pdf-00547B?style=for-the-badge&logo=adobeacrobatreader&logoColor=white">
   </a>
 </p>
@@ -58,9 +58,9 @@ Instats publishes the report source, numerical manifest, public claim register, 
 | | |
 |---|---|
 | **Read online** | **<https://mzyphur.github.io/responsible-ai-in-research-training/>** |
-| Microsoft Word (.docx) | **direct download:** <https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest/download/report.docx> |
-| PDF | **direct download:** <https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest/download/report.pdf> |
-| HTML | **direct download:** <https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest/download/report.html> |
+| Microsoft Word (.docx) | **direct download:** <https://mzyphur.github.io/responsible-ai-in-research-training/Instats%20-%20Responsible%20AI%20in%20Academic%20Research.docx> |
+| PDF | **direct download:** <https://mzyphur.github.io/responsible-ai-in-research-training/Instats%20-%20Responsible%20AI%20in%20Academic%20Research.pdf> |
+| HTML | **direct download:** <https://mzyphur.github.io/responsible-ai-in-research-training/> |
 | Releases page (all versions) | [github.com/mzyphur/responsible-ai-in-research-training/releases](https://github.com/mzyphur/responsible-ai-in-research-training/releases) |
 | Markdown source | [`drafts/report.md`](drafts/report.md) |
 
@@ -68,7 +68,7 @@ Instats publishes the report source, numerical manifest, public claim register, 
 
 **Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series. <https://github.com/mzyphur/responsible-ai-in-research-training>. ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
 
-**Available as** **HTML** ([Pages mirror](https://mzyphur.github.io/responsible-ai-in-research-training/)), **PDF** ([direct download](https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest/download/report.pdf)), **Word** ([direct download](https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest/download/report.docx)), and **source repository** ([GitHub](https://github.com/mzyphur/responsible-ai-in-research-training)).
+**Available as** **HTML** ([Pages mirror](https://mzyphur.github.io/responsible-ai-in-research-training/)), **PDF** ([direct download](https://mzyphur.github.io/responsible-ai-in-research-training/Instats%20-%20Responsible%20AI%20in%20Academic%20Research.pdf)), **Word** ([direct download](https://mzyphur.github.io/responsible-ai-in-research-training/Instats%20-%20Responsible%20AI%20in%20Academic%20Research.docx)), and **source repository** ([GitHub](https://github.com/mzyphur/responsible-ai-in-research-training)).
 
 BibTeX:
 

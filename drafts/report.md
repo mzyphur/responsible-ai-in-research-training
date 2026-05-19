@@ -28,7 +28,7 @@ Instats &nbsp;·&nbsp; [instats.org](https://instats.org) &nbsp;·&nbsp; [suppor
 
 **Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series. [github.com/mzyphur/responsible-ai-in-research-training](https://github.com/mzyphur/responsible-ai-in-research-training). ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
 
-**Available as** **HTML** ([Pages mirror](https://mzyphur.github.io/responsible-ai-in-research-training/)), **PDF** ([direct download](https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest/download/report.pdf)), **Word** ([direct download](https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest/download/report.docx)), and **source repository** ([GitHub](https://github.com/mzyphur/responsible-ai-in-research-training)).
+**Available as** **HTML** ([Pages mirror](https://mzyphur.github.io/responsible-ai-in-research-training/)), **PDF** ([direct download](https://mzyphur.github.io/responsible-ai-in-research-training/Instats%20-%20Responsible%20AI%20in%20Academic%20Research.pdf)), **Word** ([direct download](https://mzyphur.github.io/responsible-ai-in-research-training/Instats%20-%20Responsible%20AI%20in%20Academic%20Research.docx)), and **source repository** ([GitHub](https://github.com/mzyphur/responsible-ai-in-research-training)).
 
 **License.** Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0). Share and adapt with attribution; commercial reuse requires written permission from the author.
 
