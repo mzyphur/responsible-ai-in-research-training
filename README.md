@@ -4,10 +4,10 @@
   <img src="assets/instats_logo.png" alt="Instats" width="240">
 </a>
 
-# Responsible AI in Research and Research Training
-## *A Global Capability Framework for University Research Leadership*
+# Responsible AI in Academic Research
+## *A Capability Framework for Research Training*
 
-**Of thirty-eight top-tier doctoral universities surveyed across fifteen countries and jurisdictions, only six (about one in six) have AI policies that extend past plagiarism into research integrity, AI literacy, and examiner discipline. The world's major academic publishers issued a substantively identical no-AI-co-author policy across the sector within ten weeks of ChatGPT-3.5's public release. The United Kingdom's canonical PhD-researcher-development framework, refreshed in 2025, did not surface AI as a competency at all. The regulatory cascade has hardened at the publishing tip and the funding head; it has stopped almost completely at the institutional layer that actually trains researchers.**
+**What does responsible AI use look like for academic research, and how would a university know whether it is doing it well? Of thirty-eight top-tier doctoral universities surveyed across fifteen countries and jurisdictions, only six have AI policies that extend past research integrity into AI literacy and valid research practices. The world's major academic publishers issued a substantively identical no-AI-co-author policy across the sector within ten weeks of ChatGPT-3.5's public release. The United Kingdom's canonical PhD-researcher-development framework, refreshed in 2025, did not treat AI as a competency at all. While publishers and funders have responded to the emergence of AI, the universities that actually train researchers are lagging far behind what is needed to prepare them to use it responsibly.**
 
 <p>
   <a href="https://mzyphur.github.io/responsible-ai-in-research-training/">
@@ -61,17 +61,17 @@ Instats publishes the report source, numerical manifest, public claim register, 
 | Web edition | [`docs/index.html`](docs/index.html) for Pages; HTML and PDF builds attached to the [latest release](https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest) |
 | Markdown source | [`drafts/report.md`](drafts/report.md) |
 
-**Citation.** Zyphur, M. J. (2026). *Responsible AI in Research and Research Training: A Global Capability Framework for University Research Leadership.* Instats Policy Series, v1.0.0. <https://github.com/mzyphur/responsible-ai-in-research-training>. ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
+**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series, v1.1.0. <https://github.com/mzyphur/responsible-ai-in-research-training>. ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
 
 BibTeX:
 
 ```bibtex
 @techreport{zyphur2026responsibleai,
   author      = {Zyphur, Michael J.},
-  title       = {Responsible AI in Research and Research Training: A Global Capability Framework for University Research Leadership},
+  title       = {Responsible AI in Academic Research: A Capability Framework for Research Training},
   institution = {Instats},
   type        = {Instats Policy Series},
-  number      = {v1.0.0},
+  number      = {v1.1.0},
   year        = {2026},
   url         = {https://github.com/mzyphur/responsible-ai-in-research-training},
   note        = {ORCID: 0000-0003-3237-7892. DOI: 10.61700/t31oy23grr.},
@@ -120,7 +120,7 @@ responsible-ai-in-research-training/
 ├── LICENSE                ← CC BY-NC 4.0
 ├── README.md              ← this file
 ├── SECURITY.md
-└── VERSION                ← single source of truth (1.0.0)
+└── VERSION                ← single source of truth (1.1.0)
 ```
 
 Working notes (evidence dossiers; Stage A/B/C/D/E review files; private launch and dissemination packs) are retained privately by Instats per the public/private boundary protocol and are not part of this public repository.

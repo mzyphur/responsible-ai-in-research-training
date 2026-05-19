@@ -14,10 +14,10 @@ project:
   # Primary report title. Used as the HTML <title>, the sticky-header
   # banner, the DOCX cover Title style, and (joined with subtitle) as
   # the published <title> on the GitHub Pages index.
-  title: "Responsible AI in Research and Research Training"
+  title: "Responsible AI in Academic Research"
 
   # Subtitle / strapline. May be empty for projects without a subtitle.
-  subtitle: "A Global Capability Framework for University Research Leadership"
+  subtitle: "A Capability Framework for Research Training"
 
   # Short title for running header / sticky header (DOCX header,
   # build_reference_docx.py). Often a lowercase or terser variant
@@ -70,7 +70,7 @@ project:
 
   # Social card title (og:title, twitter:title). Often "<title> — <series>"
   # but kept explicit so projects can shorten or rephrase for sharing.
-  og_title: "Responsible AI in Research and Research Training — Instats Policy Series"
+  og_title: "Responsible AI in Academic Research — Instats Policy Series"
 
   # Social card description (og:description).
   og_description: "A global capability framework for senior university research leadership: what responsible AI use looks like in PhD-level research and research training, with international comparators."

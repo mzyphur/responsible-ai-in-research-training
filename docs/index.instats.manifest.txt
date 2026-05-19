@@ -1,9 +1,10 @@
 # Public asset manifest.
 # public_root = https://mzyphur.github.io/responsible-ai-in-research-training/
-# count = 5
+# count = 6
 # Listed in document order; one rewrite per line.
 
 assets/instats_logo.png  ->  https://mzyphur.github.io/responsible-ai-in-research-training/assets/instats_logo.png
+charts/png/01_regulatory_response_timeline.png  ->  https://mzyphur.github.io/responsible-ai-in-research-training/charts/png/01_regulatory_response_timeline.png
 assets/instats_logo.png  ->  https://mzyphur.github.io/responsible-ai-in-research-training/assets/instats_logo.png
 report.instats.css?v=e10ba02c395d  ->  https://mzyphur.github.io/responsible-ai-in-research-training/report.instats.css?v=e10ba02c395d
 assets/instats_logo.png  ->  https://mzyphur.github.io/responsible-ai-in-research-training/assets/instats_logo.png
