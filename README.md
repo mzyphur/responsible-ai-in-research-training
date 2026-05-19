@@ -61,7 +61,7 @@ Instats publishes the report source, numerical manifest, public claim register, 
 | Web edition | [`docs/index.html`](docs/index.html) for Pages; HTML and PDF builds attached to the [latest release](https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest) |
 | Markdown source | [`drafts/report.md`](drafts/report.md) |
 
-**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series, v1.1.0. <https://github.com/mzyphur/responsible-ai-in-research-training>. ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
+**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series, v1.1.1. <https://github.com/mzyphur/responsible-ai-in-research-training>. ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
 
 BibTeX:
 
@@ -71,7 +71,7 @@ BibTeX:
   title       = {Responsible AI in Academic Research: A Capability Framework for Research Training},
   institution = {Instats},
   type        = {Instats Policy Series},
-  number      = {v1.1.0},
+  number      = {v1.1.1},
   year        = {2026},
   url         = {https://github.com/mzyphur/responsible-ai-in-research-training},
   note        = {ORCID: 0000-0003-3237-7892. DOI: 10.61700/t31oy23grr.},

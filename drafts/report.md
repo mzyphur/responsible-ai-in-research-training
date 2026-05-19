@@ -26,13 +26,9 @@ Instats &nbsp;·&nbsp; [instats.org](https://instats.org) &nbsp;·&nbsp; [suppor
 
 ::: colophon
 
-**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series, v1.1.0. [github.com/mzyphur/responsible-ai-in-research-training](https://github.com/mzyphur/responsible-ai-in-research-training). ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
+**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series, v1.1.1. [github.com/mzyphur/responsible-ai-in-research-training](https://github.com/mzyphur/responsible-ai-in-research-training). ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
 
 **License.** Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0). Share and adapt with attribution; commercial reuse requires written permission from the author.
-
-**Scope and method.** This is the global view in a planned regional series. The capability framework in Part 2 is intended to be re-populated in later reports for the US / Americas, the UK / Europe, and APAC ex Japan; the framework itself does not change across those reports. The evidence base in Parts 1 and 3 draws on four primary dossiers, snapshotted 2026-05-18: national research-funder AI policies across fourteen funders in eleven countries plus the EU's European Research Council as a supranational fourteenth-funder; institutional AI policies across thirty-eight top-tier doctoral universities in fifteen countries and jurisdictions; the existing AI-literacy and researcher-development capability-framework literature; and the AI co-authorship and use policies of eighteen major publishers plus three preprint servers. Every claim is anchored to a primary source URL with a snapshot date.
-
-About this report, the AI-use disclosure, and the methodology summary are in [Appendix D](#appendix-d-about-this-report). The full source package is in [Appendix E](#appendix-e-sources). The regional-adaptation note for sister reports is in [Appendix F](#appendix-f-regional-adaptation-note).
 
 :::
 
@@ -515,13 +511,13 @@ The framework's Dimension 3 (tooling that promotes responsible use) is built aro
 
 **Author and contact.** Michael J. Zyphur, PhD (Instats; ORCID 0000-0003-3237-7892; support@instats.org).
 
-**Methodology summary.** Forensic, source-anchored analysis. The body's load-bearing numerical claims and direct quotations are anchored to primary-source URLs with snapshot dates of 2026-05-18 or later. Synthesis claims that consolidate multiple primary sources are anchored through the publication's evidence dossiers, which are organised by evidence axis (national research-funder policies; institutional AI policies; capability frameworks; publisher and journal policies; AI tool taxonomy; privacy and governance frameworks; reproducibility-crisis intersection; adversarial-review patterns). The dossiers list every primary-source URL with its snapshot date and its access status at the snapshot date. Appendix E names the dossiers and their coverage.
+**Scope.** This is the global view in a planned regional series. The capability framework in Part 2 is intended to be re-populated in later reports for the US / Americas, the UK / Europe, and APAC ex Japan; the framework itself does not change across those reports. The evidence base in Parts 1 and 3 draws on four primary dossiers, snapshotted 2026-05-18: national research-funder AI policies across fourteen funders in eleven countries plus the European Research Council as a supranational fourteenth funder; institutional AI policies across thirty-eight top-tier doctoral universities in fifteen countries and jurisdictions; the existing AI-literacy and researcher-development capability-framework literature; and the AI co-authorship and use policies of eighteen major publishers plus three preprint servers. Every load-bearing claim is anchored to a primary-source URL with a snapshot date.
 
-**AI assistance disclosure.** This report was drafted with assistance from large language models. Drafting, evidence synthesis, structural review, and copy editing each used distinct AI agents at successive stages, with the lead author retaining responsibility for every factual claim, institutional classification, numerical finding, and framework decision. The lead author verified each key claim against the primary sources before publication. AI assistance was used for labour-saving tasks; research-judgement decisions remained with the human author.
+**Methodology.** Forensic, source-anchored analysis. Synthesis claims that consolidate multiple primary sources are anchored through the publication's evidence dossiers (Appendix E), organised by evidence axis: national research-funder policies; institutional AI policies; capability frameworks; publisher and journal policies; AI tool taxonomy; privacy and governance frameworks; reproducibility-crisis intersection; adversarial-review patterns.
 
-**Conflict-of-interest disclosure.** The author's affiliations are listed in the colophon. The author has no paid relationships with any of the institutions in the report's institutional sample (see Appendix B). The author's commercial role at Instats is research-training-adjacent; the report's framing was developed independently of any commercial activity and is offered as a contribution to the public discussion of responsible AI use in research and research training, not as a product placement.
+**AI assistance disclosure.** This report was drafted with assistance from large language models for evidence synthesis, structural review, and copy editing. The lead author retains responsibility for every factual claim, institutional classification, numerical finding, and framework decision, and verified each load-bearing claim against the primary sources before publication.
 
-**License.** CC BY-NC 4.0 (see colophon for full text and reuse conditions).
+**Conflict-of-interest disclosure.** The author has no paid relationships with any of the institutions in the report's institutional sample (Appendix B). The author's commercial role at Instats is research-training-adjacent; the report's framing was developed independently of any commercial activity and is offered as a contribution to the public discussion of responsible AI use in research and research training, not as a product placement.
 
 \newpage
 

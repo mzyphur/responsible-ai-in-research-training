@@ -4,6 +4,21 @@ All notable changes to *Responsible AI in Academic Research: A Capability Framew
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.1.1] — 2026-05-19
+
+### Changed — Trim front-matter colophon; move scope and methodology notes into Appendix D
+
+Lead-author feedback after the v1.1.0 push: the front-matter colophon was running three substantial paragraphs (citation + license + scope-and-method + appendix pointers), and Appendix D's AI-assistance disclosure was longer than it needed to be. Readers should hit the executive summary quickly; the document-production notes belong in an appendix, not in front of the exec summary.
+
+Two changes:
+
+1. **Trim the cover-page colophon to citation + license only.** Drop the "Scope and method" paragraph (which talked about the planned regional series, the four primary dossiers, and the snapshot date) and drop the appendix-pointer paragraph (which was redundant with the TOC). The Instats involvement is implicit in the "Instats Policy Series" citation line; no need for a separate Instats paragraph.
+2. **Move the scope content into Appendix D and shorten the AI-assistance disclosure.** Appendix D now opens with Author + Contact, then Scope (the moved content), then Methodology (slightly tightened), then a shorter AI assistance disclosure, then the Conflict-of-interest disclosure. Drop the redundant License line at the end of Appendix D (already covered in the colophon).
+
+No substantive content removed — just relocated and shortened. The factual claims about the four dossiers, the snapshot date, the AI assistance scope, and the conflict-of-interest position are all preserved in Appendix D. The cover page now reads citation + license + author byline + scan to the executive summary, which is the right shape for the first impression of a policy publication.
+
+This is a structural rule that will apply to all future Instats Policy Series publications; the general-repo template (forthcoming v0.22.20) will codify it.
+
 ## [1.1.0] — 2026-05-19
 
 ### Changed — Comprehensive framing redraft on the same evidence base
