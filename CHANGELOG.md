@@ -4,6 +4,37 @@ All notable changes to *Responsible AI in Academic Research: A Capability Framew
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.2.2] — 2026-05-19
+
+### Changed — Figure 1 chart redesign (eliminate overlapping annotations; publication-quality)
+
+Lead-author feedback after v1.2.1: *"Figure 1 in the responsible AI document looks like shit. ... The text on the graph is blocking everything. It looks like a robot made it! Make it very pretty and clear with no overlapping text."*
+
+Specific failure modes in the v1.2.1 chart:
+
+1. The "Vitae RDF refresh / missed AI · May 2025" callout block was positioned at month 30, overlapping the "Sep 2023 to Apr 2026" label INSIDE the funders bar.
+2. The "Tsinghua AI framework · Dec 2025" annotation sat below the universities lane, crowding the X-axis label area.
+3. Corner labels ("ChatGPT-3.5 release Nov 2022" + "May 2026") competed with lane labels for visual attention.
+4. Multiple arrow leader lines intersected the bars and dots.
+
+Redesign (codex GPT-5.5 xhigh, executed against the chart-redesign brief at `private/reviews/chart_redesign_brief.md`):
+
+- **Figure size increased** from (10, 4.35) to (12, 5.5) — more breathing room.
+- **Right-side callout panel** (figure x=0.8 onwards) — lists the six Class D universities by publication date, separated from the chart proper by a thin vertical rule. No more leader-line callouts pointing into the bars/dots.
+- **Inline lane summary labels** — each lane has a single in-bar (or below-bar) summary positioned to never overlap anything else:
+  - PUBLISHERS bar: "0-3 months / ~10 weeks" in primary teal-navy
+  - NATIONAL RESEARCH FUNDERS bar: "10-41 months / Sep 2023-Apr 2026" in paper-white against the secondary mid-teal
+  - UNIVERSITIES lane: "6 Class D policies by May 2026" + "32 of 38 universities still not at Class D" below the lane
+- **Real date X-axis** — replaces the abstract "months from ChatGPT-3.5 release" ticks (0-42) with actual two-line dates (Nov 2022, May 2023, Nov 2023, May 2024, Nov 2024, May 2025, Nov 2025, May 2026). The X-axis title remains "Months from ChatGPT-3.5 release" as a unit reminder.
+- **Bottom-right caption block** in the right callout panel: "The blank university lane is the result: most audited institutions had not published AI-literacy + valid-practice guidance." Explains the visual emptiness for the skim reader.
+- **6 red Class D markers** preserved (`# red-clusters: 6` directive in chart-script header unchanged).
+
+The chart now visually delivers the headline finding without any text overlap. Codex's redesign artefact preserved at `private/reviews/chart_redesign_codex_2026-05-19.md`.
+
+No prose changed in the report; the chart caption (Figure 1 markdown) is unchanged (it still describes the same data; the chart now renders it cleanly).
+
+verify-publication: 19 passed, 0 failed; Stage-A carry-over PASS.
+
 ## [1.2.1] — 2026-05-19
 
 ### Fixed — DOCX now opens in Mac Microsoft Word (bookmark-name compatibility)

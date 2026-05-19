@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="668.345469pt" height="283.763688pt" viewBox="0 0 668.345469 283.763688" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="812.229406pt" height="333.488406pt" viewBox="0 0 812.229406 333.488406" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-05-19T13:47:11.599673</dc:date>
+    <dc:date>2026-05-19T14:03:00.481017</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,317 +21,278 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 283.763688 
-L 668.345469 283.763688 
-L 668.345469 0 
+   <path d="M 0 333.488406 
+L 812.229406 333.488406 
+L 812.229406 0 
 L 0 0 
 z
 " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 103.145469 248.364 
-L 661.145469 248.364 
-L 661.145469 7.2 
+    <path d="M 103.145469 288.36 
+L 595.625469 288.36 
+L 595.625469 7.2 
 L 103.145469 7.2 
 z
 " style="fill: #ffffff"/>
    </g>
-   <g id="line2d_1">
-    <path d="M 127.406338 248.364 
-L 127.406338 7.2 
-" clip-path="url(#p6d079032eb)" style="fill: none; stroke: #525560; stroke-width: 0.8; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_2">
-    <path d="M 636.884599 248.364 
-L 636.884599 7.2 
-" clip-path="url(#p6d079032eb)" style="fill: none; stroke: #525560; stroke-width: 0.8; stroke-linecap: square"/>
-   </g>
    <g id="patch_3">
-    <path d="M 127.406338 209.256324 
-L 636.884599 209.256324 
-L 636.884599 176.666595 
-L 127.406338 176.666595 
+    <path d="M 103.145469 264.778839 
+L 595.625469 264.778839 
+L 595.625469 212.17471 
+L 103.145469 212.17471 
 z
-" clip-path="url(#p6d079032eb)" style="fill: #a8aab1; opacity: 0.3"/>
+" clip-path="url(#p0b6b07b1da)" style="fill: #a8aab1; opacity: 0.24"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
-     <g id="line2d_3">
-      <path d="M 127.406338 248.364 
-L 127.406338 7.2 
-" clip-path="url(#p6d079032eb)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
+     <g id="line2d_1">
+      <path d="M 103.145469 288.36 
+L 103.145469 7.2 
+" clip-path="url(#p0b6b07b1da)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
      </g>
-     <g id="line2d_4">
+     <g id="line2d_2">
       <defs>
-       <path id="m518f8dfc91" d="M 0 0 
+       <path id="m2875b64fb2" d="M 0 0 
 L 0 3 
 " style="stroke: #525560; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m518f8dfc91" x="127.406338" y="248.364" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
+       <use xlink:href="#m2875b64fb2" x="103.145469" y="288.36" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
-      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #525560" x="127.406338" y="261.4115" transform="rotate(-0 127.406338 261.4115)">0</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(94.527266 301.4075)">Nov</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(92.073359 311.101062)">2022</text>
      </g>
     </g>
     <g id="xtick_2">
-     <g id="line2d_5">
-      <path d="M 200.188947 248.364 
-L 200.188947 7.2 
-" clip-path="url(#p6d079032eb)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
+     <g id="line2d_3">
+      <path d="M 173.499754 288.36 
+L 173.499754 7.2 
+" clip-path="url(#p0b6b07b1da)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
      </g>
-     <g id="line2d_6">
+     <g id="line2d_4">
       <g>
-       <use xlink:href="#m518f8dfc91" x="200.188947" y="248.364" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
+       <use xlink:href="#m2875b64fb2" x="173.499754" y="288.36" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
-      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #525560" x="200.188947" y="261.4115" transform="rotate(-0 200.188947 261.4115)">6</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(164.378817 301.4075)">May</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(162.392489 311.136219)">2023</text>
      </g>
     </g>
     <g id="xtick_3">
-     <g id="line2d_7">
-      <path d="M 272.971556 248.364 
-L 272.971556 7.2 
-" clip-path="url(#p6d079032eb)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
+     <g id="line2d_5">
+      <path d="M 243.85404 288.36 
+L 243.85404 7.2 
+" clip-path="url(#p0b6b07b1da)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
      </g>
-     <g id="line2d_8">
+     <g id="line2d_6">
       <g>
-       <use xlink:href="#m518f8dfc91" x="272.971556" y="248.364" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
+       <use xlink:href="#m2875b64fb2" x="243.85404" y="288.36" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
-      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #525560" x="272.971556" y="261.4115" transform="rotate(-0 272.971556 261.4115)">12</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(235.235837 301.4075)">Nov</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(232.746775 311.101062)">2023</text>
      </g>
     </g>
     <g id="xtick_4">
-     <g id="line2d_9">
-      <path d="M 345.754164 248.364 
-L 345.754164 7.2 
-" clip-path="url(#p6d079032eb)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
+     <g id="line2d_7">
+      <path d="M 314.208326 288.36 
+L 314.208326 7.2 
+" clip-path="url(#p0b6b07b1da)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
      </g>
-     <g id="line2d_10">
+     <g id="line2d_8">
       <g>
-       <use xlink:href="#m518f8dfc91" x="345.754164" y="248.364" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
+       <use xlink:href="#m2875b64fb2" x="314.208326" y="288.36" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
-      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #525560" x="345.754164" y="261.4115" transform="rotate(-0 345.754164 261.4115)">18</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(305.087388 301.4075)">May</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(302.973795 311.136219)">2024</text>
      </g>
     </g>
     <g id="xtick_5">
-     <g id="line2d_11">
-      <path d="M 418.536773 248.364 
-L 418.536773 7.2 
-" clip-path="url(#p6d079032eb)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
+     <g id="line2d_9">
+      <path d="M 384.562612 288.36 
+L 384.562612 7.2 
+" clip-path="url(#p0b6b07b1da)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
      </g>
-     <g id="line2d_12">
+     <g id="line2d_10">
       <g>
-       <use xlink:href="#m518f8dfc91" x="418.536773" y="248.364" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
+       <use xlink:href="#m2875b64fb2" x="384.562612" y="288.36" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
-      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #525560" x="418.536773" y="261.4115" transform="rotate(-0 418.536773 261.4115)">24</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(375.944408 301.4075)">Nov</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(373.32808 311.101062)">2024</text>
      </g>
     </g>
     <g id="xtick_6">
-     <g id="line2d_13">
-      <path d="M 491.319382 248.364 
-L 491.319382 7.2 
-" clip-path="url(#p6d079032eb)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
+     <g id="line2d_11">
+      <path d="M 454.916897 288.36 
+L 454.916897 7.2 
+" clip-path="url(#p0b6b07b1da)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
      </g>
-     <g id="line2d_14">
+     <g id="line2d_12">
       <g>
-       <use xlink:href="#m518f8dfc91" x="491.319382" y="248.364" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
+       <use xlink:href="#m2875b64fb2" x="454.916897" y="288.36" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
-      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #525560" x="491.319382" y="261.4115" transform="rotate(-0 491.319382 261.4115)">30</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(445.79596 301.4075)">May</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(443.919319 311.136219)">2025</text>
      </g>
     </g>
     <g id="xtick_7">
-     <g id="line2d_15">
-      <path d="M 564.10199 248.364 
-L 564.10199 7.2 
-" clip-path="url(#p6d079032eb)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
+     <g id="line2d_13">
+      <path d="M 525.271183 288.36 
+L 525.271183 7.2 
+" clip-path="url(#p0b6b07b1da)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
      </g>
-     <g id="line2d_16">
+     <g id="line2d_14">
       <g>
-       <use xlink:href="#m518f8dfc91" x="564.10199" y="248.364" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
+       <use xlink:href="#m2875b64fb2" x="525.271183" y="288.36" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_7">
-      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #525560" x="564.10199" y="261.4115" transform="rotate(-0 564.10199 261.4115)">36</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(516.65298 301.4075)">Nov</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(514.273605 311.101062)">2025</text>
      </g>
     </g>
     <g id="xtick_8">
-     <g id="line2d_17">
-      <path d="M 636.884599 248.364 
-L 636.884599 7.2 
-" clip-path="url(#p6d079032eb)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
+     <g id="line2d_15">
+      <path d="M 595.625469 288.36 
+L 595.625469 7.2 
+" clip-path="url(#p0b6b07b1da)" style="fill: none; stroke: #e8e7e6; stroke-width: 0.5; stroke-linecap: square"/>
      </g>
-     <g id="line2d_18">
+     <g id="line2d_16">
       <g>
-       <use xlink:href="#m518f8dfc91" x="636.884599" y="248.364" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
+       <use xlink:href="#m2875b64fb2" x="595.625469" y="288.36" style="fill: #525560; stroke: #525560; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_8">
-      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #525560" x="636.884599" y="261.4115" transform="rotate(-0 636.884599 261.4115)">42</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(586.504531 301.4075)">May</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(584.506953 311.136219)">2026</text>
      </g>
     </g>
     <g id="text_9">
-     <text style="font-weight: 500; font-size: 10px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #525560" x="382.145469" y="274.523062" transform="rotate(-0 382.145469 274.523062)">Months from ChatGPT-3.5 release (Nov 2022)</text>
+     <text style="font-weight: 500; font-size: 10px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #525560" x="349.385469" y="324.247781" transform="rotate(-0 349.385469 324.247781)">Months from ChatGPT-3.5 release</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
-     <g id="line2d_19"/>
+     <g id="line2d_17"/>
      <g id="text_10">
-      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: end; fill: #525560" x="99.645469" y="196.235209" transform="rotate(-0 99.645469 196.235209)">UNIVERSITIES</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: end; fill: #525560" x="99.645469" y="241.750524" transform="rotate(-0 99.645469 241.750524)">UNIVERSITIES</text>
      </g>
     </g>
     <g id="ytick_2">
-     <g id="line2d_20"/>
+     <g id="line2d_18"/>
      <g id="text_11">
-      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(53.465625 126.863719)">NATIONAL</text>
-      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(7.2 136.557281)">RESEARCH FUNDERS</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(53.465625 146.861719)">NATIONAL</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(7.2 156.555281)">RESEARCH FUNDERS</text>
      </g>
     </g>
     <g id="ytick_3">
-     <g id="line2d_21"/>
+     <g id="line2d_19"/>
      <g id="text_12">
-      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: end; fill: #525560" x="99.645469" y="65.876291" transform="rotate(-0 99.645469 65.876291)">PUBLISHERS</text>
+      <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: end; fill: #525560" x="99.645469" y="60.356976" transform="rotate(-0 99.645469 60.356976)">PUBLISHERS</text>
      </g>
     </g>
    </g>
    <g id="patch_4">
-    <path d="M 248.710686 144.076865 
-L 624.754164 144.076865 
-L 624.754164 111.487135 
-L 248.710686 111.487135 
+    <path d="M 220.402612 166.826323 
+L 583.899754 166.826323 
+L 583.899754 128.733677 
+L 220.402612 128.733677 
 z
-" clip-path="url(#p6d079032eb)" style="fill: #3092b1"/>
+" clip-path="url(#p0b6b07b1da)" style="fill: #3092b1"/>
    </g>
    <g id="patch_5">
-    <path d="M 103.145469 248.364 
+    <path d="M 103.145469 288.36 
 L 103.145469 7.2 
 " style="fill: none; stroke: #525560; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_6">
-    <path d="M 103.145469 248.364 
-L 661.145469 248.364 
+    <path d="M 103.145469 288.36 
+L 595.625469 288.36 
 " style="fill: none; stroke: #525560; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_7">
-    <path d="M 127.406338 78.897405 
-L 163.797643 78.897405 
-L 163.797643 46.307676 
-L 127.406338 46.307676 
+    <path d="M 103.145469 76.129548 
+L 138.322612 76.129548 
+L 138.322612 38.036903 
+L 103.145469 38.036903 
 z
-" clip-path="url(#p6d079032eb)" style="fill: #00547b"/>
+" clip-path="url(#p0b6b07b1da)" style="fill: #00547b"/>
    </g>
    <g id="text_13">
-    <text style="font-size: 8.5px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(130.438947 13.908892)">ChatGPT-3.5 release</text>
-    <text style="font-size: 8.5px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(130.438947 23.063923)">Nov 2022</text>
+    <text style="font-weight: 500; font-size: 9.2px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #00547b" transform="translate(146.530612 54.536551)">0-3 months</text>
+    <text style="font-weight: 500; font-size: 9.2px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #00547b" transform="translate(146.530612 64.445526)">~10 weeks</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 8.5px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: end; fill: #525560" x="636.884599" y="23.03072" transform="rotate(-0 636.884599 23.03072)">May 2026</text>
+    <text style="font-weight: 500; font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #ffffff" transform="translate(373.194386 145.235531)">10-41 months</text>
+    <text style="font-weight: 500; font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #ffffff" transform="translate(359.070011 155.035406)">Sep 2023-Apr 2026</text>
    </g>
-   <g id="patch_8">
-    <path d="M 196.424055 58.663668 
-Q 181.104536 60.51314 166.783995 62.242009 
-" style="fill: none; stroke: #00547b; stroke-width: 0.9; stroke-linecap: round"/>
-    <path d="M 170.573785 63.597551 
-L 166.783995 62.242009 
-L 170.142302 60.023502 
+   <g id="PathCollection_1">
+    <defs>
+     <path id="m97c8d12f0b" d="M 0 4.690416 
+C 1.243913 4.690416 2.437046 4.196204 3.316625 3.316625 
+C 4.196204 2.437046 4.690416 1.243913 4.690416 0 
+C 4.690416 -1.243913 4.196204 -2.437046 3.316625 -3.316625 
+C 2.437046 -4.196204 1.243913 -4.690416 0 -4.690416 
+C -1.243913 -4.690416 -2.437046 -4.196204 -3.316625 -3.316625 
+C -4.196204 -2.437046 -4.690416 -1.243913 -4.690416 0 
+C -4.690416 1.243913 -4.196204 2.437046 -3.316625 3.316625 
+C -2.437046 4.196204 -1.243913 4.690416 0 4.690416 
 z
-" style="fill: #00547b; stroke: #00547b; stroke-width: 0.9; stroke-linecap: round"/>
+" style="stroke: #ffffff; stroke-width: 1.4"/>
+    </defs>
+    <g clip-path="url(#p0b6b07b1da)">
+     <use xlink:href="#m97c8d12f0b" x="314.208326" y="238.476774" style="fill: #c5283d; stroke: #ffffff; stroke-width: 1.4"/>
+     <use xlink:href="#m97c8d12f0b" x="361.111183" y="238.476774" style="fill: #c5283d; stroke: #ffffff; stroke-width: 1.4"/>
+     <use xlink:href="#m97c8d12f0b" x="384.562612" y="238.476774" style="fill: #c5283d; stroke: #ffffff; stroke-width: 1.4"/>
+     <use xlink:href="#m97c8d12f0b" x="408.01404" y="238.476774" style="fill: #c5283d; stroke: #ffffff; stroke-width: 1.4"/>
+     <use xlink:href="#m97c8d12f0b" x="431.465469" y="238.476774" style="fill: #c5283d; stroke: #ffffff; stroke-width: 1.4"/>
+     <use xlink:href="#m97c8d12f0b" x="536.996897" y="238.476774" style="fill: #c5283d; stroke: #ffffff; stroke-width: 1.4"/>
+    </g>
    </g>
    <g id="text_15">
-    <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #1f2024" transform="translate(201.40199 48.468925)">sector-wide policy adoption</text>
-    <text style="font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #1f2024" transform="translate(201.40199 58.197644)">~10 weeks</text>
+    <text style="font-weight: 500; font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #1f2024" x="114.871183" y="232.784143" transform="rotate(-0 114.871183 232.784143)">6 Class D policies by May 2026</text>
    </g>
    <g id="text_16">
-    <text style="font-weight: 500; font-size: 9px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="436.732425" y="130.181766" transform="rotate(-0 436.732425 130.181766)">Sep 2023 to Apr 2026</text>
+    <text style="font-size: 8.5px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #525560" x="114.871183" y="254.3059" transform="rotate(-0 114.871183 254.3059)">32 of 38 universities still not at Class D</text>
    </g>
-   <g id="patch_9">
-    <path d="M 491.319382 150.725853 
-Q 491.319382 169.344424 491.319382 187.068568 
-" style="fill: none; stroke: #525560; stroke-width: 0.8; stroke-linecap: round"/>
-    <path d="M 493.019382 183.668568 
-L 491.319382 187.068568 
-L 489.619382 183.668568 
-z
-" style="fill: #525560; stroke: #525560; stroke-width: 0.8; stroke-linecap: round"/>
-   </g>
-   <g id="text_17">
-    <text style="font-size: 8.5px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #1f2024" transform="translate(455.916882 133.56205)">Vitae RDF refresh</text>
-    <text style="font-size: 8.5px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #1f2024" transform="translate(447.920241 142.960925)">missed AI · May 2025</text>
-   </g>
-   <g id="patch_10">
-    <path d="M 508.016379 229.485551 
-Q 539.919788 212.403895 571.03468 195.744425 
-" style="fill: none; stroke: #c5283d; stroke-width: 0.8; stroke-linecap: round"/>
-    <path d="M 567.234847 195.850587 
-L 571.03468 195.744425 
-L 568.83971 198.847988 
-z
-" style="fill: #c5283d; stroke: #c5283d; stroke-width: 0.8; stroke-linecap: round"/>
-   </g>
-   <g id="text_18">
-    <text style="font-size: 8.5px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #1f2024" transform="translate(427.942683 239.847334)">Tsinghua AI framework · Dec 2025</text>
-    <text style="font-size: 8.5px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #1f2024" transform="translate(400.512918 249.345818)">integrated teaching, research, and theses</text>
-   </g>
-   <g id="line2d_22">
-    <defs>
-     <path id="m1d5aefcc77" d="M 0 4 
-C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
-C 3.578535 2.078319 4 1.060812 4 0 
-C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
-C 2.078319 -3.578535 1.060812 -4 0 -4 
-C -1.060812 -4 -2.078319 -3.578535 -2.828427 -2.828427 
-C -3.578535 -2.078319 -4 -1.060812 -4 0 
-C -4 1.060812 -3.578535 2.078319 -2.828427 2.828427 
-C -2.078319 3.578535 -1.060812 4 0 4 
-z
-" style="stroke: #ffffff; stroke-width: 1.2"/>
-    </defs>
-    <g clip-path="url(#p6d079032eb)">
-     <use xlink:href="#m1d5aefcc77" x="345.754164" y="192.961459" style="fill: #c5283d; stroke: #ffffff; stroke-width: 1.2"/>
-    </g>
-   </g>
-   <g id="line2d_23">
-    <g clip-path="url(#p6d079032eb)">
-     <use xlink:href="#m1d5aefcc77" x="394.275904" y="192.961459" style="fill: #c5283d; stroke: #ffffff; stroke-width: 1.2"/>
-    </g>
-   </g>
-   <g id="line2d_24">
-    <g clip-path="url(#p6d079032eb)">
-     <use xlink:href="#m1d5aefcc77" x="418.536773" y="192.961459" style="fill: #c5283d; stroke: #ffffff; stroke-width: 1.2"/>
-    </g>
-   </g>
-   <g id="line2d_25">
-    <g clip-path="url(#p6d079032eb)">
-     <use xlink:href="#m1d5aefcc77" x="442.797643" y="192.961459" style="fill: #c5283d; stroke: #ffffff; stroke-width: 1.2"/>
-    </g>
-   </g>
-   <g id="line2d_26">
-    <g clip-path="url(#p6d079032eb)">
-     <use xlink:href="#m1d5aefcc77" x="467.058512" y="192.961459" style="fill: #c5283d; stroke: #ffffff; stroke-width: 1.2"/>
-    </g>
-   </g>
-   <g id="line2d_27">
-    <g clip-path="url(#p6d079032eb)">
-     <use xlink:href="#m1d5aefcc77" x="576.232425" y="192.961459" style="fill: #c5283d; stroke: #ffffff; stroke-width: 1.2"/>
-    </g>
-   </g>
+  </g>
+  <g id="line2d_20">
+   <path d="M 621.545469 276.48 
+L 621.545469 23.04 
+" style="fill: none; stroke: #e8e7e6; stroke-linecap: square"/>
+  </g>
+  <g id="text_17">
+   <text style="font-weight: 500; font-size: 9.5px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start; fill: #1f2024" x="634.505469" y="46.070313" transform="rotate(-0 634.505469 46.070313)">Class D university markers</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 8.4px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(634.505469 66.853688)">May 2024: UCL Doctoral School</text>
+   <text style="font-size: 8.4px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(634.505469 77.752753)">Sep 2024: Heidelberg Graduate Academy</text>
+   <text style="font-size: 8.4px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(634.505469 88.717444)">Nov 2024: King's College London</text>
+   <text style="font-size: 8.4px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(634.505469 99.390956)">Jan 2025: KU Leuven</text>
+   <text style="font-size: 8.4px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(634.505469 110.382816)">Mar 2025: University of Helsinki</text>
+   <text style="font-size: 8.4px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(634.505469 121.281881)">Dec 2025: Tsinghua University</text>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 8.4px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(634.505469 247.151813)">The blank university lane is the result:</text>
+   <text style="font-size: 8.4px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(634.505469 257.419697)">most audited institutions had not published</text>
+   <text style="font-size: 8.4px; font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'; fill: #525560" transform="translate(634.505469 267.654769)">AI-literacy + valid-practice guidance.</text>
   </g>
  </g>
  <defs>
-  <clipPath id="p6d079032eb">
-   <rect x="103.145469" y="7.2" width="558" height="241.164"/>
+  <clipPath id="p0b6b07b1da">
+   <rect x="103.145469" y="7.2" width="492.48" height="281.16"/>
   </clipPath>
  </defs>
 </svg>

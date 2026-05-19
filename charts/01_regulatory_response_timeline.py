@@ -34,19 +34,32 @@ TITLE = (
 )
 
 UNIVERSITY_DOTS = [
-    (18, "UCL Doctoral School"),
-    (22, "Heidelberg Graduate Academy"),
-    (24, "King's College London"),
-    (26, "KU Leuven"),
-    (28, "University of Helsinki"),
-    (37, "Tsinghua University"),
+    (18, "UCL Doctoral School", "May 2024"),
+    (22, "Heidelberg Graduate Academy", "Sep 2024"),
+    (24, "King's College London", "Nov 2024"),
+    (26, "KU Leuven", "Jan 2025"),
+    (28, "University of Helsinki", "Mar 2025"),
+    (37, "Tsinghua University", "Dec 2025"),
+]
+
+DATE_TICKS = [
+    (0, "Nov\n2022"),
+    (6, "May\n2023"),
+    (12, "Nov\n2023"),
+    (18, "May\n2024"),
+    (24, "Nov\n2024"),
+    (30, "May\n2025"),
+    (36, "Nov\n2025"),
+    (42, "May\n2026"),
 ]
 
 
 def main() -> None:
-    fig, ax = plt.subplots(figsize=(10, 4.35))
+    fig, ax = plt.subplots(figsize=(12, 5.5))
+    fig.subplots_adjust(left=0.2, right=0.77, bottom=0.19, top=0.9)
 
-    lane_height = 0.5
+    lane_height = 0.42
+    university_lane_height = 0.58
 
     # Universities: the lane exists across the full period, but only six
     # institutions reached the report's Class D standard by May 2026.
@@ -55,8 +68,8 @@ def main() -> None:
         width=42,
         left=0,
         color=COLORS["neutral_mid"],
-        alpha=0.3,
-        height=lane_height,
+        alpha=0.24,
+        height=university_lane_height,
         edgecolor="none",
         zorder=1,
     )
@@ -81,62 +94,32 @@ def main() -> None:
         zorder=3,
     )
 
-    for x, _label in UNIVERSITY_DOTS:
-        ax.plot(
-            x,
-            0,
-            marker="o",
-            markersize=8,
-            markerfacecolor=COLORS["accent"],
-            markeredgecolor=COLORS["paper"],
-            markeredgewidth=1.2,
-            linestyle="none",
-            zorder=4,
-        )
-
-    ax.axvline(0, color=COLORS["ink_soft"], linewidth=0.8, zorder=0)
-    ax.axvline(42, color=COLORS["ink_soft"], linewidth=0.8, zorder=0)
-
-    ax.text(
-        0.25,
-        2.58,
-        "ChatGPT-3.5 release\nNov 2022",
-        ha="left",
-        va="bottom",
-        color=COLORS["ink_soft"],
-        fontsize=8.5,
-    )
-    ax.text(
-        42,
-        2.58,
-        "May 2026",
-        ha="right",
-        va="bottom",
-        color=COLORS["ink_soft"],
-        fontsize=8.5,
+    ax.scatter(
+        [x for x, _label, _date in UNIVERSITY_DOTS],
+        [0] * len(UNIVERSITY_DOTS),
+        s=88,
+        marker="o",
+        facecolor=COLORS["accent"],
+        edgecolor=COLORS["paper"],
+        linewidth=1.4,
+        zorder=4,
     )
 
-    ax.annotate(
-        "sector-wide policy adoption\n~10 weeks",
-        xy=(3, 2),
-        xytext=(6.1, 2.18),
+    ax.text(
+        3.7,
+        2,
+        "0-3 months\n~10 weeks",
         ha="left",
         va="center",
-        color=COLORS["ink"],
-        fontsize=9,
-        arrowprops={
-            "arrowstyle": "-|>",
-            "color": COLORS["primary"],
-            "lw": 0.9,
-            "shrinkA": 3,
-            "shrinkB": 2,
-        },
+        color=COLORS["primary"],
+        fontsize=9.2,
+        fontweight="medium",
     )
 
     ax.text(
         25.5,
         1,
-        "Sep 2023 to Apr 2026",
+        "10-41 months\nSep 2023-Apr 2026",
         ha="center",
         va="center",
         color=COLORS["paper"],
@@ -144,50 +127,79 @@ def main() -> None:
         fontweight="medium",
     )
 
-    ax.annotate(
-        "Vitae RDF refresh\nmissed AI · May 2025",
-        xy=(30, 0),
-        xytext=(30, 0.74),
-        ha="center",
-        va="bottom",
+    ax.text(
+        1.0,
+        0.09,
+        "6 Class D policies by May 2026",
+        ha="left",
+        va="center",
         color=COLORS["ink"],
-        fontsize=8.5,
-        arrowprops={
-            "arrowstyle": "-|>",
-            "color": COLORS["neutral_dark"],
-            "lw": 0.8,
-            "shrinkA": 4,
-            "shrinkB": 5,
-        },
+        fontsize=9,
+        fontweight="medium",
+        zorder=5,
     )
-
-    ax.annotate(
-        "Tsinghua AI framework · Dec 2025\nintegrated teaching, research, and theses",
-        xy=(37, 0),
-        xytext=(36.3, -0.62),
-        ha="right",
-        va="top",
-        color=COLORS["ink"],
+    ax.text(
+        1.0,
+        -0.15,
+        "32 of 38 universities still not at Class D",
+        ha="left",
+        va="center",
+        color=COLORS["neutral_dark"],
         fontsize=8.5,
-        arrowprops={
-            "arrowstyle": "-|>",
-            "color": COLORS["accent"],
-            "lw": 0.8,
-            "shrinkA": 4,
-            "shrinkB": 5,
-        },
+        zorder=5,
     )
 
     ax.set_yticks([0, 1, 2])
     ax.set_yticklabels(["UNIVERSITIES", "NATIONAL\nRESEARCH FUNDERS", "PUBLISHERS"])
-    ax.set_xlabel("Months from ChatGPT-3.5 release (Nov 2022)")
-    ax.set_xlim(-2, 44)
-    ax.set_ylim(-0.85, 2.85)
-    ax.set_xticks(range(0, 43, 6))
+    ax.set_xlabel("Months from ChatGPT-3.5 release")
+    ax.set_xlim(0, 42)
+    ax.set_ylim(-0.55, 2.55)
+    ax.set_xticks([x for x, _label in DATE_TICKS])
+    ax.set_xticklabels([label for _x, label in DATE_TICKS])
 
     ax.grid(axis="x", color=COLORS["rule_soft"], linewidth=0.5)
     ax.grid(axis="y", visible=False)
     ax.tick_params(axis="y", length=0)
+
+    fig.lines.append(
+        plt.Line2D(
+            [0.8, 0.8],
+            [0.22, 0.86],
+            transform=fig.transFigure,
+            color=COLORS["rule_soft"],
+            linewidth=1,
+        )
+    )
+    fig.text(
+        0.815,
+        0.82,
+        "Class D university markers",
+        ha="left",
+        va="top",
+        color=COLORS["ink"],
+        fontsize=9.5,
+        fontweight="medium",
+    )
+    fig.text(
+        0.815,
+        0.765,
+        "\n".join(f"{date}: {label}" for _x, label, date in UNIVERSITY_DOTS),
+        ha="left",
+        va="top",
+        color=COLORS["neutral_dark"],
+        fontsize=8.4,
+        linespacing=1.45,
+    )
+    fig.text(
+        0.815,
+        0.31,
+        "The blank university lane is the result:\nmost audited institutions had not published\nAI-literacy + valid-practice guidance.",
+        ha="left",
+        va="top",
+        color=COLORS["ink_soft"],
+        fontsize=8.4,
+        linespacing=1.35,
+    )
 
     set_chart_title(ax, TITLE)
 
