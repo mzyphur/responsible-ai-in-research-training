@@ -177,6 +177,23 @@ h1, h2, h3, h4 {
   flex-direction: column;
 }
 
+/* v0.22.34+: .cover is PRINT-ONLY.
+   The print cover (.cover) is the title-page artefact for the PDF —
+   it carries the logo, kicker, title, subtitle, abstract, author
+   block, and bottom report-identifier band. On the WEB, the v0.22.26
+   hero block (.hero) is the equivalent first-touch surface, with
+   the same content (kicker, title, subtitle, headline finding,
+   byline) in a web-tuned visual treatment. Showing BOTH on the web
+   is duplicative AND produces a narrower secondary blue band below
+   the column-constrained hero (the cover's 6px primary-blue
+   border-top is 72px narrower than the hero because .wrap has 36px
+   horizontal padding). Lead-author flagged it 2026-05-19.
+   Solution: hide .cover on screen. Print continues to render it via
+   the @media print block further down. */
+@media screen {
+  .cover { display: none; }
+}
+
 .cover > * { padding-left: 0; padding-right: 0; }
 
 @media (max-width: 760px) {

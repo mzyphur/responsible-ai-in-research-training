@@ -129,6 +129,11 @@
   flex-direction: column;
 }
 
+
+@media screen {
+  .instats-report .cover { display: none; }
+}
+
 .instats-report .cover > * { padding-left: 0; padding-right: 0; }
 
 @media (max-width: 760px) {
