@@ -68,8 +68,6 @@ The evidence supports a five-dimension capability framework, a maturity grid for
 
 \newpage
 
----
-
 ::: toc
 
 # Contents
