@@ -6,7 +6,7 @@
 assets/instats_logo.png  ->  https://mzyphur.github.io/responsible-ai-in-research-training/assets/instats_logo.png
 charts/png/01_regulatory_response_timeline.png  ->  https://mzyphur.github.io/responsible-ai-in-research-training/charts/png/01_regulatory_response_timeline.png
 assets/instats_logo.png  ->  https://mzyphur.github.io/responsible-ai-in-research-training/assets/instats_logo.png
-report.instats.css?v=a631af6abcb8  ->  https://mzyphur.github.io/responsible-ai-in-research-training/report.instats.css?v=a631af6abcb8
+report.instats.css?v=6e725a7ce0a6  ->  https://mzyphur.github.io/responsible-ai-in-research-training/report.instats.css?v=6e725a7ce0a6
 assets/instats_logo.png  ->  https://mzyphur.github.io/responsible-ai-in-research-training/assets/instats_logo.png
-report.pdf  ->  https://mzyphur.github.io/responsible-ai-in-research-training/report.pdf
-report.docx  ->  https://mzyphur.github.io/responsible-ai-in-research-training/report.docx
+Instats - Responsible AI in Academic Research.pdf  ->  https://mzyphur.github.io/responsible-ai-in-research-training/Instats - Responsible AI in Academic Research.pdf
+Instats - Responsible AI in Academic Research.docx  ->  https://mzyphur.github.io/responsible-ai-in-research-training/Instats - Responsible AI in Academic Research.docx

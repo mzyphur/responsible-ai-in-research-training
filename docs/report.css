@@ -854,6 +854,12 @@ pre code {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.sticky-header .sh-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
 .sticky-header .sh-download,
 .sticky-header .sh-repo {
   font-family: var(--sans);

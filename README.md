@@ -22,7 +22,6 @@
 </p>
 
 <p>
-  <img alt="Version" src="https://img.shields.io/github/v/release/mzyphur/responsible-ai-in-research-training?label=version&color=00547B">
   <img alt="License" src="https://img.shields.io/badge/license-CC%20BY--NC%204.0-3092B1">
   <img alt="Evidence" src="https://img.shields.io/badge/evidence-public%20audit%20package-00547B">
   <img alt="Formats" src="https://img.shields.io/badge/formats-DOCX%20%C2%B7%20HTML%20%C2%B7%20PDF-3092B1">
@@ -67,7 +66,9 @@ Instats publishes the report source, numerical manifest, public claim register, 
 
 > **Downloading.** Use the direct-download links above (which serve the actual file with the correct `Content-Type`) or the release-page assets. If you click into the `docs/` folder via GitHub's file tree and "Save Link As" on the file there, GitHub serves the *browser preview page* — not the file — and the saved file will not open in Word. Use the direct-download links above instead.
 
-**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series, v1.2.4. <https://github.com/mzyphur/responsible-ai-in-research-training>. ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
+**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series. <https://github.com/mzyphur/responsible-ai-in-research-training>. ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
+
+**Available as** **HTML** ([Pages mirror](https://mzyphur.github.io/responsible-ai-in-research-training/)), **PDF** ([direct download](https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest/download/report.pdf)), **Word** ([direct download](https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest/download/report.docx)), and **source repository** ([GitHub](https://github.com/mzyphur/responsible-ai-in-research-training)).
 
 BibTeX:
 
@@ -77,7 +78,6 @@ BibTeX:
   title       = {Responsible AI in Academic Research: A Capability Framework for Research Training},
   institution = {Instats},
   type        = {Instats Policy Series},
-  number      = {v1.2.4},
   year        = {2026},
   url         = {https://github.com/mzyphur/responsible-ai-in-research-training},
   note        = {ORCID: 0000-0003-3237-7892. DOI: 10.61700/t31oy23grr.},

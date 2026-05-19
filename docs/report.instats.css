@@ -841,6 +841,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.instats-report .sticky-header .sh-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
 .instats-report .sticky-header .sh-download, .instats-report .sticky-header .sh-repo {
   font-family: var(--sans);
   font-size: 11px;
