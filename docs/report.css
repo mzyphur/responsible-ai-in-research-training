@@ -784,7 +784,6 @@ pre code {
   figure, .tablewrap, table, blockquote, .colophon, .toc, .callout {
     break-inside: avoid;
   }
-  .footnotes, .footnote, .sources { break-before: page; }
 
   
   a {
@@ -855,7 +854,8 @@ pre code {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.sticky-header .sh-download {
+.sticky-header .sh-download,
+.sticky-header .sh-repo {
   font-family: var(--sans);
   font-size: 11px;
   font-weight: 600;
@@ -869,8 +869,27 @@ pre code {
   white-space: nowrap;
   text-decoration: none;
 }
-.sticky-header .sh-download:hover {
+.sticky-header .sh-download:hover,
+.sticky-header .sh-repo:hover {
   background: var(--instats-secondary);
+  color: white;
+}
+
+.sticky-header .sh-download-word {
+  background: var(--instats-secondary);
+}
+.sticky-header .sh-download-word:hover {
+  background: var(--instats-primary);
+}
+
+.sticky-header .sh-repo {
+  background: white;
+  color: var(--instats-primary);
+  border: 1px solid var(--instats-primary);
+  padding: 7px 13px;
+}
+.sticky-header .sh-repo:hover {
+  background: var(--instats-primary);
   color: white;
 }
 

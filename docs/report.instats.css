@@ -778,7 +778,6 @@
   .instats-report figure, .instats-report .tablewrap, .instats-report table, .instats-report blockquote, .instats-report .colophon, .instats-report .toc, .instats-report .callout {
     break-inside: avoid;
   }
-  .instats-report .footnotes, .instats-report .footnote, .instats-report .sources { break-before: page; }
 
   
   .instats-report a {
@@ -842,7 +841,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.instats-report .sticky-header .sh-download {
+.instats-report .sticky-header .sh-download, .instats-report .sticky-header .sh-repo {
   font-family: var(--sans);
   font-size: 11px;
   font-weight: 600;
@@ -856,8 +855,26 @@
   white-space: nowrap;
   text-decoration: none;
 }
-.instats-report .sticky-header .sh-download:hover {
+.instats-report .sticky-header .sh-download:hover, .instats-report .sticky-header .sh-repo:hover {
   background: var(--instats-secondary);
+  color: white;
+}
+
+.instats-report .sticky-header .sh-download-word {
+  background: var(--instats-secondary);
+}
+.instats-report .sticky-header .sh-download-word:hover {
+  background: var(--instats-primary);
+}
+
+.instats-report .sticky-header .sh-repo {
+  background: white;
+  color: var(--instats-primary);
+  border: 1px solid var(--instats-primary);
+  padding: 7px 13px;
+}
+.instats-report .sticky-header .sh-repo:hover {
+  background: var(--instats-primary);
   color: white;
 }
 
@@ -956,6 +973,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 12px;
 }
 
 .instats-pdf-download,
@@ -995,6 +1013,40 @@
 .instats-report .instats-pdf-download:focus-visible {
   outline: 3px solid rgba(48, 146, 177, 0.35);
   outline-offset: 3px;
+}
+
+/* Download Word variant — Instats secondary (teal) so the two
+   download buttons sit side-by-side as visibly distinct affordances. */
+.instats-docx-download,
+.instats-report .instats-docx-download {
+  background: var(--instats-secondary, #3092B1) !important;
+  border-color: var(--instats-secondary, #3092B1);
+  box-shadow: 0 8px 20px rgba(48, 146, 177, 0.18);
+}
+.instats-docx-download:hover,
+.instats-docx-download:focus,
+.instats-report .instats-docx-download:hover,
+.instats-report .instats-docx-download:focus {
+  background: var(--instats-primary, #00547B) !important;
+  border-color: var(--instats-primary, #00547B);
+}
+
+/* GitHub repo button — outlined-on-white so it subordinates to the
+   two download buttons. The repo is the secondary destination
+   (sources, dossiers) for readers who want to audit the report. */
+.instats-repo-link,
+.instats-report .instats-repo-link {
+  background: #FFFFFF !important;
+  color: var(--instats-primary, #00547B) !important;
+  border-color: var(--instats-primary, #00547B);
+  box-shadow: none;
+}
+.instats-repo-link:hover,
+.instats-repo-link:focus,
+.instats-report .instats-repo-link:hover,
+.instats-report .instats-repo-link:focus {
+  background: var(--instats-primary, #00547B) !important;
+  color: #FFFFFF !important;
 }
 
 @media (max-width: 720px) {

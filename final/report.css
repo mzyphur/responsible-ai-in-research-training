@@ -924,14 +924,21 @@ pre code {
   /* Layout: remove web column width — pandoc/pages will use @page margins. */
   .wrap { padding: 0; max-width: none; }
 
-  /* Section breaks. Every H1 starts on a new page; H2 stays with following
-     content; footnotes block break to its own page. */
+  /* Section breaks. Every H1 starts on a new page; H2 stays with the
+     following content. The footnotes/sources block does NOT carry its
+     own break-before rule (v0.22.24+): combined with the markdown `---`
+     separator that authors place before "Sources and footnotes" /
+     "Appendix N — Sources" headings, it produced TWO page breaks (one
+     from the separator's .pagebreak div, one from the .footnote div),
+     leaving the h2 alone on an otherwise-blank page. The drafting
+     convention is now: place a `---` before the sources heading, and
+     the CSS keeps the heading with its content via `break-after: avoid`.
+     See methodology/drafting_protocol.md § Sources/footnotes block. */
   h1 { break-before: page; }
   h1, h2, h3 { break-after: avoid; }
   figure, .tablewrap, table, blockquote, .colophon, .toc, .callout {
     break-inside: avoid;
   }
-  .footnotes, .footnote, .sources { break-before: page; }
 
   /* Links: tone down (no coloured links in print, but keep underline). */
   a {
@@ -1020,7 +1027,8 @@ pre code {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.sticky-header .sh-download {
+.sticky-header .sh-download,
+.sticky-header .sh-repo {
   font-family: var(--sans);
   font-size: 11px;
   font-weight: 600;
@@ -1034,8 +1042,32 @@ pre code {
   white-space: nowrap;
   text-decoration: none;
 }
-.sticky-header .sh-download:hover {
+.sticky-header .sh-download:hover,
+.sticky-header .sh-repo:hover {
   background: var(--instats-secondary);
+  color: white;
+}
+/* Download Word variant — Instats secondary (teal) so the two
+   download buttons sit side-by-side as visibly distinct affordances.
+   Hover swaps to primary blue, mirroring the .sh-download swap. */
+.sticky-header .sh-download-word {
+  background: var(--instats-secondary);
+}
+.sticky-header .sh-download-word:hover {
+  background: var(--instats-primary);
+}
+/* GitHub repo button — outlined-on-white style so it visually
+   subordinates to the two download buttons. The repo is the
+   secondary destination for readers who want sources, not the
+   primary read-the-report action. */
+.sticky-header .sh-repo {
+  background: white;
+  color: var(--instats-primary);
+  border: 1px solid var(--instats-primary);
+  padding: 7px 13px;
+}
+.sticky-header .sh-repo:hover {
+  background: var(--instats-primary);
   color: white;
 }
 
