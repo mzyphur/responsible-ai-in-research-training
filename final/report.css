@@ -1200,15 +1200,24 @@ pre code {
  * .cover h1 rule both put display sans (Montserrat) on cover titles.
  * Fixed in v0.22.28.
  * ─────────────────────────────────────────────────────────────────────*/
+/* v0.22.31+: hero is column-constrained, NOT full-bleed.
+   Pre-v0.22.31 the hero used `background: ...` on .hero with no
+   max-width, producing a full-bleed colored band edge-to-edge of
+   the viewport while the body column below was 880px max-width
+   centered. The visual mismatch (very-wide hero band → narrow
+   body column) was jarring and the user flagged it. The fix:
+   constrain the hero to the same 880px column the body uses,
+   centered. The blue band now lives WITHIN the report column
+   measure, matching the cover block + report body below it. */
 .hero {
   background: var(--instats-primary, #00547B);
   color: #FFFFFF;
-  padding: 64px 28px 56px;
+  padding: 56px 36px 48px;
+  max-width: 880px;
+  margin: 0 auto;
   border-bottom: 4px solid var(--instats-secondary, #3092B1);
 }
 .hero-inner {
-  max-width: 880px;
-  margin: 0 auto;
   text-align: center;
 }
 .hero-series {

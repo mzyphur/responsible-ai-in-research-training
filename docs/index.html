@@ -16,15 +16,6 @@
 </head>
 <body>
 
-<header id="sticky-header" class="sticky-header web-only" aria-hidden="false">
-  <div class="sh-title">Responsible AI in Academic Research</div>
-  <div class="sh-meta">Instats Policy Series</div>
-  <div class="sh-actions">
-    <a class="sh-download" href="Instats - Responsible AI in Academic Research.pdf" download>PDF version</a>
-    <a class="sh-download sh-download-word" href="Instats - Responsible AI in Academic Research.docx" download>Word version</a>
-    <a class="sh-repo" href="https://github.com/mzyphur/responsible-ai-in-research-training" target="_blank" rel="noopener">View GitHub</a>
-  </div>
-</header>
 
 <div id="progress-bar" class="web-only" aria-hidden="true"></div>
 
@@ -709,16 +700,8 @@ Instats &nbsp;·&nbsp; <a href="https://instats.org">instats.org</a> &nbsp;·&nb
 
 <script>
 (function() {
-  const header = document.getElementById('sticky-header');
-  const cover = document.querySelector('.cover');
-  const showHeader = () => {
-    if (!header || !cover) return;
-    const coverBottom = cover.getBoundingClientRect().bottom + window.scrollY;
-    header.classList.toggle('visible', window.scrollY > coverBottom - 40);
-    header.classList.toggle('scrolled', window.scrollY > 0);
-  };
-  document.addEventListener('scroll', showHeader, { passive: true });
-  showHeader();
+  // v0.22.31+: showHeader scroll-tracking removed along with the
+  // sticky-header element. Progress bar + sticky TOC remain.
 
   // Progress bar
   const bar = document.getElementById('progress-bar');

@@ -1,12 +1,14 @@
 # Public asset manifest.
 # public_root = https://mzyphur.github.io/responsible-ai-in-research-training/
-# count = 7
+# count = 9
 # Listed in document order; one rewrite per line.
 
 assets/instats_logo.png  ->  https://mzyphur.github.io/responsible-ai-in-research-training/assets/instats_logo.png
 charts/png/01_regulatory_response_timeline.png  ->  https://mzyphur.github.io/responsible-ai-in-research-training/charts/png/01_regulatory_response_timeline.png
 assets/instats_logo.png  ->  https://mzyphur.github.io/responsible-ai-in-research-training/assets/instats_logo.png
-report.instats.css?v=c283192a6999  ->  https://mzyphur.github.io/responsible-ai-in-research-training/report.instats.css?v=c283192a6999
+report.instats.css?v=f26da85778f4  ->  https://mzyphur.github.io/responsible-ai-in-research-training/report.instats.css?v=f26da85778f4
 assets/instats_logo.png  ->  https://mzyphur.github.io/responsible-ai-in-research-training/assets/instats_logo.png
+Instats - Responsible AI in Academic Research.pdf  ->  https://mzyphur.github.io/responsible-ai-in-research-training/Instats - Responsible AI in Academic Research.pdf
+Instats - Responsible AI in Academic Research.docx  ->  https://mzyphur.github.io/responsible-ai-in-research-training/Instats - Responsible AI in Academic Research.docx
 Instats - Responsible AI in Academic Research.pdf  ->  https://mzyphur.github.io/responsible-ai-in-research-training/Instats - Responsible AI in Academic Research.pdf
 Instats - Responsible AI in Academic Research.docx  ->  https://mzyphur.github.io/responsible-ai-in-research-training/Instats - Responsible AI in Academic Research.docx

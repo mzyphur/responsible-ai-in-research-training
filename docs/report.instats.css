@@ -956,15 +956,16 @@
 }
 
 
+
 .instats-report .hero {
   background: var(--instats-primary, #00547B);
   color: #FFFFFF;
-  padding: 64px 28px 56px;
+  padding: 56px 36px 48px;
+  max-width: 880px;
+  margin: 0 auto;
   border-bottom: 4px solid var(--instats-secondary, #3092B1);
 }
 .instats-report .hero-inner {
-  max-width: 880px;
-  margin: 0 auto;
   text-align: center;
 }
 .instats-report .hero-series {
