@@ -4,6 +4,28 @@ All notable changes to *Responsible AI in Academic Research: A Capability Framew
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.2.0] — 2026-05-19
+
+### Added — Definitional paragraph (§1.2) + societal-stakes paragraph (Conclusion)
+
+Lead-author feedback after v1.1.2: the report uses *"ethical, valid, reproducible, and transparent"* as the operational test for responsible AI use at lines 51, 434, and elsewhere, but never explicitly **defines** the four-way standard or **justifies** why these four properties (vs others) constitute responsibility. The connection to "the goals of research and research training" was implicit. The connection to society was absent. v1.2.0 closes both gaps.
+
+Two paragraphs added — synthesised from parallel codex GPT-5.5 xhigh and Gemini 3 Flash Preview drafts of the same brief:
+
+1. **§1.2 closing paragraph (new):** the explicit definition of "responsible" the report uses. Names the four properties, justifies them ("the conditions under which AI-augmented research remains research"), and defines each one in a short clause: *Ethical* (does not harm research participants, communities, or third parties whose data is processed); *Valid* (inferences meet the same methodological and evidentiary standards as human-produced inferences); *Reproducible* (another researcher with the same inputs, prompts, parameters, and tool version can reproduce the output); *Transparent* (AI's role is disclosed with enough specificity for supervisors, examiners, reviewers, and readers to assess it). Ends with the necessary-together claim: *"no three substitute for the fourth."*
+
+2. **Conclusion middle paragraph (new):** the societal-stakes paragraph. Explicitly connects the four-way standard to the broader public interest in knowledge that the public can trust. Frames universities as *"epistemic infrastructure: institutions that organise knowledge production, discipline claims, and sustain trust in evidence."* Names the failure modes (fabricated citations, unreproducible findings, biased analyses, methods that cannot be assessed). Closes with *"Responsible AI in research is an obligation universities owe society, because the social licence of research depends on knowledge that remains ethical, valid, reproducible, and transparent."*
+
+Conclusion now reads in three paragraphs: lag-story → why-it-matters-beyond-the-institution → universities-not-passive-consumers + framework-as-response. Classic problem → stakes → solution structure.
+
+No substantive content changed in the empirical body, the framework, the chart, or any source citation. The definitional and societal-stakes additions sharpen the report's argumentative spine without disturbing the evidence base.
+
+### Production discipline
+
+Both paragraphs drafted by parallel agents (codex GPT-5.5 xhigh + Gemini 3 Flash Preview) against the same scoped brief, then synthesised by the orchestrator. The brief specified the audience (senior university research leadership), the voice (position-paper, declarative, restrained), the word counts (80–130 per paragraph), and the placement. Each agent's draft preserved verbatim in `private/reviews/definitional_paragraphs_{codex,gemini}.md` for audit.
+
+verify-publication: 19 passed, 0 failed; Stage-A carry-over PASS.
+
 ## [1.1.2] — 2026-05-19
 
 ### Changed — Cover-abstract closing sentence: plant "agentic generative AI" + preview the deliverable
