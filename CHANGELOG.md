@@ -4,6 +4,20 @@ All notable changes to *Responsible AI in Academic Research: A Capability Framew
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.2.4] — 2026-05-19
+
+### Changed — canonical AI-assistance disclosure paragraph (general-repo v0.22.21)
+
+The AI-assistance disclosure paragraph in Appendix D now uses the canonical Instats Policy Series wording introduced in general-repo v0.22.21 (`methodology/public_private_boundary_protocol.md` § Single allowed AI-assistance disclosure sentence): names the three tool families used across the publication round (Anthropic Claude Code Opus 4.7, OpenAI Codex GPT-5.5, Google Gemini 3 Flash Preview), asserts author responsibility, contains no other production-discipline detail.
+
+The previous wording was generic ("large language models for evidence synthesis, structural review, and copy editing"). The canonical wording is more specific about which tools were used and is consistent in shape with other Instats publications (gas-tax v3.2.8 ships the identical canonical paragraph in the same publication round).
+
+### Rebuilt on general-repo v0.22.21 pipeline (defense-in-depth gates active)
+
+Same substantive content as v1.2.3; rebuilt through the general-repo v0.22.21 pipeline so the docx benefits from the post-build defense-in-depth gates: bookmark-name normaliser + Mac-Word-strict validator + RGBA → RGB PNG flatten (from v0.22.20) plus degenerate-zero-width-WordprocessingShape normaliser + validator (new in v0.22.21).
+
+v1.2.3's source-level chart RGB conversion remains in place; the v0.22.20 + v0.22.21 build-time gates act as belt-and-braces against any future regression. SHA256 of `report.docx` differs from v1.2.3's (new build + new disclosure paragraph), but the substantive evidence, framework, recommendations, and DOI are unchanged from v1.2.3.
+
 ## [1.2.3] — 2026-05-19
 
 ### Fixed — Chart PNG now RGB (no alpha channel) for Mac Word compatibility

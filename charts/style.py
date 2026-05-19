@@ -172,3 +172,65 @@ def aud(n: float, decimals: int = 1) -> str:
     if abs(n) >= 1e3:
         return f"A${n/1e3:.{decimals}f}k"
     return f"A${n:.{decimals}f}"
+
+
+def save_chart(fig, png_path, svg_path=None) -> None:
+    """Save a chart figure as PNG (+ optional SVG) in Mac-Word-safe form.
+
+    Matplotlib's default `savefig` writes RGBA PNGs (4 channels with an
+    alpha layer). Mac Microsoft Word has documented compatibility issues
+    with alpha-channel PNGs embedded in DOCX: the file opens partially
+    with "Word found unreadable content" and Word offers recovery mode
+    that drops the offending image (confirmed against responsible-ai
+    v1.2.2 → v1.2.3). The build_docx.py pipeline catches this at the
+    post-build stage by flattening RGBA → RGB in every word/media/ PNG;
+    this helper is the SOURCE-side equivalent that chart scripts call
+    so the rendered PNG is Word-safe from the start.
+
+    Behaviour:
+      - Call `fig.savefig(png_path)` (matplotlib's default RGBA save).
+      - If `svg_path` is given, also call `fig.savefig(svg_path)` (SVG
+        unchanged — only the PNG needs the RGBA fix; SVG goes to HTML
+        + web edition where alpha is fine).
+      - Flatten the rendered PNG: open with Pillow, paste onto a white
+        background, re-save as RGB at the same DPI.
+
+    The visual result is identical for charts with white backgrounds
+    (the Instats convention — see `apply_style()`). For charts that
+    intentionally use transparency, the white-background flatten is the
+    closest Word-renderable approximation.
+
+    Usage in a chart script (replaces the manual fig.savefig pair):
+
+        from style import apply_style, COLORS, set_chart_title, save_chart
+        # ... build the chart ...
+        set_chart_title(ax, "Headline finding.")
+        save_chart(fig,
+                   OUT / "01_my_chart.png",
+                   SVG / "01_my_chart.svg")
+    """
+    fig.savefig(png_path)
+    if svg_path is not None:
+        fig.savefig(svg_path)
+
+    try:
+        from PIL import Image
+    except ImportError:
+        # Pillow is a project dependency; if it's missing, skip the
+        # flatten. The build_docx.py post-build gate catches the issue
+        # later. We don't want chart scripts to fail just because Pillow
+        # wasn't installed yet on a fresh dev machine.
+        return
+
+    from pathlib import Path
+    png_path = Path(png_path)
+    with Image.open(png_path) as img:
+        if img.mode == "RGBA":
+            bg = Image.new("RGB", img.size, (255, 255, 255))
+            bg.paste(img, mask=img.split()[3])
+            bg.save(
+                png_path,
+                "PNG",
+                optimize=True,
+                dpi=img.info.get("dpi", (300, 300)),
+            )

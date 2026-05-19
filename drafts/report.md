@@ -26,7 +26,7 @@ Instats &nbsp;·&nbsp; [instats.org](https://instats.org) &nbsp;·&nbsp; [suppor
 
 ::: colophon
 
-**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series, v1.2.3. [github.com/mzyphur/responsible-ai-in-research-training](https://github.com/mzyphur/responsible-ai-in-research-training). ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
+**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series, v1.2.4. [github.com/mzyphur/responsible-ai-in-research-training](https://github.com/mzyphur/responsible-ai-in-research-training). ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
 
 **License.** Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0). Share and adapt with attribution; commercial reuse requires written permission from the author.
 
@@ -519,7 +519,7 @@ The framework's Dimension 3 (tooling that promotes responsible use) is built aro
 
 **Methodology.** Forensic, source-anchored analysis. Synthesis claims that consolidate multiple primary sources are anchored through the publication's evidence dossiers (Appendix E), organised by evidence axis: national research-funder policies; institutional AI policies; capability frameworks; publisher and journal policies; AI tool taxonomy; privacy and governance frameworks; reproducibility-crisis intersection; adversarial-review patterns.
 
-**AI assistance disclosure.** This report was drafted with assistance from large language models for evidence synthesis, structural review, and copy editing. The lead author retains responsibility for every factual claim, institutional classification, numerical finding, and framework decision, and verified each load-bearing claim against the primary sources before publication.
+**AI assistance.** This report used assistance from Anthropic Claude Code (Opus 4.7), OpenAI Codex (GPT-5.5), and Google Gemini (3 Flash Preview) for research review, drafting, code/release checks, and copy-editing. The author is responsible for every factual claim, source interpretation, calculation, caveat, and final wording.
 
 **Conflict-of-interest disclosure.** The author has no paid relationships with any of the institutions in the report's institutional sample (Appendix B). The author's commercial role at Instats is research-training-adjacent; the report's framing was developed independently of any commercial activity and is offered as a contribution to the public discussion of responsible AI use in research and research training, not as a product placement.
 
