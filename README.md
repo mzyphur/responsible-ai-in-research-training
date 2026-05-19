@@ -7,7 +7,7 @@
 # Responsible AI in Academic Research
 ## *A Capability Framework for Research Training*
 
-**What does responsible AI use look like for academic research, and how would a university know whether it is doing it well? Of thirty-eight top-tier doctoral universities surveyed across fifteen countries and jurisdictions, only six have AI policies that extend past research integrity into AI literacy and valid research practices. The world's major academic publishers issued a substantively identical no-AI-co-author policy across the sector within ten weeks of ChatGPT-3.5's public release. The United Kingdom's canonical PhD-researcher-development framework, refreshed in 2025, did not treat AI as a competency at all. While publishers and funders have responded to the emergence of AI, the universities that actually train researchers are lagging far behind what is needed to prepare them to use it responsibly.**
+**What does responsible AI use look like for academic research, and how would a university know whether it is doing it well? Of thirty-eight top-tier doctoral universities surveyed across fifteen countries and jurisdictions, only six have AI policies that extend past research integrity into AI literacy and valid research practices. The world's major academic publishers issued a substantively identical no-AI-co-author policy across the sector within ten weeks of ChatGPT-3.5's public release. The United Kingdom's canonical PhD-researcher-development framework, refreshed in 2025, did not treat AI as a competency at all. While publishers and funders have responded to the emergence of AI, the universities that actually train researchers are lagging far behind what is needed to prepare them to use it responsibly. This report describes the significant opportunities and problems that agentic generative AI creates for research, setting out a capability framework for research training in the 21st century.**
 
 <p>
   <a href="https://mzyphur.github.io/responsible-ai-in-research-training/">
@@ -61,7 +61,7 @@ Instats publishes the report source, numerical manifest, public claim register, 
 | Web edition | [`docs/index.html`](docs/index.html) for Pages; HTML and PDF builds attached to the [latest release](https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest) |
 | Markdown source | [`drafts/report.md`](drafts/report.md) |
 
-**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series, v1.1.1. <https://github.com/mzyphur/responsible-ai-in-research-training>. ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
+**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series, v1.1.2. <https://github.com/mzyphur/responsible-ai-in-research-training>. ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
 
 BibTeX:
 
@@ -71,7 +71,7 @@ BibTeX:
   title       = {Responsible AI in Academic Research: A Capability Framework for Research Training},
   institution = {Instats},
   type        = {Instats Policy Series},
-  number      = {v1.1.1},
+  number      = {v1.1.2},
   year        = {2026},
   url         = {https://github.com/mzyphur/responsible-ai-in-research-training},
   note        = {ORCID: 0000-0003-3237-7892. DOI: 10.61700/t31oy23grr.},

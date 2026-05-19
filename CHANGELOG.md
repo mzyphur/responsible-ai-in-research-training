@@ -4,6 +4,26 @@ All notable changes to *Responsible AI in Academic Research: A Capability Framew
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.1.2] — 2026-05-19
+
+### Changed — Cover-abstract closing sentence: plant "agentic generative AI" + preview the deliverable
+
+Lead-author feedback after the v1.1.1 ship: the cover-page abstract closes on the lag story ("the universities that actually train researchers are lagging far behind what is needed to prepare them to use it responsibly") but the reader doesn't yet know what the report *delivers* until they turn the page. A reader who skims only the cover never encounters the term "agentic" (which first appears in "The finding" paragraph 3, line 51 as part of the SPSS-reframe).
+
+One-sentence addition to the cover-page abstract (`drafts/report.md:13`) and to the README headline paragraph:
+
+> *This report describes the significant opportunities and problems that agentic generative AI creates for research, setting out a capability framework for research training in the 21st century.*
+
+Five things this sentence does:
+
+1. **Plants "agentic generative AI" at the cover** — one noun phrase, no typographic gymnastics. When the reader hits the SPSS-reframe ("LLMs are agentic research tools") on the next page, the term is already familiar.
+2. **Previews the deliverable** — *"setting out a capability framework"* — so the reader knows what the report produces, not just what it diagnoses.
+3. **Echoes the subtitle** — *"capability framework for research training"* nearly verbatim mirrors the subtitle ("A Capability Framework for Research Training"). Cover-design cohesion.
+4. **Frames opportunities AND problems** — disarms the "anti-AI report" misread.
+5. **Anchors the temporal stakes** — *"in the 21st century"* makes the historical inflection visible.
+
+No substantive content changed. Same title, framing, body, evidence base, DOI, and chart as v1.1.1. The cover abstract gains one sentence; the README headline paragraph gains the same sentence; VERSION + CITATION.cff + colophon citation bump 1.1.1 → 1.1.2.
+
 ## [1.1.1] — 2026-05-19
 
 ### Changed — Trim front-matter colophon; move scope and methodology notes into Appendix D
