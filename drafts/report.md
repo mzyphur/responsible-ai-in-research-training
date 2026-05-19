@@ -515,7 +515,7 @@ The framework's Dimension 3 (tooling that promotes responsible use) is built aro
 
 ## Appendix D — About this report
 
-**Author and contact.** Michael J. Zyphur, PhD (Instats; ORCID 0000-0003-3237-7892; support@instats.org).
+**About the author.** Michael J. Zyphur is the Director of Instats and a Professor of Quantitative Methods at the University of Queensland. His research is at [Google Scholar](https://scholar.google.com/citations?user=J2VA-RMAAAAJ&hl=en). ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). Contact: [support@instats.org](mailto:support@instats.org).
 
 **Scope.** This is the global view in a planned regional series. The capability framework in Part 2 is intended to be re-populated in later reports for the US / Americas, the UK / Europe, and APAC ex Japan; the framework itself does not change across those reports. The evidence base in Parts 1 and 3 draws on four primary dossiers, snapshotted 2026-05-18: national research-funder AI policies across fourteen funders in eleven countries plus the European Research Council as a supranational fourteenth funder; institutional AI policies across thirty-eight top-tier doctoral universities in fifteen countries and jurisdictions; the existing AI-literacy and researcher-development capability-framework literature; and the AI co-authorship and use policies of eighteen major publishers plus three preprint servers. Every load-bearing claim is anchored to a primary-source URL with a snapshot date.
 

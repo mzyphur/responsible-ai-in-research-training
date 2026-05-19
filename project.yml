@@ -47,6 +47,16 @@ project:
   # Author affiliation (institution / department).
   author_affiliation: "Instats"
 
+  # Author bio long-form (v0.22.26+). One sentence, role+institution.
+  author_bio: "Director of Instats; Professor of Quantitative Methods at the University of Queensland"
+
+  # Public author homepage / Google Scholar / ORCID profile URL
+  # (v0.22.26+).
+  author_url: "https://scholar.google.com/citations?user=J2VA-RMAAAAJ&hl=en"
+
+  # One-sentence headline finding for the web hero block (v0.22.26+).
+  headline_finding: "Of thirty-eight top-tier doctoral universities surveyed across fifteen countries, only six have AI policies that extend past research integrity into AI literacy and valid research practice — while publishers issued a no-AI-co-author rule sector-wide within ten weeks of ChatGPT's release."
+
   # Contact email for footer / colophon and DOCX core properties.
   contact_email: "support@instats.org"
 
