@@ -4,6 +4,25 @@ All notable changes to *Responsible AI in Academic Research: A Capability Framew
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.2.1] — 2026-05-19
+
+### Fixed — DOCX now opens in Mac Microsoft Word (bookmark-name compatibility)
+
+**Root cause** (identified by codex GPT-5.5 xhigh research, with the smoking-gun diff between gas-tax v3.2.5 — which opens in Mac Word — and responsible-ai v1.2.0 — which did not): the Figure 1 chart embed used pandoc's anchor syntax `{#fig:timeline}`, where the colon in the anchor name produced an OOXML bookmark named `fig%3Atimeline` (pandoc URL-encodes the colon to `%3A`). **Mac Microsoft Word's stricter OOXML schema validator rejects bookmark names containing `%`** — per Microsoft's documentation, Word bookmark names must begin with a letter and contain only letters, numbers, and underscores. LibreOffice tolerates `%` in bookmark names; Mac Word does not. Each `soffice` round-trip made it worse (the existing `%` got re-encoded to `%25`, producing `fig%253Atimeline`).
+
+**Fix**: changed `{#fig:timeline}` → `{#fig-timeline}` in `drafts/report.md:63` (the only chart anchor). Rebuilt the DOCX. Verified all 53 bookmark names are now Word-compatible: zero contain `%` or `:`.
+
+**Why no earlier publication hit this**: gas-tax does not use pandoc figure anchors of the form `{#fig:NAME}`. Its 12 chart embeds use the default pandoc image syntax without anchor IDs, so no bookmark with a colon was generated. The responsible-ai chart embed was the first time a figure anchor was added with the colon-bearing convention.
+
+**Why local LibreOffice round-trip didn't catch it**: LibreOffice's OOXML parser is more permissive than Mac Word's. The verify-publication DOCX gates check style references, footnote resolution, and required parts — but did not check bookmark-name validity against the OOXML spec's stricter rules that Mac Word enforces.
+
+**General-repo v0.22.20 follow-up** (documented in `private/redraft_v1_1_0_working_notes.md`):
+1. Add a build-time check that rejects bookmark names containing `%` or `:` after the DOCX is built. Fail-loud, before publish_pages copies the file to docs/.
+2. Document the anchor-name discipline in `methodology/drafting_protocol.md`: figure anchors MUST use only letters, numbers, and hyphens — never colons, percent signs, spaces, or other characters that pandoc URL-encodes.
+3. Consider a pre-pandoc lint step on `drafts/report.md` that scans for `{#X:Y}` patterns and warns the drafter.
+
+verify-publication: 19 passed, 0 failed; Stage-A carry-over PASS.
+
 ## [1.2.0] — 2026-05-19
 
 ### Added — Definitional paragraph (§1.2) + societal-stakes paragraph (Conclusion)

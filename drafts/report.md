@@ -26,7 +26,7 @@ Instats &nbsp;·&nbsp; [instats.org](https://instats.org) &nbsp;·&nbsp; [suppor
 
 ::: colophon
 
-**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series, v1.2.0. [github.com/mzyphur/responsible-ai-in-research-training](https://github.com/mzyphur/responsible-ai-in-research-training). ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
+**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series, v1.2.1. [github.com/mzyphur/responsible-ai-in-research-training](https://github.com/mzyphur/responsible-ai-in-research-training). ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
 
 **License.** Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0). Share and adapt with attribution; commercial reuse requires written permission from the author.
 
@@ -60,7 +60,7 @@ The evidence supports a five-dimension capability framework, a maturity grid for
 
 \newpage
 
-![](../charts/png/01_regulatory_response_timeline.png){#fig:timeline width=100%}
+![](../charts/png/01_regulatory_response_timeline.png){#fig-timeline width=100%}
 
 **Figure 1.** *Publishers responded in months. National research funders responded over years. Universities still mostly haven't.* The six dots in the universities lane are the Class D universities — the only institutions with AI policies that extend past research integrity into AI literacy and valid research practices: UCL Doctoral School, KCL Centre for Education Studies, Heidelberg Graduate Academy, KU Leuven, University of Helsinki, and Tsinghua University. The remaining thirty-two institutions in the sample do not yet extend their AI policies into AI literacy and valid research practices. *Sources*: publisher dossier (18 publishers + 3 preprint servers, snapshotted 2026-05-18); funder dossier (14 national research funders + the European Research Council); institutional dossier (38 top-tier doctoral universities in 15 countries and jurisdictions); Vitae RDF refresh date from vitae.ac.uk.
 
