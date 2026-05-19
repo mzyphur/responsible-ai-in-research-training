@@ -203,9 +203,24 @@ def main() -> None:
 
     set_chart_title(ax, TITLE)
 
-    fig.savefig(OUT / "01_regulatory_response_timeline.png")
-    fig.savefig(SVG / "01_regulatory_response_timeline.svg")
+    png_path = OUT / "01_regulatory_response_timeline.png"
+    svg_path = SVG / "01_regulatory_response_timeline.svg"
+    fig.savefig(png_path)
+    fig.savefig(svg_path)
     plt.close(fig)
+
+    # Mac Word compatibility: matplotlib outputs RGBA PNG by default. Mac
+    # Microsoft Word has documented issues opening DOCX files that embed
+    # PNGs with alpha channels (the file opens but Word reports "found
+    # unreadable content" and rolls back to recovery mode). Convert the
+    # final PNG to RGB with a white background to keep the file Word-safe.
+    # The chart background is already white per Instats style.
+    from PIL import Image
+    with Image.open(png_path) as img:
+        if img.mode == "RGBA":
+            bg = Image.new("RGB", img.size, (255, 255, 255))
+            bg.paste(img, mask=img.split()[3])
+            bg.save(png_path, "PNG", optimize=True, dpi=img.info.get("dpi", (300, 300)))
 
 
 if __name__ == "__main__":

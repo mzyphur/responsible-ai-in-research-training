@@ -4,6 +4,35 @@ All notable changes to *Responsible AI in Academic Research: A Capability Framew
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.2.3] — 2026-05-19
+
+### Fixed — Chart PNG now RGB (no alpha channel) for Mac Word compatibility
+
+Lead-author reported v1.2.2 docx STILL did not open in Mac Word — two errors: *"Word experienced an error trying to open the file"* and *"Word found unreadable content in report.docx. Do you want to recover the contents..."* This was a regression from v1.2.1 (which the user confirmed opens cleanly).
+
+**Diagnosis:** the only substantive difference between v1.2.1's docx (works) and v1.2.2's docx (fails) is the Figure 1 chart PNG. All 53 bookmark names remain Word-compatible after the v1.2.1 + v1.2.2 builds; document.xml differs only in the chart's cy (height) attribute and the version string. The v1.2.2 PNG is larger (3384x1390 vs 2784x1182, 233 KB vs 154 KB) but both are RGBA from matplotlib's default `savefig`.
+
+**Suspected root cause:** matplotlib outputs RGBA PNGs (4 channels with alpha). Mac Microsoft Word has documented compatibility issues with PNGs that have alpha channels — specifically the "Word found unreadable content" recovery flow when an embedded image's alpha channel cannot be processed cleanly. LibreOffice tolerates RGBA PNGs; Mac Word does not always.
+
+**Fix:** added a post-savefig RGB conversion step at the end of `charts/01_regulatory_response_timeline.py` — PIL flattens the RGBA chart onto a white background (the chart's intended background colour per Instats style) and re-saves as RGB. No alpha channel reaches Mac Word.
+
+```python
+from PIL import Image
+with Image.open(png_path) as img:
+    if img.mode == "RGBA":
+        bg = Image.new("RGB", img.size, (255, 255, 255))
+        bg.paste(img, mask=img.split()[3])
+        bg.save(png_path, "PNG", optimize=True, dpi=img.info.get("dpi", (300, 300)))
+```
+
+The chart visual is unchanged (the background was already white; we're just flattening the alpha layer that was always 255). PNG file size: 233 KB → 222 KB. Embedded in docx after rebuild: `mode=RGB, size=(3384, 1390)`.
+
+**General-repo v0.22.20 follow-up** (documented in working notes): the RGBA→RGB conversion belongs in `general-repo/charts/style.py` or a post-savefig helper so all future chart scripts get the Word-safe PNG output for free. Combined with the bookmark-name normaliser (now also queued for v0.22.20), the docx-broken-in-Mac-Word class of defect will be permanently closed.
+
+No prose, framework, or evidence changes from v1.2.2.
+
+verify-publication: 19 passed, 0 failed; Stage-A carry-over PASS.
+
 ## [1.2.2] — 2026-05-19
 
 ### Changed — Figure 1 chart redesign (eliminate overlapping annotations; publication-quality)
