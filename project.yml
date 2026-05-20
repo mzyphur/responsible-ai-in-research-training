@@ -17,7 +17,7 @@ project:
   title: "Responsible AI in Academic Research"
 
   # Subtitle / strapline. May be empty for projects without a subtitle.
-  subtitle: "A Capability Framework for Research Training"
+  subtitle: "A Competency Framework for Research Training"
 
   # Short title for running header / sticky header (DOCX header,
   # build_reference_docx.py). Often a lowercase or terser variant
@@ -76,14 +76,14 @@ project:
 
   # One-sentence description for the <meta name="description"> tag and
   # the social-card og:description.
-  description: "What does responsible AI use look like in PhD-level research and research training? A capability framework benchmarking institutional AI policy, AI-literacy, validation, and reproducibility, with international comparators."
+  description: "What does responsible AI use look like in PhD-level research and research training? A competency framework benchmarking institutional AI policy, AI-literacy, validation, and reproducibility, with international comparators."
 
   # Social card title (og:title, twitter:title). Often "<title> — <series>"
   # but kept explicit so projects can shorten or rephrase for sharing.
   og_title: "Responsible AI in Academic Research — Instats Policy Series"
 
   # Social card description (og:description).
-  og_description: "A global capability framework for senior university research leadership: what responsible AI use looks like in PhD-level research and research training, with international comparators."
+  og_description: "A global competency framework for senior university research leadership: what responsible AI use looks like in PhD-level research and research training, with international comparators."
 
   # Word "Properties" Subject field — populates `dc:subject` in the DOCX
   # core properties via pandoc --metadata subject=...
@@ -91,7 +91,7 @@ project:
 
   # Word "Properties" Keywords field — pandoc --metadata keywords=...
   # Comma-separated topic keywords for archival search.
-  docx_keywords: "AI policy, research training, PhD research, university leadership, capability framework, responsible AI, AI literacy, research integrity"
+  docx_keywords: "AI policy, research training, PhD research, university leadership, competency framework, responsible AI, AI literacy, research integrity"
 
   # If set, the build pipeline emits an additional HTML variant at
   # `docs/index.instats.html` where every relative asset URL is rewritten

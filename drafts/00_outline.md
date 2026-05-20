@@ -2,7 +2,7 @@
 
 **Status:** WORKING DRAFT — Mike to review before Tier 1 dossiers land. Locks the report's spine. Subsequent revisions land here, not in a sibling file.
 **Working title:** Responsible AI in Research and Research Training
-**Working subtitle:** A Global Capability Framework for University Research Leadership
+**Working subtitle:** A Global Competency Framework for University Research Leadership
 **Report ID:** INSTATS-PS-2026-04
 **Date target:** First public release window opens after Tier 1 + Tier 2 dossiers and full Stage A/B/C/D/E review. Plan for a working pace, not a deadline; gas-tax shipped at v3.2.5 and that pace is the model.
 
@@ -14,7 +14,7 @@ Per `general-repo/methodology/drafting_protocol.md` § Step 0 (v0.22.5+ discipli
 
 ### Why does this report exist?
 
-University research leadership is being asked, often by their own councils and boards, what their institution's posture on AI in research is. Most institutional answers in 2026 are derivatives of plagiarism policy with an AI clause appended. That answer is not adequate for the strategic moment: it gets the threat model wrong, it gets the opportunity model wrong, and it does not tell faculty deans, graduate-school deans, or higher-degrees committees what to do on Monday morning. This report supplies a global capability framework that does.
+University research leadership is being asked, often by their own councils and boards, what their institution's posture on AI in research is. Most institutional answers in 2026 are derivatives of plagiarism policy with an AI clause appended. That answer is not adequate for the strategic moment: it gets the threat model wrong, it gets the opportunity model wrong, and it does not tell faculty deans, graduate-school deans, or higher-degrees committees what to do on Monday morning. This report supplies a global competency framework that does.
 
 ### What is the report's purpose?
 
@@ -36,7 +36,7 @@ Secondary readers: research-administration directors, IT-procurement leads with 
 
 - Forensic, source-anchored, plain English. Same register as gas-tax. Every claim with a numerator and denominator carries a primary-source URL and a snapshot date.
 - No Instats product mentions in the body. Single AI-use line in the colophon, same wording as gas-tax. Test bar for every paragraph: would it survive being read aloud at a peer university's senate-research committee.
-- The capability framework is the spine. Topics 1-4 (Mike's locked scope, see scoping brief §3) supply the dimensions; international evidence populates the dimensions. The framework is reusable so the planned regional adaptations (US/Americas, UK/Europe, APAC ex Japan) can re-populate it without restructuring it.
+- The competency framework is the spine. Topics 1-4 (Mike's locked scope, see scoping brief §3) supply the dimensions; international evidence populates the dimensions. The framework is reusable so the planned regional adaptations (US/Americas, UK/Europe, APAC ex Japan) can re-populate it without restructuring it.
 - Formatting discipline per v0.22.9+: bolding ≤5%, em-dashes ≤2/1000, italics ≤5/1000, bullet ratio ≤30%, words/heading ≥150. Anti-LLM-tic patterns banned at Stage E.
 
 ---
@@ -55,7 +55,7 @@ Use exemplars as models for form, not authority for facts. Do not copy external 
 
 **Anticipated structural moves (provisional, finalise after card review):**
 
-- The capability-framework spine pattern (UNESCO AI Competency Framework structure adapted to research-training).
+- The competency-framework spine pattern (UNESCO AI Competency Framework structure adapted to research-training).
 - The international-comparator table pattern (gas-tax Norway / Qatar / US comparator → here: funder positions across UKRI / NSF / ARC / DFG / ERC / NORDIS / A*STAR).
 - The maturity grid (rows = framework dimensions; columns = "absent / nascent / established / leading").
 - The audience-tiered recommendations chapter (one short chapter per audience tier; concrete asks per tier).
@@ -82,7 +82,7 @@ A working sketch; refine after Tier 1 dossiers land. The summary's headline find
 - **Three things sector leaders get wrong about this debate** (working list, refine).
     1. AI in research is treated as a student-conduct problem (plagiarism) when the binding constraint is a research-integrity problem (validity, reproducibility, adversarial validation).
     2. AI literacy is treated as a tooling-skills problem (which buttons to push) when the binding constraint is a judgement problem (which tasks AI is good at, which ones it ruins, and how to tell the difference).
-    3. AI-in-research policy is treated as a single document when the binding constraint is a five-dimension capability grid that crosses policy, people, systems, and process.
+    3. AI-in-research policy is treated as a single document when the binding constraint is a five-dimension competency grid that crosses policy, people, systems, and process.
 - **What changes if you adopt the framework.** The grid is the change. Section 4 makes the grid operational.
 - **Audience paragraph.** "This report is written for…" — Tier 1-5 named, two sentences on the planned regional adaptations.
 
@@ -90,7 +90,7 @@ A working sketch; refine after Tier 1 dossiers land. The summary's headline find
 
 ## Part 1 — The factual baseline: where research training stands on AI today
 
-The "where the gap is" section. Pulls Candidate A (capability inventory + gap analysis) into the report. Feeds Topic 5's "does policy go beyond plagiarism?" question and Topic 1's "human-in-the-loop" claim by establishing the present condition.
+The "where the gap is" section. Pulls Candidate A (competency inventory + gap analysis) into the report. Feeds Topic 5's "does policy go beyond plagiarism?" question and Topic 1's "human-in-the-loop" claim by establishing the present condition.
 
 ### 1.1 The shift in research practice 2022 → 2026
 
@@ -106,7 +106,7 @@ The "does the AI policy go beyond plagiarism?" question (Topic 5). Inventory: of
 
 ---
 
-## Part 2 — A capability framework
+## Part 2 — A competency framework
 
 The spine. Five dimensions, each derived from one of Mike's locked topics. Each dimension carries (a) a one-sentence definition, (b) what observable institutional behaviours mark "absent / nascent / established / leading" on the dimension, (c) the international evidence that anchors the level claims.
 
@@ -128,7 +128,7 @@ Human experts central plus AI augmentation equals AI-literate humans needed. The
 
 ### 2.5 Dimension 5 — Institutional benchmarking grid (Topic 5)
 
-The capability framework for benchmarking, at "whole of education system" level and at organisational level. Crosses the four preceding dimensions with four operational axes: policy (does the AI policy exist, and does it go beyond plagiarism?); people (who is responsible at each level?); systems (which platforms, with what governance?); process (what is the actual workflow for a PhD student or supervisor?).
+The competency framework for benchmarking, at "whole of education system" level and at organisational level. Crosses the four preceding dimensions with four operational axes: policy (does the AI policy exist, and does it go beyond plagiarism?); people (who is responsible at each level?); systems (which platforms, with what governance?); process (what is the actual workflow for a PhD student or supervisor?).
 
 ---
 
@@ -205,7 +205,7 @@ The five locked topics (scoping brief §3) map onto the body as follows.
 | Topic 2 | Define and embed responsible, effective, accurate AI tools and methods in research and research training | §2.2 (Dimension 2) | §1.2, §3.3, §5.* |
 | Topic 3 | AI tools that promote responsible use (privacy, no plagiarism encouragement, validating models, replicability/accuracy) | §2.3 (Dimension 3) | §3.4, Appendix C |
 | Topic 4 | AI-literate humans needed; training on validity, co-authorship, AI model use, adversarial review | §2.4 (Dimension 4) | §3.4, §5.3 |
-| Topic 5 | Capability framework for benchmarking at system and organisational level | §2.5 (Dimension 5), Part 4 | §1.3, §3.1, §3.2, Appendix A |
+| Topic 5 | Competency framework for benchmarking at system and organisational level | §2.5 (Dimension 5), Part 4 | §1.3, §3.1, §3.2, Appendix A |
 
 ---
 
@@ -217,7 +217,7 @@ The four Tier 1 dossiers (scoping brief §4) feed the report as follows.
 |---|---|---|
 | National research-funder AI policies | §3.1 | §1.2, §2.5, Appendix B, Appendix E |
 | Top-tier university institutional AI policies | §3.2 | §1.3, §2.5, §4.3, Appendix B, Appendix E |
-| Existing AI-literacy / capability frameworks | §3.4 | §2.* (all dimensions reference these as priors), Appendix E |
+| Existing AI-literacy / competency frameworks | §3.4 | §2.* (all dimensions reference these as priors), Appendix E |
 | Publisher / journal AI policies | §3.3 | §2.2, §2.4, Appendix C, Appendix E |
 
 The four Tier 2 dossiers (AI tool taxonomy; privacy/IP/governance; reproducibility intersection; adversarial-review patterns) feed §2.3 / Appendix C, §2.5, §1.1 + §2.4, and §2.4 respectively.

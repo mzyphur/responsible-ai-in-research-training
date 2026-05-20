@@ -1,8 +1,16 @@
 # Changelog
 
-All notable changes to *Responsible AI in Academic Research: A Capability Framework for Research Training* are recorded in this file. The publication uses [Semantic Versioning](https://semver.org/).
+All notable changes to *Responsible AI in Academic Research: A Competency Framework for Research Training* are recorded in this file. The publication uses [Semantic Versioning](https://semver.org/).
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
+
+## [1.2.5] — 2026-05-20
+
+### Changed — terminology: capability framework renamed to competency framework
+
+Renamed the report terminology from "capability framework" to "competency framework" throughout source metadata, README, report prose, research dossiers, and retained working notes to align the publication with researcher-skill and research-training language used in UK/Australia pedagogy. This is a terminology update only: the evidence base, five-dimension framework structure, maturity grid, DOI, and substantive recommendations are unchanged.
+
+Generated publication artifacts were rebuilt from the updated source so HTML, PDF, DOCX, citation metadata, and Open Graph metadata carry the new terminology consistently. External proper names and URL slugs that genuinely contain "Capability" / "capability" were preserved.
 
 ## [1.2.4] — 2026-05-19
 
@@ -127,13 +135,13 @@ Lead-author feedback after the v1.1.1 ship: the cover-page abstract closes on th
 
 One-sentence addition to the cover-page abstract (`drafts/report.md:13`) and to the README headline paragraph:
 
-> *This report describes the significant opportunities and problems that agentic generative AI creates for research, setting out a capability framework for research training in the 21st century.*
+> *This report describes the significant opportunities and problems that agentic generative AI creates for research, setting out a competency framework for research training in the 21st century.*
 
 Five things this sentence does:
 
 1. **Plants "agentic generative AI" at the cover** — one noun phrase, no typographic gymnastics. When the reader hits the SPSS-reframe ("LLMs are agentic research tools") on the next page, the term is already familiar.
-2. **Previews the deliverable** — *"setting out a capability framework"* — so the reader knows what the report produces, not just what it diagnoses.
-3. **Echoes the subtitle** — *"capability framework for research training"* nearly verbatim mirrors the subtitle ("A Capability Framework for Research Training"). Cover-design cohesion.
+2. **Previews the deliverable** — *"setting out a competency framework"* — so the reader knows what the report produces, not just what it diagnoses.
+3. **Echoes the subtitle** — *"competency framework for research training"* nearly verbatim mirrors the subtitle ("A Competency Framework for Research Training"). Cover-design cohesion.
 4. **Frames opportunities AND problems** — disarms the "anti-AI report" misread.
 5. **Anchors the temporal stakes** — *"in the 21st century"* makes the historical inflection visible.
 
@@ -164,19 +172,19 @@ The v1.0.0 cover-page abstract, executive summary, body, and conclusion were str
 
 2. **AI in research training is not yet an adversarial public debate.** The three-claims-with-verdicts opening device works for topics with identifiable parties making identifiable circulating claims (gas tax, fiscal policy, etc.) but reads as theatre for a topic where the sector is *drifting* rather than *arguing*. The v1.0.0 three "claims" were either tautologies the report immediately reframed or soft straw men the report set up to knock down.
 
-v1.1.0 is a comprehensive framing redraft that preserves the entire empirical evidence base (thirty-eight top-tier doctoral universities in fifteen countries and jurisdictions; fourteen national research funders plus the European Research Council; eighteen publishers plus three preprint servers; thirteen capability-framework dossiers; eleven AI tool classes) while rebuilding the cover, executive summary, and body around two new structural moves:
+v1.1.0 is a comprehensive framing redraft that preserves the entire empirical evidence base (thirty-eight top-tier doctoral universities in fifteen countries and jurisdictions; fourteen national research funders plus the European Research Council; eighteen publishers plus three preprint servers; thirteen competency-framework dossiers; eleven AI tool classes) while rebuilding the cover, executive summary, and body around two new structural moves:
 
 - **The SPSS-analogy reframe of LLMs as agentic research tools** — explicit in the new "The finding" section, glossary preamble, and Conclusion. The plagiarism framing is named as a category error driven by surface mimicry.
 - **The new-frameworks position** — universities require purpose-built, adaptive frameworks that address AI as an agentic research tool, NOT extensions to plagiarism policies and NOT bolt-ons to researcher-development frameworks designed for a pre-2022 world. The Vitae 2025 refresh is the worked exemplar of a framework refresh that still missed AI.
 
 ### Specific changes
 
-- **Title and subtitle.** *"Responsible AI in Research and Research Training: A Global Capability Framework for University Research Leadership"* → *"Responsible AI in Academic Research: A Capability Framework for Research Training."* Title-broad, subtitle-specific-lever; "Global" and "University Research Leadership" carried in body rather than crowding the cover.
+- **Title and subtitle.** *"Responsible AI in Research and Research Training: A Global Competency Framework for University Research Leadership"* → *"Responsible AI in Academic Research: A Competency Framework for Research Training."* Title-broad, subtitle-specific-lever; "Global" and "University Research Leadership" carried in body rather than crowding the cover.
 - **Cover-page abstract** (drafts/report.md:13) — fully rewritten by the lead author. Drops the canonical defect sentence ("the regulatory cascade has hardened at the publishing tip and the funding head"). Opens with the audience question, lands the only-six-of-thirty-eight headline early, contrasts publishers vs. universities, lands the Vitae 2025 punctuation, closes with the lag thesis.
 - **"The finding" executive summary** (drafts/report.md:45-61) — rewritten as six paragraphs + three bullets. New paragraph 3 introduces the agentic-research-tools reframe with the SPSS analogy. The three "points the debate consistently gets wrong" bullets from v1.0.0 are preserved as the unpacking of the category-error claim. New paragraph 5 articulates the new-frameworks position. Removed: the three-claims-with-verdicts block, which was dropped entirely.
 - **Figure 1** (new) — anchor regulatory-response-timeline chart added at the report's opening, visualising the lag with three lanes (publishers / national research funders / universities) on a months-from-ChatGPT-3.5 X-axis. Six accent-red dots mark the Class D universities. Caption lands the headline finding for skimmers.
-- **§1.3** (drafts/report.md:150-161) — heading renamed from "The plagiarism-policy ceiling" to "The institutional baseline in 2026"; opener reframed around capability-scope axis; Class A/B/C labels smoothed to drop "Beyond plagiarism" lead-ins. "Plagiarism-policy ceiling" preserved as the empirical term for what institutions have built (the term still names a real institutional finding).
-- **§2.2** (drafts/report.md:185-191) — three-actor convergence comparison reframed from "three different layers" to "three actor groups" with direct-actor framing (publishers / national research funders / capability-framework literature).
+- **§1.3** (drafts/report.md:150-161) — heading renamed from "The plagiarism-policy ceiling" to "The institutional baseline in 2026"; opener reframed around competency-scope axis; Class A/B/C labels smoothed to drop "Beyond plagiarism" lead-ins. "Plagiarism-policy ceiling" preserved as the empirical term for what institutions have built (the term still names a real institutional finding).
+- **§2.2** (drafts/report.md:185-191) — three-actor convergence comparison reframed from "three different layers" to "three actor groups" with direct-actor framing (publishers / national research funders / competency-framework literature).
 - **Part 3 sub-section closes** (lines 256, 264, 268, 274, 288, 304, 318) — cascade-stratum metaphors removed; "the institutional layer" / "the funder layer" / "the publisher layer" replaced with direct-actor framing. Cover-handoff binary swapped from "AI literacy and examiner discipline" → "AI literacy and valid research practices" at characterising positions. "Examiner discipline" preserved as the specific Class D taxonomic feature (line 157) and at four other feature-level positions where it names the institutional viva-voce examination practice.
 - **Part 5 recommendations** (lines 380, 392, 410, 424) — "the institutional layer has not yet achieved convergence" → "universities have not yet achieved convergence"; "extends past plagiarism" → "anchored in research-integrity adjudication"; "the institutional layer is the layer the framework's evidence shows is least developed" → "universities are the actor the framework's evidence shows is least developed."
 - **Conclusion** (lines 428-432) — fully rewritten as two paragraphs. Lands the agentic-tools reframe + new-frameworks position + the goal of excellent research achieved through excellent research training.
@@ -188,8 +196,8 @@ v1.1.0 is a comprehensive framing redraft that preserves the entire empirical ev
 
 ### Preserved (unchanged in substance)
 
-- The empirical evidence base: thirty-eight top-tier doctoral universities in fifteen countries; fourteen national research funders plus ERC; eighteen publishers plus three preprint servers; thirteen capability-framework dossiers; eleven AI tool classes.
-- The five-dimension capability framework and four-level maturity grid.
+- The empirical evidence base: thirty-eight top-tier doctoral universities in fifteen countries; fourteen national research funders plus ERC; eighteen publishers plus three preprint servers; thirteen competency-framework dossiers; eleven AI tool classes.
+- The five-dimension competency framework and four-level maturity grid.
 - The labour-vs-judgement task taxonomy (Appendix G).
 - The audience-tier recommendation structure (Part 5: five tiers).
 - All source citations and DOI (10.61700/t31oy23grr).
@@ -209,4 +217,4 @@ The voice-tic and decorative-metaphor scanner (`scripts/check_voice_tics.py` fro
 
 ### Added
 
-- Initial public release of the Instats Policy Series publication *Responsible AI in Research and Research Training: A Global Capability Framework for University Research Leadership.* Five-dimension capability framework with four-level maturity grid; thirty-eight-university institutional dossier; fourteen-funder national-research-funder dossier; eighteen-publisher publisher dossier; thirteen-framework capability-framework dossier. DOI 10.61700/t31oy23grr.
+- Initial public release of the Instats Policy Series publication *Responsible AI in Research and Research Training: A Global Competency Framework for University Research Leadership.* Five-dimension competency framework with four-level maturity grid; thirty-eight-university institutional dossier; fourteen-funder national-research-funder dossier; eighteen-publisher publisher dossier; thirteen-framework competency-framework dossier. DOI 10.61700/t31oy23grr.

@@ -5,9 +5,9 @@
 </a>
 
 # Responsible AI in Academic Research
-## *A Capability Framework for Research Training*
+## *A Competency Framework for Research Training*
 
-**What does responsible AI use look like for academic research, and how would a university know whether it is doing it well? Of thirty-eight top-tier doctoral universities surveyed across fifteen countries and jurisdictions, only six have AI policies that extend past research integrity into AI literacy and valid research practices. The world's major academic publishers issued a substantively identical no-AI-co-author policy across the sector within ten weeks of ChatGPT-3.5's public release. The United Kingdom's canonical PhD-researcher-development framework, refreshed in 2025, did not treat AI as a competency at all. While publishers and funders have responded to the emergence of AI, the universities that actually train researchers are lagging far behind what is needed to prepare them to use it responsibly. This report describes the significant opportunities and problems that agentic generative AI creates for research, setting out a capability framework for research training in the 21st century.**
+**What does responsible AI use look like for academic research, and how would a university know whether it is doing it well? Of thirty-eight top-tier doctoral universities surveyed across fifteen countries and jurisdictions, only six have AI policies that extend past research integrity into AI literacy and valid research practices. The world's major academic publishers issued a substantively identical no-AI-co-author policy across the sector within ten weeks of ChatGPT-3.5's public release. The United Kingdom's canonical PhD-researcher-development framework, refreshed in 2025, did not treat AI as a competency at all. While publishers and funders have responded to the emergence of AI, the universities that actually train researchers are lagging far behind what is needed to prepare them to use it responsibly. This report describes the significant opportunities and problems that agentic generative AI creates for research, setting out a competency framework for research training in the 21st century.**
 
 <p>
   <a href="https://mzyphur.github.io/responsible-ai-in-research-training/">
@@ -35,7 +35,7 @@
 
 This report is written for senior university research leadership: Deputy Vice-Chancellors and Deputy Provosts of Research, Pro-Vice-Chancellors and Deputy Vice Presidents of Research, faculty Deans and Associate Deans of Research, Deans of Graduate Schools and Associate Deans of Research Training, higher-degrees and research-integrity committees, and the peak bodies that represent graduate students. Its purpose is to give that audience a shared, evidence-anchored vocabulary for benchmarking institutional readiness on responsible AI use in research and research training, and a maturity grid that translates the vocabulary into concrete decisions on policy, curriculum, infrastructure, and governance.
 
-The report is the global anchor of a planned regional series. The same five-dimension capability framework and the same four-level maturity grid will be re-populated in later companion reports for the US / Americas, the UK / Europe, and APAC ex Japan.
+The report is the global anchor of a planned regional series. The same five-dimension competency framework and the same four-level maturity grid will be re-populated in later companion reports for the US / Americas, the UK / Europe, and APAC ex Japan.
 
 ## Public audit package
 
@@ -47,7 +47,7 @@ This public repository contains the material needed to inspect the report's fact
 - the web edition in [`docs/`](docs/);
 - the publication-formatted artefacts (DOCX, HTML, PDF) attached to the [latest GitHub Release](https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest).
 
-The report draws on eight primary-source evidence dossiers covering national research-funder AI policies (14 funders across 11 countries plus the EU's European Research Council), institutional AI policies at top-tier doctoral universities (38 universities across 15 countries and jurisdictions), existing AI-literacy and researcher-development capability frameworks (13 frameworks), publisher and journal AI policies (18 publishers plus 3 preprint servers), AI tool taxonomy (11 classes), privacy / IP / governance frameworks (14), the reproducibility-crisis intersection with AI augmentation, and adversarial-review patterns. The dossiers are working notes retained privately by Instats per the public/private boundary protocol; every load-bearing claim in this report carries a primary-source URL with a 2026-05-18 snapshot date in the body footnotes.
+The report draws on eight primary-source evidence dossiers covering national research-funder AI policies (14 funders across 11 countries plus the EU's European Research Council), institutional AI policies at top-tier doctoral universities (38 universities across 15 countries and jurisdictions), existing AI-literacy and researcher-development competency frameworks (13 frameworks), publisher and journal AI policies (18 publishers plus 3 preprint servers), AI tool taxonomy (11 classes), privacy / IP / governance frameworks (14), the reproducibility-crisis intersection with AI augmentation, and adversarial-review patterns. The dossiers are working notes retained privately by Instats per the public/private boundary protocol; every load-bearing claim in this report carries a primary-source URL with a 2026-05-18 snapshot date in the body footnotes.
 
 Instats publishes the report source, numerical manifest, public claim register, public value/caveat change log, and release files needed to inspect the report. Additional working files are retained privately by Instats. The author retains responsibility for every numerical claim, interpretation, and recommendation. Questions about public evidence can be sent to [support@instats.org](mailto:support@instats.org).
 
@@ -66,7 +66,7 @@ Instats publishes the report source, numerical manifest, public claim register, 
 
 > **Downloading.** Use the direct-download links above (which serve the actual file with the correct `Content-Type`) or the release-page assets. If you click into the `docs/` folder via GitHub's file tree and "Save Link As" on the file there, GitHub serves the *browser preview page* — not the file — and the saved file will not open in Word. Use the direct-download links above instead.
 
-**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Capability Framework for Research Training.* Instats Policy Series. <https://github.com/mzyphur/responsible-ai-in-research-training>. ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
+**Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Competency Framework for Research Training.* Instats Policy Series. <https://github.com/mzyphur/responsible-ai-in-research-training>. ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
 
 **Available as** **HTML** ([Pages mirror](https://mzyphur.github.io/responsible-ai-in-research-training/)), **PDF** ([direct download](https://mzyphur.github.io/responsible-ai-in-research-training/Instats%20-%20Responsible%20AI%20in%20Academic%20Research.pdf)), **Word** ([direct download](https://mzyphur.github.io/responsible-ai-in-research-training/Instats%20-%20Responsible%20AI%20in%20Academic%20Research.docx)), and **source repository** ([GitHub](https://github.com/mzyphur/responsible-ai-in-research-training)).
 
@@ -75,7 +75,7 @@ BibTeX:
 ```bibtex
 @techreport{zyphur2026responsibleai,
   author      = {Zyphur, Michael J.},
-  title       = {Responsible AI in Academic Research: A Capability Framework for Research Training},
+  title       = {Responsible AI in Academic Research: A Competency Framework for Research Training},
   institution = {Instats},
   type        = {Instats Policy Series},
   year        = {2026},
@@ -89,7 +89,7 @@ Machine-readable citation: [`CITATION.cff`](CITATION.cff).
 
 ---
 
-## The five-dimension capability framework
+## The five-dimension competency framework
 
 The framework's spine, set out in Part 2 of the report and operationalised as a four-level maturity grid in Part 4 and Appendix A:
 
@@ -97,7 +97,7 @@ The framework's spine, set out in Part 2 of the report and operationalised as a 
 2. **Responsible use in practice** — operational rules for the four AI-use modes (search; co-author; validator; tutor) at PhD level.
 3. **Tooling that promotes responsible use** — institutional procurement standard incorporating six observable properties (verifiable citation, data residency, uncertainty reporting, reproducibility, auditability, open-source-and-local options).
 4. **AI-literate humans** — six load-bearing competencies for PhD researchers, supervisors, and examiners (citation verification; model-and-parameter specification; prompt-as-fork-in-the-garden discipline; model-heterogeneity in adversarial review; sycophancy detection and human-as-verifier discipline; structured failure-mode reporting).
-5. **Institutional benchmarking grid** — the institutional capability to know where it sits on Dimensions 1-4 and act on what the answer reveals, scored across four axes: policy / people / systems / process.
+5. **Institutional benchmarking grid** — the institutional competency to know where it sits on Dimensions 1-4 and act on what the answer reveals, scored across four axes: policy / people / systems / process.
 
 Appendix G of the report carries a worked labour-vs-judgement task taxonomy that institutions can adopt and adapt.
 

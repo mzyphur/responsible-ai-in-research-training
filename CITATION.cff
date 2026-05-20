@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "Responsible AI in Academic Research: A Capability Framework for Research Training"
+title: "Responsible AI in Academic Research: A Competency Framework for Research Training"
 message: "If you use this work, please cite it using the metadata below."
 type: report
 authors:
@@ -11,7 +11,7 @@ authors:
 repository-code: "https://github.com/mzyphur/responsible-ai-in-research-training"
 url: "https://instats.org/publications/responsible-ai-in-research-training/"
 abstract: >-
-  A global capability framework for senior university research
+  A global competency framework for senior university research
   leadership on responsible AI use in research and research training.
   Synthesises national research-funder policies (UKRI, NSF, ARC, DFG,
   ERC, NORDIS, A*STAR), institutional AI policies at top doctoral
@@ -35,7 +35,7 @@ keywords:
   - PhD research
   - AI ethics
   - AI literacy
-  - capability framework
+  - competency framework
   - responsible AI
   - research integrity
   - international comparison
@@ -43,8 +43,8 @@ keywords:
   - reproducible research
   - INSTATS-PS-2026-04
 license: CC-BY-NC-4.0
-date-released: "2026-05-19"
-version: "1.2.4"
+date-released: "2026-05-20"
+version: "1.2.5"
 # DOI: leave commented out at seed time. The first run of
 # `python3 scripts/mint_doi.py --publication-root .` — which
 # `make publish-release` calls by default (v0.22.14+; pass MINT_DOI=0
