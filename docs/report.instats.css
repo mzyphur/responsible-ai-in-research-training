@@ -300,11 +300,11 @@
   line-height: 1.5;
   color: var(--ink);
   margin-bottom: 28px;
-  max-width: 60ch;
+  max-width: 100%;
 }
 
 
-.instats-report .exec p { max-width: 60ch; }
+.instats-report .exec p { max-width: 100%; }
 
 
 .instats-report .exec ol {
@@ -535,12 +535,12 @@
 
 
 .instats-report p {
-  max-width: var(--measure);
+  max-width: 100%;
   margin: 0 0 14px 0;
 }
 
 .instats-report ul, .instats-report ol {
-  max-width: var(--measure);
+  max-width: 100%;
   margin: 0 0 18px 0;
   padding-left: 1.4em;
 }
@@ -558,7 +558,7 @@
   background: transparent;
   margin: 22px 0;
   padding: 14px 22px;
-  max-width: var(--measure);
+  max-width: 100%;
 }
 
 .instats-report blockquote cite {
@@ -671,7 +671,7 @@
   font-size: 0.86rem;
   color: var(--ink-soft);
   margin-top: 10px;
-  max-width: var(--measure);
+  max-width: 100%;
   display: block;
 }
 
