@@ -1103,6 +1103,12 @@
   .instats-report .hero-finding { font-size: 15px; }
 }
 
+@media (max-width: 720px) {
+  .instats-report .wrap { padding-left: 20px; padding-right: 20px; }
+  .instats-report .colophon { margin-left: -20px; margin-right: -20px; }
+  .instats-report .exec { padding-left: 16px; padding-right: 16px; }
+}
+
 
 @media print {
   

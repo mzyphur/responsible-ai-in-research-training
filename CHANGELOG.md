@@ -4,6 +4,12 @@ All notable changes to *Responsible AI in Academic Research: A Competency Framew
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.2.7] — Mobile body-width fix (2026-05-21)
+
+Mobile @media rules: .wrap padding 36px → 20px; .exec padding 24px → 16px;
+.colophon margins -36px → -20px. Body text on phone viewports now matches
+the hero width.
+
 ## [1.2.6] — COI clarification + PhD phrasing tidy (2026-05-21)
 
 Two small edits: (1) COI disclosure now explicitly notes the author's UQ
