@@ -4,6 +4,14 @@ All notable changes to *Responsible AI in Academic Research: A Competency Framew
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.2.9] — DOCX TOC anchor fix-up (2026-05-21)
+
+Rebuilds the generated publication artifacts with the general-repo v0.22.42
+DOCX TOC-anchor fix, then applies the same anchor rewrite after the
+LibreOffice Word round-trip. This resolves the issue where Word TOC entries
+clicked to the top of the document instead of their target sections. No
+content findings change.
+
 ## [1.2.8] — Hero byline: primary role only (2026-05-21)
 
 Removes long-form UQ affiliation from the hero. Appendix D About-the-author
