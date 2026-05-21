@@ -4,6 +4,12 @@ All notable changes to *Responsible AI in Academic Research: A Competency Framew
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.2.6] — COI clarification + PhD phrasing tidy (2026-05-21)
+
+Two small edits: (1) COI disclosure now explicitly notes the author's UQ
+employment given UQ's inclusion in the sample; (2) "at PhD level" → "at
+the PhD level" for natural phrasing. No content findings change.
+
 ## [1.2.5] — 2026-05-20
 
 ### Changed — terminology: capability framework renamed to competency framework
