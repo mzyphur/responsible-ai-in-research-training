@@ -4,6 +4,12 @@ All notable changes to *Responsible AI in Academic Research: A Competency Framew
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.2.8] — Hero byline: primary role only (2026-05-21)
+
+Removes long-form UQ affiliation from the hero. Appendix D About-the-author
+and the COI disclosure retain the full UQ affiliation. No content findings
+change.
+
 ## [1.2.7] — Mobile body-width fix (2026-05-21)
 
 Mobile @media rules: .wrap padding 36px → 20px; .exec padding 24px → 16px;
