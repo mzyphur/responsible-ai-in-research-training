@@ -4,6 +4,8 @@ All notable changes to *Responsible AI in Academic Research: A Competency Framew
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
+This CHANGELOG tracks the **publication's content history** — the versioned changes to *Responsible AI in Academic Research* itself (currently v1.2.9). It is not the changelog for the build tooling. The build/review pipeline that produces this publication was seeded from the general-repo template engine and can be re-synced from general-repo (currently v0.22.43) when pipeline updates are needed; those tooling changes are recorded in general-repo's own CHANGELOG, not here.
+
 ## [1.2.9] — DOCX TOC anchor fix-up (2026-05-21)
 
 Rebuilds the generated publication artifacts with the general-repo v0.22.42
