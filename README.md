@@ -22,7 +22,7 @@
 </p>
 
 <p>
-  <img alt="License" src="https://img.shields.io/badge/license-CC%20BY--NC%204.0-3092B1">
+  <img alt="License" src="https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-3092B1">
   <img alt="Evidence" src="https://img.shields.io/badge/evidence-public%20audit%20package-00547B">
   <img alt="Formats" src="https://img.shields.io/badge/formats-DOCX%20%C2%B7%20HTML%20%C2%B7%20PDF-3092B1">
 </p>
@@ -123,7 +123,7 @@ responsible-ai-in-research-training/
 ├── assets/
 │   └── instats_logo.png
 ├── CITATION.cff           ← machine-readable citation (CFF 1.2)
-├── LICENSE                ← CC BY-NC 4.0
+├── LICENSE                ← CC BY-NC-ND 4.0
 ├── README.md              ← this file
 ├── SECURITY.md
 └── VERSION                ← single source of truth (1.1.0)
@@ -166,7 +166,7 @@ Instats &nbsp;|&nbsp; [instats.org](https://instats.org)
 
 ### License
 
-**Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)** — see [LICENSE](LICENSE). Share and adapt with attribution; commercial reuse requires written permission.
+**Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** — see [LICENSE](LICENSE). © 2026 Instats. Share in full, with attribution, for non-commercial purposes; no adapted or modified redistribution; commercial reuse by written permission from Instats.
 
 ---
 

@@ -6,6 +6,29 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
 This CHANGELOG tracks the **publication's content history** — the versioned changes to *Responsible AI in Academic Research* itself (currently v1.2.9). It is not the changelog for the build tooling. The build/review pipeline that produces this publication was seeded from the general-repo template engine and can be re-synced from general-repo (currently v0.22.44 — CLI agent-call liveness hardening + the Visual render review gate; see `docs/cli_agent_calls.md`) when pipeline updates are needed; those tooling changes are recorded in general-repo's own CHANGELOG, not here.
 
+## [Unreleased] — Lead-author revision: track-changes, footnote + font fixes, CC BY-NC-ND
+
+Applies the lead author's tracked changes and margin comments from the Word
+review copy, fixes the underlying build defects they surfaced, and switches the
+licence to CC BY-NC-ND. (Version/DOI set at the next `make publish-release`.)
+
+- **Text edits** applied verbatim from the tracked-changes review copy across
+  the executive summary and Parts 1–2 (~30 wording changes).
+- **Editorial fixes** from review comments: Figure 1 no longer uses the
+  not-yet-defined "Class D" term (caption and chart relabelled to
+  "AI-literacy policies"); the §1.2 heading reworded to "'Responsible AI use'
+  still lacks an operational definition"; the "structural signal" sentence
+  clarified; the Figure 1 source note moved to a footnote.
+- **Footnote rendering fixed** (via general-repo v0.22.45): repeated-source
+  footnotes now render in the correct footnote font, numbered, reading "As
+  cited above: …" instead of an unnumbered, wrong-font, mid-word-truncated
+  "Repeated source: …". Five footnotes cleaned of internal dossier-process
+  wording.
+- **Body font fixed** (via general-repo v0.22.45): §1.2 / §1.3 and the
+  Dimension sections now render at a uniform 12pt in the DOCX (were 11pt).
+- **Licence → CC BY-NC-ND 4.0**, copyright Instats (was CC BY-NC 4.0): no
+  adapted or modified redistribution.
+
 ## [1.2.9] — DOCX TOC anchor fix-up (2026-05-21)
 
 Rebuilds the generated publication artifacts with the general-repo v0.22.42

@@ -130,7 +130,7 @@ def main() -> None:
     ax.text(
         1.0,
         0.09,
-        "6 Class D policies by May 2026",
+        "6 AI-literacy policies by May 2026",
         ha="left",
         va="center",
         color=COLORS["ink"],
@@ -141,7 +141,7 @@ def main() -> None:
     ax.text(
         1.0,
         -0.15,
-        "32 of 38 universities still not at Class D",
+        "32 of 38 universities not yet at this level",
         ha="left",
         va="center",
         color=COLORS["neutral_dark"],
@@ -173,7 +173,7 @@ def main() -> None:
     fig.text(
         0.815,
         0.82,
-        "Class D university markers",
+        "AI-literacy policy markers",
         ha="left",
         va="top",
         color=COLORS["ink"],
