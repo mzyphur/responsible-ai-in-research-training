@@ -68,7 +68,7 @@ Instats publishes the report source, numerical manifest, public claim register, 
 
 **Citation.** Zyphur, M. J. (2026). *Responsible AI in Academic Research: A Competency Framework for Research Training.* Instats Policy Series. <https://github.com/mzyphur/responsible-ai-in-research-training>. ORCID: [0000-0003-3237-7892](https://orcid.org/0000-0003-3237-7892). DOI: 10.61700/t31oy23grr.
 
-**Available as** **HTML** ([Pages mirror](https://mzyphur.github.io/responsible-ai-in-research-training/)), **PDF** ([direct download](https://mzyphur.github.io/responsible-ai-in-research-training/Instats%20-%20Responsible%20AI%20in%20Academic%20Research.pdf)), **Word** ([direct download](https://mzyphur.github.io/responsible-ai-in-research-training/Instats%20-%20Responsible%20AI%20in%20Academic%20Research.docx)), and **source repository** ([GitHub](https://github.com/mzyphur/responsible-ai-in-research-training)).
+**Available as** **HTML** ([read online](https://mzyphur.github.io/responsible-ai-in-research-training/)), **PDF** ([direct download](https://mzyphur.github.io/responsible-ai-in-research-training/Instats%20-%20Responsible%20AI%20in%20Academic%20Research.pdf)), **Word** ([direct download](https://mzyphur.github.io/responsible-ai-in-research-training/Instats%20-%20Responsible%20AI%20in%20Academic%20Research.docx)), and **source repository** ([GitHub](https://github.com/mzyphur/responsible-ai-in-research-training)).
 
 BibTeX:
 
