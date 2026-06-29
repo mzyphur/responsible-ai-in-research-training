@@ -26,6 +26,11 @@ licence to CC BY-NC-ND. (Version/DOI set at the next `make publish-release`.)
   wording.
 - **Body font fixed** (via general-repo v0.22.45): §1.2 / §1.3 and the
   Dimension sections now render at a uniform 12pt in the DOCX (were 11pt).
+- **PDF superscript line-gaps fixed + type sizes** (via general-repo v0.22.46):
+  citation superscripts no longer expand the line box (even line spacing in the
+  PDF); PDF heading sizes aligned with the DOCX (major headings 14pt,
+  sub-headings homogeneous with the 12pt body); the colophon block is now 10pt
+  fine print in both the PDF and the DOCX.
 - **Licence → CC BY-NC-ND 4.0**, copyright Instats (was CC BY-NC 4.0): no
   adapted or modified redistribution.
 
