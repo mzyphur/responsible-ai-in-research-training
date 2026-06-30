@@ -172,6 +172,18 @@ Approximately one in six of the world's top-tier doctoral universities has an AI
 
 The framework's five dimensions translate the principles in the existing literature (PNAS Blau et al. 2024; Council of Graduate Schools and Institut national de la recherche scientifique Global Action Agenda 2025; UNESCO AI Competency Frameworks 2024; Russell Group Principles 2023) into observable institutional behaviours that an external observer can score and an institution can self-diagnose against. The dimensions sit in a deliberate sequence: each is a precondition for the one that follows. An institution that has not made the human-in-the-loop call (Dimension 1) cannot define responsible use in practice (Dimension 2); without an operational definition of responsible use, the test for whether a tool promotes it (Dimension 3) is empty; without responsible-by-construction tooling and operational standards, the AI-literate-humans curriculum (Dimension 4) lacks a subject; without all four, the institutional benchmarking grid (Dimension 5) lacks a substantive foundation.
 
+**The maturity grid at a glance.** Each dimension is scored from *absent* through *nascent* and *established* to *leading*. The levels build on one another, so the *leading* column shows only what it adds to *established* (marked "+"). Appendix A expands every cell into its full observable criteria.
+
+\newpage
+
+| Dimension | Absent | Nascent | Established | Leading (adds) |
+|---|---|---|---|---|
+| **1. Human-in-the-loop discipline** | No published position; the labour-vs-judgement line is left to individual supervisors. | Stated in principle (one AI-policy document); no task-level demarcation. | Demarcation published, taught in methods, and enforced in supervision and examination. | + published scoring, outcome evidence, and peer benchmarking. |
+| **2. Responsible use in practice** | Confined to student-conduct rules; no task-level rules for AI use. | A disclosure template exists, but no rules for the four AI-use modes. | Task-level rules for all four modes — taught, disclosed, and verified. | + annual compliance evidence and sector-level benchmarking. |
+| **3. Tooling that promotes responsible use** | No procurement gate; tool choice is private to each lab. | A gate exists but is vendor-led; the resolvability test is inconsistent. | Procurement standard (the six properties); outputs sampled; an EU AI Act rights-impact assessment. | + cadence audits, independent vendor-claim checks, and an improvement cycle. |
+| **4. AI-literate humans** | Treated as a "which buttons to press" skill; no curriculum or training. | Some provision (a MOOC, a library guide), unintegrated and voluntary. | The six AI-era competencies are named curriculum outcomes; supervisors and examiners trained. | + competency-outcome evidence and a curriculum-improvement cycle. |
+| **5. Institutional benchmarking grid** | No benchmarking cycle; the four axes and regulatory deadlines are unnamed. | A cycle in principle; only the policy axis has a named owner. | Self-scores at a stated cadence; owners per axis; a regulatory-deadline plan; committee-reviewable. | + published scoring, external/peer audit, and contribution to sector standards. |
+
 ### 2.1 Dimension 1 — Human-in-the-loop discipline
 
 The first dimension is the institutional commitment that the judgement steps that define research remain human. The labour steps can be augmented or accelerated by AI; the judgement steps cannot be outsourced to it without ceasing to be research.
@@ -184,7 +196,7 @@ The Dimension 1 institutional move is to publish this demarcation and enforce it
 
 Where Dimension 1 is absent, the result is the "AI did the analysis for me" failure mode and its institutional cousin, the "we used AI to validate our findings" justification offered without the disciplines Dimension 2 and Dimension 4 require. Where Dimension 1 is leading, the institution can answer the question "which research judgements stay human, why those, and how do we know" in a single paragraph that a Tier 1 audience member can read aloud to their council/colleagues for planning implementation (or, more likely, deliberation and debate).
 
-### 2.2 Dimension 2 — Responsible use in practice
+### 2.2 Dimension 2 — Responsible use in practice (four AI-use modes)
 
 The second dimension is the operationalisation of "responsible AI use" from principle to research-task workflow. The phrase is in every funder, publisher, institutional, and competency-framework policy in the sample.[^funder_dossier] [^publisher_dossier] [^university_dossier] [^framework_dossier] Its operational meaning has converged across three actor groups, and these groups are not aligned with each other.
 

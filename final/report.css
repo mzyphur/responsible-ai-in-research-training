@@ -313,7 +313,7 @@ h1, h2, h3, h4 {
 .colophon {
   background: var(--rule-soft);
   padding: 32px 36px;
-  margin: 48px -36px 48px -36px;
+  margin: 20px -36px 48px -36px;
   border-left: 3px solid var(--instats-secondary);
   font-family: var(--sans);
   font-size: 0.81rem;           /* ~10pt — colophon set smaller than the 12pt body */
