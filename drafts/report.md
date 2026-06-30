@@ -83,7 +83,7 @@ The evidence supports a five-dimension competency framework, a maturity grid for
 #### [Part 2 — A five-dimension competency framework](#part-2-a-five-dimension-competency-framework_1)
 
 - [2.1 &nbsp; Dimension 1 &mdash; Human-in-the-loop discipline](#21-dimension-1-human-in-the-loop-discipline)
-- [2.2 &nbsp; Dimension 2 &mdash; Responsible use in practice](#22-dimension-2-responsible-use-in-practice)
+- [2.2 &nbsp; Dimension 2 &mdash; Responsible use across the four AI-use modes](#22-dimension-2-responsible-use-across-the-four-ai-use-modes)
 - [2.3 &nbsp; Dimension 3 &mdash; Tooling that promotes responsible use](#23-dimension-3-tooling-that-promotes-responsible-use)
 - [2.4 &nbsp; Dimension 4 &mdash; AI-literate humans](#24-dimension-4-ai-literate-humans)
 - [2.5 &nbsp; Dimension 5 &mdash; Institutional benchmarking grid](#25-dimension-5-institutional-benchmarking-grid)
@@ -196,7 +196,7 @@ The Dimension 1 institutional move is to publish this demarcation and enforce it
 
 Where Dimension 1 is absent, the result is the "AI did the analysis for me" failure mode and its institutional cousin, the "we used AI to validate our findings" justification offered without the disciplines Dimension 2 and Dimension 4 require. Where Dimension 1 is leading, the institution can answer the question "which research judgements stay human, why those, and how do we know" in a single paragraph that a Tier 1 audience member can read aloud to their council/colleagues for planning implementation (or, more likely, deliberation and debate).
 
-### 2.2 Dimension 2 — Responsible use in practice (four AI-use modes)
+### 2.2 Dimension 2 — Responsible use across the four AI-use modes
 
 The second dimension is the operationalisation of "responsible AI use" from principle to research-task workflow. The phrase is in every funder, publisher, institutional, and competency-framework policy in the sample.[^funder_dossier] [^publisher_dossier] [^university_dossier] [^framework_dossier] Its operational meaning has converged across three actor groups, and these groups are not aligned with each other.
 
