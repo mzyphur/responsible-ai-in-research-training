@@ -45,14 +45,4 @@ keywords:
 license: CC-BY-NC-ND-4.0
 date-released: "2026-05-20"
 version: "1.2.5"
-# DOI: leave commented out at seed time. The first run of
-# `python3 scripts/mint_doi.py --publication-root .` — which
-# `make publish-release` calls by default (v0.22.14+; pass MINT_DOI=0
-# to skip) — generates an opaque 10-char random suffix per CrossRef's
-# opacity rule, writes `doi: "10.61700/<suffix>"` here, and
-# propagates the same string to drafts/report.md colophon + README.md
-# citation paragraph + README.md BibTeX entry. Idempotent on re-run.
-# Full scheme + CrossRef rules: methodology/publication_workflow.md
-# § Step 5 — DOI mint.
-# doi: "10.61700/<10-char-opaque-suffix>"   # auto-populated on first publish-release
 doi: "10.61700/t31oy23grr"

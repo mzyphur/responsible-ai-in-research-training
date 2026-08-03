@@ -42,14 +42,13 @@ The report is the global anchor of a planned regional series. The same five-dime
 This public repository contains the material needed to inspect the report's factual surface:
 
 - the report source manuscript at [`drafts/report.md`](drafts/report.md);
-- the canonical numerical manifest at [`data/values.yml`](data/values.yml);
-- the public claim and source register at [`sources/claim_register.yml`](sources/claim_register.yml);
+- the chart source and rendered chart assets in [`charts/`](charts/);
 - the web edition in [`docs/`](docs/);
 - the publication-formatted artefacts (DOCX, HTML, PDF) attached to the [latest GitHub Release](https://github.com/mzyphur/responsible-ai-in-research-training/releases/latest).
 
-The report draws on eight primary-source evidence dossiers covering national research-funder AI policies (14 funders across 11 countries plus the EU's European Research Council), institutional AI policies at top-tier doctoral universities (38 universities across 15 countries and jurisdictions), existing AI-literacy and researcher-development competency frameworks (13 frameworks), publisher and journal AI policies (18 publishers plus 3 preprint servers), AI tool taxonomy (11 classes), privacy / IP / governance frameworks (14), the reproducibility-crisis intersection with AI augmentation, and adversarial-review patterns. The dossiers are working notes retained privately by Instats per the public/private boundary protocol; every load-bearing claim in this report carries a primary-source URL with a 2026-05-18 snapshot date in the body footnotes.
+The report draws on eight primary-source evidence dossiers covering national research-funder AI policies (14 funders across 11 countries plus the EU's European Research Council), institutional AI policies at top-tier doctoral universities (38 universities across 15 countries and jurisdictions), existing AI-literacy and researcher-development competency frameworks (13 frameworks), publisher and journal AI policies (18 publishers plus 3 preprint servers), AI tool taxonomy (11 classes), privacy / IP / governance frameworks (14), the reproducibility-crisis intersection with AI augmentation, and adversarial-review patterns. The dossiers are working notes retained privately by Instats; every load-bearing claim in this report carries a primary-source URL with a 2026-05-18 snapshot date in the body footnotes.
 
-Instats publishes the report source, numerical manifest, public claim register, public value/caveat change log, and release files needed to inspect the report. Additional working files are retained privately by Instats. The author retains responsibility for every numerical claim, interpretation, and recommendation. Questions about public evidence can be sent to [support@instats.org](mailto:support@instats.org).
+Instats publishes the report source, the chart material, and the release files needed to inspect the report. Working files are retained privately by Instats. The author retains responsibility for every numerical claim, interpretation, and recommendation. Questions about public evidence can be sent to [support@instats.org](mailto:support@instats.org).
 
 ---
 
@@ -112,14 +111,11 @@ responsible-ai-in-research-training/
 │   └── report.md          ← markdown source manuscript
 ├── final/
 │   ├── report.docx        ← Microsoft Word build (Word-for-Mac compatible)
-│   └── reference.docx     ← pandoc reference template
-├── data/
-│   ├── values.yml         ← numerical manifest (placeholder schema; this report
-│   │                        uses no headline_check entries)
-│   └── change_log.yml     ← public value/caveat change log
-├── sources/
-│   ├── claim_register.yml ← public claim/source register
-│   └── fx_rates.md        ← FX reference table (not used by this publication)
+│   └── reference.docx     ← Word styling template
+├── charts/
+│   ├── 01_regulatory_response_timeline.py   ← Figure 1 source
+│   ├── png/ · svg/        ← rendered chart assets
+│   └── style.py           ← chart stylesheet
 ├── assets/
 │   └── instats_logo.png
 ├── CITATION.cff           ← machine-readable citation (CFF 1.2)
@@ -129,21 +125,15 @@ responsible-ai-in-research-training/
 └── VERSION                ← single source of truth (1.1.0)
 ```
 
-Working notes (evidence dossiers; Stage A/B/C/D/E review files; private launch and dissemination packs) are retained privately by Instats per the public/private boundary protocol and are not part of this public repository.
+Working notes (evidence dossiers, review files, and launch material) are retained privately by Instats and are not part of this public repository.
 
 ---
 
 ## How this report was made
 
-This report was produced through a five-stage adversarial review pipeline, all stages complete before v1.0.0:
+Before release, the manuscript went through several rounds of independent review: adversarial fact-checking against the primary sources, a reader-persona panel spanning the five audience tiers, multi-pass copy-editing, and a final read for voice and clarity. Findings from those rounds were resolved across the v0.5.x and v0.6.0 revisions and closed out at v1.0.0.
 
-- **Stage A** — adversarial fact-checking pair (Claude Opus 4.7 + OpenAI GPT-5.5 codex, running independently against the same draft). 9 P0 release-blocking findings and 20 P1 material findings were caught and resolved in v0.5.1 and v0.5.2.
-- **Stage B** — persona panel: 12 hypothetical reader personas across the five audience tiers, run as a single Opus 4.7 sub-agent. 9 of 12 personas would circulate the report at their institution unconditionally; zero negative verdicts. The Bucket C labour-vs-judgement task taxonomy (Appendix G) was added in response to convergent feedback from six personas across four tiers.
-- **Stage C** — three Gemini-3-Flash-Preview copy-editor passes (sentence, paragraph, section levels) running in parallel.
-- **Stage D** — codex GPT-5.5 synthesis of the 80 Stage C suggestions: 23 ACCEPT, 13 PARTIAL, 33 REJECT, 11 STALE; the accepted edits landed at v0.6.0.
-- **Stage E** — voice-and-naturalness review pair (Gemini-3-Flash-Preview + codex GPT-5.5; Claude excluded by protocol because of the same-family-pair bias risk). 43 voice-sweep edits applied; prose em-dash density reduced from 79 to 52 across the 20,500-word manuscript.
-
-The author used author-directed computational and research-assistance workflows while preparing this report. The author retains responsibility for every numerical claim, interpretation, and recommendation; every load-bearing claim was verified against the primary sources by the lead author before publication.
+The author used author-directed computational and research-assistance workflows while preparing this report; Appendix D of the report carries the full AI-assistance disclosure. The author retains responsibility for every numerical claim, interpretation, and recommendation, and every load-bearing claim was verified against the primary sources by the lead author before publication.
 
 ---
 

@@ -4,7 +4,7 @@ All notable changes to *Responsible AI in Academic Research: A Competency Framew
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
-This CHANGELOG tracks the **publication's content history** — the versioned changes to *Responsible AI in Academic Research* itself (currently v1.2.9). It is not the changelog for the build tooling. The build/review pipeline that produces this publication was seeded from the general-repo template engine and can be re-synced from general-repo (currently v0.22.44 — CLI agent-call liveness hardening + the Visual render review gate; see `docs/cli_agent_calls.md`) when pipeline updates are needed; those tooling changes are recorded in general-repo's own CHANGELOG, not here.
+This CHANGELOG tracks the **publication's content history** — the versioned changes to *Responsible AI in Academic Research* itself. It is not a changelog for the build tooling.
 
 ## [Unreleased] — Lead-author revision: track-changes, footnote + font fixes, CC BY-NC-ND
 
@@ -19,14 +19,14 @@ licence to CC BY-NC-ND. (Version/DOI set at the next `make publish-release`.)
   "AI-literacy policies"); the §1.2 heading reworded to "'Responsible AI use'
   still lacks an operational definition"; the "structural signal" sentence
   clarified; the Figure 1 source note moved to a footnote.
-- **Footnote rendering fixed** (via general-repo v0.22.45): repeated-source
+- **Footnote rendering fixed**: repeated-source
   footnotes now render in the correct footnote font, numbered, reading "As
   cited above: …" instead of an unnumbered, wrong-font, mid-word-truncated
   "Repeated source: …". Five footnotes cleaned of internal dossier-process
   wording.
-- **Body font fixed** (via general-repo v0.22.45): §1.2 / §1.3 and the
+- **Body font fixed**: §1.2 / §1.3 and the
   Dimension sections now render at a uniform 12pt in the DOCX (were 11pt).
-- **PDF superscript line-gaps fixed + type sizes** (via general-repo v0.22.46):
+- **PDF superscript line-gaps fixed + type sizes**:
   citation superscripts no longer expand the line box (even line spacing in the
   PDF); PDF heading sizes aligned with the DOCX (major headings 14pt,
   sub-headings homogeneous with the 12pt body); the colophon block is now 10pt
@@ -36,9 +36,8 @@ licence to CC BY-NC-ND. (Version/DOI set at the next `make publish-release`.)
 
 ## [1.2.9] — DOCX TOC anchor fix-up (2026-05-21)
 
-Rebuilds the generated publication artifacts with the general-repo v0.22.42
-DOCX TOC-anchor fix, then applies the same anchor rewrite after the
-LibreOffice Word round-trip. This resolves the issue where Word TOC entries
+Rebuilds the generated publication artifacts with a DOCX TOC-anchor fix,
+then applies the same anchor rewrite after the LibreOffice Word round-trip. This resolves the issue where Word TOC entries
 clicked to the top of the document instead of their target sections. No
 content findings change.
 
@@ -70,15 +69,15 @@ Generated publication artifacts were rebuilt from the updated source so HTML, PD
 
 ## [1.2.4] — 2026-05-19
 
-### Changed — canonical AI-assistance disclosure paragraph (general-repo v0.22.21)
+### Changed — canonical AI-assistance disclosure paragraph
 
-The AI-assistance disclosure paragraph in Appendix D now uses the canonical Instats Policy Series wording introduced in general-repo v0.22.21 (`methodology/public_private_boundary_protocol.md` § Single allowed AI-assistance disclosure sentence): names the three tool families used across the publication round (Anthropic Claude Code Opus 4.7, OpenAI Codex GPT-5.5, Google Gemini 3 Flash Preview), asserts author responsibility, contains no other production-discipline detail.
+The AI-assistance disclosure paragraph in Appendix D now uses the canonical Instats Policy Series wording: it names the AI tool families used in preparing the report and asserts author responsibility, with no other detail.
 
-The previous wording was generic ("large language models for evidence synthesis, structural review, and copy editing"). The canonical wording is more specific about which tools were used and is consistent in shape with other Instats publications (gas-tax v3.2.8 ships the identical canonical paragraph in the same publication round).
+The previous wording was generic ("large language models for evidence synthesis, structural review, and copy editing"); the canonical wording is more specific about which tools were used.
 
-### Rebuilt on general-repo v0.22.21 pipeline (defense-in-depth gates active)
+### Rebuilt with additional Word-compatibility checks
 
-Same substantive content as v1.2.3; rebuilt through the general-repo v0.22.21 pipeline so the docx benefits from the post-build defense-in-depth gates: bookmark-name normaliser + Mac-Word-strict validator + RGBA → RGB PNG flatten (from v0.22.20) plus degenerate-zero-width-WordprocessingShape normaliser + validator (new in v0.22.21).
+Same substantive content as v1.2.3; rebuilt so the DOCX benefits from post-build validity checks layered on the v1.2.1 bookmark fix and the v1.2.3 chart colour conversion.
 
 v1.2.3's source-level chart RGB conversion remains in place; the v0.22.20 + v0.22.21 build-time gates act as belt-and-braces against any future regression. SHA256 of `report.docx` differs from v1.2.3's (new build + new disclosure paragraph), but the substantive evidence, framework, recommendations, and DOI are unchanged from v1.2.3.
 
@@ -105,17 +104,13 @@ with Image.open(png_path) as img:
 
 The chart visual is unchanged (the background was already white; we're just flattening the alpha layer that was always 255). PNG file size: 233 KB → 222 KB. Embedded in docx after rebuild: `mode=RGB, size=(3384, 1390)`.
 
-**General-repo v0.22.20 follow-up** (documented in working notes): the RGBA→RGB conversion belongs in `general-repo/charts/style.py` or a post-savefig helper so all future chart scripts get the Word-safe PNG output for free. Combined with the bookmark-name normaliser (now also queued for v0.22.20), the docx-broken-in-Mac-Word class of defect will be permanently closed.
-
 No prose, framework, or evidence changes from v1.2.2.
-
-verify-publication: 19 passed, 0 failed; Stage-A carry-over PASS.
 
 ## [1.2.2] — 2026-05-19
 
 ### Changed — Figure 1 chart redesign (eliminate overlapping annotations; publication-quality)
 
-Lead-author feedback after v1.2.1: *"Figure 1 in the responsible AI document looks like shit. ... The text on the graph is blocking everything. It looks like a robot made it! Make it very pretty and clear with no overlapping text."*
+Lead-author feedback after v1.2.1: the Figure 1 text was overlapping and obscuring the chart, and the figure needed to be redrawn cleanly with no overlapping text.
 
 Specific failure modes in the v1.2.1 chart:
 
@@ -124,7 +119,7 @@ Specific failure modes in the v1.2.1 chart:
 3. Corner labels ("ChatGPT-3.5 release Nov 2022" + "May 2026") competed with lane labels for visual attention.
 4. Multiple arrow leader lines intersected the bars and dots.
 
-Redesign (codex GPT-5.5 xhigh, executed against the chart-redesign brief at `private/reviews/chart_redesign_brief.md`):
+Redesign:
 
 - **Figure size increased** from (10, 4.35) to (12, 5.5) — more breathing room.
 - **Right-side callout panel** (figure x=0.8 onwards) — lists the six Class D universities by publication date, separated from the chart proper by a thin vertical rule. No more leader-line callouts pointing into the bars/dots.
@@ -136,30 +131,21 @@ Redesign (codex GPT-5.5 xhigh, executed against the chart-redesign brief at `pri
 - **Bottom-right caption block** in the right callout panel: "The blank university lane is the result: most audited institutions had not published AI-literacy + valid-practice guidance." Explains the visual emptiness for the skim reader.
 - **6 red Class D markers** preserved (`# red-clusters: 6` directive in chart-script header unchanged).
 
-The chart now visually delivers the headline finding without any text overlap. Codex's redesign artefact preserved at `private/reviews/chart_redesign_codex_2026-05-19.md`.
+The chart now visually delivers the headline finding without any text overlap.
 
 No prose changed in the report; the chart caption (Figure 1 markdown) is unchanged (it still describes the same data; the chart now renders it cleanly).
-
-verify-publication: 19 passed, 0 failed; Stage-A carry-over PASS.
 
 ## [1.2.1] — 2026-05-19
 
 ### Fixed — DOCX now opens in Mac Microsoft Word (bookmark-name compatibility)
 
-**Root cause** (identified by codex GPT-5.5 xhigh research, with the smoking-gun diff between gas-tax v3.2.5 — which opens in Mac Word — and responsible-ai v1.2.0 — which did not): the Figure 1 chart embed used pandoc's anchor syntax `{#fig:timeline}`, where the colon in the anchor name produced an OOXML bookmark named `fig%3Atimeline` (pandoc URL-encodes the colon to `%3A`). **Mac Microsoft Word's stricter OOXML schema validator rejects bookmark names containing `%`** — per Microsoft's documentation, Word bookmark names must begin with a letter and contain only letters, numbers, and underscores. LibreOffice tolerates `%` in bookmark names; Mac Word does not. Each `soffice` round-trip made it worse (the existing `%` got re-encoded to `%25`, producing `fig%253Atimeline`).
+**Root cause**: the Figure 1 chart embed used pandoc's anchor syntax `{#fig:timeline}`, where the colon in the anchor name produced an OOXML bookmark named `fig%3Atimeline` (pandoc URL-encodes the colon to `%3A`). **Mac Microsoft Word's stricter OOXML schema validator rejects bookmark names containing `%`** — per Microsoft's documentation, Word bookmark names must begin with a letter and contain only letters, numbers, and underscores. LibreOffice tolerates `%` in bookmark names; Mac Word does not. Each `soffice` round-trip made it worse (the existing `%` got re-encoded to `%25`, producing `fig%253Atimeline`).
 
 **Fix**: changed `{#fig:timeline}` → `{#fig-timeline}` in `drafts/report.md:63` (the only chart anchor). Rebuilt the DOCX. Verified all 53 bookmark names are now Word-compatible: zero contain `%` or `:`.
 
 **Why no earlier publication hit this**: gas-tax does not use pandoc figure anchors of the form `{#fig:NAME}`. Its 12 chart embeds use the default pandoc image syntax without anchor IDs, so no bookmark with a colon was generated. The responsible-ai chart embed was the first time a figure anchor was added with the colon-bearing convention.
 
-**Why local LibreOffice round-trip didn't catch it**: LibreOffice's OOXML parser is more permissive than Mac Word's. The verify-publication DOCX gates check style references, footnote resolution, and required parts — but did not check bookmark-name validity against the OOXML spec's stricter rules that Mac Word enforces.
-
-**General-repo v0.22.20 follow-up** (documented in `private/redraft_v1_1_0_working_notes.md`):
-1. Add a build-time check that rejects bookmark names containing `%` or `:` after the DOCX is built. Fail-loud, before publish_pages copies the file to docs/.
-2. Document the anchor-name discipline in `methodology/drafting_protocol.md`: figure anchors MUST use only letters, numbers, and hyphens — never colons, percent signs, spaces, or other characters that pandoc URL-encodes.
-3. Consider a pre-pandoc lint step on `drafts/report.md` that scans for `{#X:Y}` patterns and warns the drafter.
-
-verify-publication: 19 passed, 0 failed; Stage-A carry-over PASS.
+**Why local LibreOffice round-trip didn't catch it**: LibreOffice's OOXML parser is more permissive than Mac Word's, and the build's DOCX checks did not test bookmark-name validity against the stricter rules Mac Word enforces.
 
 ## [1.2.0] — 2026-05-19
 
@@ -167,7 +153,7 @@ verify-publication: 19 passed, 0 failed; Stage-A carry-over PASS.
 
 Lead-author feedback after v1.1.2: the report uses *"ethical, valid, reproducible, and transparent"* as the operational test for responsible AI use at lines 51, 434, and elsewhere, but never explicitly **defines** the four-way standard or **justifies** why these four properties (vs others) constitute responsibility. The connection to "the goals of research and research training" was implicit. The connection to society was absent. v1.2.0 closes both gaps.
 
-Two paragraphs added — synthesised from parallel codex GPT-5.5 xhigh and Gemini 3 Flash Preview drafts of the same brief:
+Two paragraphs added:
 
 1. **§1.2 closing paragraph (new):** the explicit definition of "responsible" the report uses. Names the four properties, justifies them ("the conditions under which AI-augmented research remains research"), and defines each one in a short clause: *Ethical* (does not harm research participants, communities, or third parties whose data is processed); *Valid* (inferences meet the same methodological and evidentiary standards as human-produced inferences); *Reproducible* (another researcher with the same inputs, prompts, parameters, and tool version can reproduce the output); *Transparent* (AI's role is disclosed with enough specificity for supervisors, examiners, reviewers, and readers to assess it). Ends with the necessary-together claim: *"no three substitute for the fourth."*
 
@@ -176,12 +162,6 @@ Two paragraphs added — synthesised from parallel codex GPT-5.5 xhigh and Gemin
 Conclusion now reads in three paragraphs: lag-story → why-it-matters-beyond-the-institution → universities-not-passive-consumers + framework-as-response. Classic problem → stakes → solution structure.
 
 No substantive content changed in the empirical body, the framework, the chart, or any source citation. The definitional and societal-stakes additions sharpen the report's argumentative spine without disturbing the evidence base.
-
-### Production discipline
-
-Both paragraphs drafted by parallel agents (codex GPT-5.5 xhigh + Gemini 3 Flash Preview) against the same scoped brief, then synthesised by the orchestrator. The brief specified the audience (senior university research leadership), the voice (position-paper, declarative, restrained), the word counts (80–130 per paragraph), and the placement. Each agent's draft preserved verbatim in `private/reviews/definitional_paragraphs_{codex,gemini}.md` for audit.
-
-verify-publication: 19 passed, 0 failed; Stage-A carry-over PASS.
 
 ## [1.1.2] — 2026-05-19
 
@@ -216,7 +196,7 @@ Two changes:
 
 No substantive content removed — just relocated and shortened. The factual claims about the four dossiers, the snapshot date, the AI assistance scope, and the conflict-of-interest position are all preserved in Appendix D. The cover page now reads citation + license + author byline + scan to the executive summary, which is the right shape for the first impression of a policy publication.
 
-This is a structural rule that will apply to all future Instats Policy Series publications; the general-repo template (forthcoming v0.22.20) will codify it.
+This is a structural rule that will apply to all future Instats Policy Series publications.
 
 ## [1.1.0] — 2026-05-19
 
@@ -257,17 +237,6 @@ v1.1.0 is a comprehensive framing redraft that preserves the entire empirical ev
 - The labour-vs-judgement task taxonomy (Appendix G).
 - The audience-tier recommendation structure (Part 5: five tiers).
 - All source citations and DOI (10.61700/t31oy23grr).
-
-### Production discipline
-
-The redraft used the same five-stage adversarial review pipeline as v1.0.0 with two additional discipline upgrades:
-
-1. **A focused Stage E voice-pair (Gemini 3 Flash Preview + GPT-5.5 xhigh) on the rewritten cover + finding** immediately after the framing rewrite, BEFORE extending to the body. Caught six small register/structure issues (semicolon+em-dash stack; wooden "position of this report"; residual "lagging end" metaphor; framework-Framework stutter; passive-voice publisher clause) that would have propagated into the body sweep if not caught early.
-2. **A parallel Phase 1 triage (Opus 4.7 + GPT-5.5 xhigh)** of the whole manuscript to identify every site where the body's framing was out of step with the rewritten cover. Two independent reads converged on a list of ~14 P0 sites + ~10 P1 sites; both reviewers' different training caught different defect classes (Opus surfaced the examiner-discipline→valid-research-practices terminology handoff that codex missed; codex surfaced the §1.3 plagiarism-spine reframe that Opus underplayed).
-3. **Five sequential codex implementation passes** (A → E) with orchestrator verification between each. Each pass had a tight scoped brief (≤6 sites, explicit preserve/touch acceptance criteria). Race conditions avoided by serial dispatch; all five passes landed cleanly.
-4. **A full-manuscript Stage E voice-pair** on the completed redraft. Surfaced four small line edits (figure caption ceiling-phrase; finding-section closing overpacked; Tier 5 "advocacy frame" register; §3.4 "literature's blind spot" abstract-heavy) plus one Gemini-only finding (Part 2 opener "decoration" → "lacks a substantive foundation"). All five applied.
-
-The voice-tic and decorative-metaphor scanner (`scripts/check_voice_tics.py` from general-repo v0.22.19) reports zero multi-compound flags in the rewritten manuscript except line 442 ("row axis / column axis") — a literal description of the maturity-grid table's rows and columns, confirmed acceptable.
 
 ## [1.0.0] — 2026-05-18
 
