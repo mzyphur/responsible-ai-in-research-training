@@ -182,10 +182,9 @@ def save_chart(fig, png_path, svg_path=None) -> None:
     with alpha-channel PNGs embedded in DOCX: the file opens partially
     with "Word found unreadable content" and Word offers recovery mode
     that drops the offending image (confirmed against responsible-ai
-    v1.2.2 → v1.2.3). The build_docx.py pipeline catches this at the
-    post-build stage by flattening RGBA → RGB in every word/media/ PNG;
-    this helper is the SOURCE-side equivalent that chart scripts call
-    so the rendered PNG is Word-safe from the start.
+    v1.2.2 → v1.2.3). The DOCX build also flattens RGBA → RGB after the
+    fact; this helper is the source-side equivalent that chart scripts
+    call so the rendered PNG is Word-safe from the start.
 
     Behaviour:
       - Call `fig.savefig(png_path)` (matplotlib's default RGBA save).
@@ -217,9 +216,9 @@ def save_chart(fig, png_path, svg_path=None) -> None:
         from PIL import Image
     except ImportError:
         # Pillow is a project dependency; if it's missing, skip the
-        # flatten. The build_docx.py post-build gate catches the issue
-        # later. We don't want chart scripts to fail just because Pillow
-        # wasn't installed yet on a fresh dev machine.
+        # flatten — the DOCX build catches the issue later. We don't want
+        # chart scripts to fail just because Pillow wasn't installed yet
+        # on a fresh dev machine.
         return
 
     from pathlib import Path
